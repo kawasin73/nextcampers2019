@@ -20,7 +20,7 @@ def csv_write(f_name, label, data):
     with open(f_name, mode='w', encoding='utf-8') as f:
         w = csv.writer(f, lineterminator='\n')
         for l, d in zip(label, data):
-            w.writerow([l, d])
+            w.writerow([d, l])
 
 
 XSS_TRAIN_FILE = 'dataset/train_level_1.csv'
