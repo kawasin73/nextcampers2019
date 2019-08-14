@@ -1,0 +1,5 @@
+.DS_Store
+security-ml-level3/.venv
+.envrc
+*checkpoint.ipynb
+doc2vec

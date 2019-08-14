@@ -1,0 +1,1115 @@
+<tr><td> A3 </td><td align="center"> 3 </td><td align="right"> 3 </td></tr>
+<tr><td colspan="3"> multi span </td></tr>
+<tr><td> A4 </td><td> next </td><td> next </td></tr>
+<strong>WikiWord Links:</strong> <br />
+CapitalizedWordsStuckTogether (or <a href="http://TWiki.org/cgi-bin/view/TWiki/WikiWord">WikiWords</a>) will produce a link automatically. <br /> <strong><em>Note:</em></strong> In case you want to link to a topic in a different TWiki web write <code>Webname.TopicName</code>.
+<a href="http://TWiki.org/cgi-bin/view/TWiki/WebNotify">WebNotify</a>
+<a href="http://TWiki.org/cgi-bin/view/Know/ReadmeFirst">ReadmeFirst</a>
+<a name="SquareBrackets"></a>
+<strong>Forced Links:</strong> <br />
+<br /> <strong><em>Note:</em></strong> Text within the brackets may contain optional spaces; the topic name is formed by capitalizing the initial letter and by removing the spaces; for example, <code>[[text formatting FAQ]]</code> links to topic <a href="http://TWiki.org/cgi-bin/view/TWiki/TextFormattingFAQ">TextFormattingFAQ</a>. You can also refer to a different web and use anchors.
+<a href="http://TWiki.org/cgi-bin/view/TWiki/WikiSyntax">wiki syntax</a>
+<a href="http://TWiki.org/cgi-bin/view/Main/TWikiUsers">Main.TWiki users</a>
+<strong>Specific Links:</strong> <br />
+Create a link where you can specify the link text and the link reference separately, using nested square brackets like <code>[[reference][text]]</code>. Internal link references (e.g. <a href="http://TWiki.org/cgi-bin/view/TWiki/WikiSyntax">WikiSyntax</a>) and external link references (e.g. <a href="http://TWiki.org/" target="_top">http://TWiki.org/</a>) are supported.
+<br /> <strong><em>Note:</em></strong> The same <strong><em>Forced Links</em></strong> rules apply for internal link references.
+<br /> <strong><em>Note:</em></strong> For external link references, you can simply use a space instead of <code>][</code> to separate the link URL from the descriptive text.
+<br /> <strong><em>Note:</em></strong> Anchor names can be added as well, like <code>[[WebHome#MyAnchor][go home]]</code> and <code>[[http://gnu.org/#Action][GNU Action]]</code>.
+<a href="http://TWiki.org/cgi-bin/view/TWiki/WikiSyntax">syntax</a>
+<a href="http://gnu.org" target="_top">GNU</a>
+<a href="http://xml.org" target="_top">XML</a>
+<strong>Anchors:</strong> <br />
+You can define a link reference inside a TWiki topic (called an anchor name) and link to that. To <strong><em>define</em></strong> an anchor write <code>#AnchorName</code> at the beginning of a line. The anchor name must be a <a href="http://TWiki.org/cgi-bin/view/TWiki/WikiWord">WikiWord</a>. To <strong><em>link to</em></strong> an anchor name use the <code>[[MyTopic#MyAnchor]]</code> syntax. You can omit the topic name if you want to link within the same topic.
+<a href="http://TWiki.org/cgi-bin/view/TWiki/WebHome#NotThere">WebHome#NotThere</a>
+<a href="#MyAnchor">Jump</a>
+<a name="MyAnchor"></a> To here
+<strong>Prevent a Link:</strong> <br />
+Prevent a <a href="http://TWiki.org/cgi-bin/view/TWiki/WikiWord">WikiWord</a> from being linked by prepending it with the <code>&lt;nop&gt;</code> tag.
+<strong>Disable Links:</strong> <br />
+You can disable automatic linking of <a href="http://TWiki.org/cgi-bin/view/TWiki/WikiWord">WikiWords</a> by surrounding text with <code>&lt;noautolink&gt;</code> and <code>&lt;/noautolink&gt;</code> tags.
+<br /> <strong><em>Note:</em></strong> Each tag must be on a line by itself.
+<br /> <strong><em>Note:</em></strong> This also works for TWiki tables, but only if you add a blank line between the end of the table and the closing <code>&lt;/noautolink&gt;</code> tag (known issue of the <a href="http://TWiki.org/cgi-bin/view/TWiki/TablePlugin">TablePlugin</a>).
+<strong>Mailto: Links:</strong> <br />
+To create 'mailto:' links that have more descriptive link text, specify subject lines or message bodies, or omit the email address, you can write <code>[[mailto:user@domain descriptive text]]</code>.
+<a href="mailto:a@z.com">Mail</a>
+<a href="mailto:?subject=Hi">Hi</a>
+<h2><a name="Using_HTML"> </a> Using HTML </h2>
+<h3><a name="HTML_and_TWiki_Usability"> </a> HTML and TWiki Usability </h3>
+On collaboration pages, it's preferable NOT to use HTML, and to use <a href="#TWikiShorthand">TWiki shorthand</a> instead - this keeps the text uncluttered and easy to edit.
+<img src="http://TWiki.org/p/pub/TWiki/TWikiDocGraphics/warning.gif" border="0" alt="ALERT!" width="16" height="16" /> <strong>NOTE:</strong> TWiki is designed to work with a wide range of browsers and computer platforms, holding to HTML 3.2 compatibility in the standard installation - adding raw HTML, particularly browser-specific tags (or any other mark-up that doesn't degrade well) will reduce compatibility.
+<h3><a name="TWiki_HTML_Rendering"> </a> TWiki HTML Rendering </h3>
+<img src="http://TWiki.org/p/pub/TWiki/TWikiDocGraphics/tip.gif" border="0" alt="TIP" width="16" height="16" /> If you need to save HTML frequently, you may want to check out <a href="http://twiki.org/cgi-bin/view/Plugins/GenHTMLAddon" title="'Plugins/GenHTMLAddon' on TWiki site, we know it!">TWiki:Plugins/GenHTMLAddon</a> - it will "generate a directory containing rendered versions of a set of TWiki pages together with any attached files."
+<img src="http://TWiki.org/p/pub/TWiki/TWikiDocGraphics/warning.gif" border="0" alt="ALERT!" width="16" height="16" /> <strong>NOTE:</strong> The opening and closing angle brackets - <code><b>&lt;...&gt;</b></code> - of an HTML tag <strong><em>must be on the same line</em></strong>, or the tag will be broken.
+This feature allows you to enter an unclosed angle bracket - as a greater than or less than symbol - and have it automatically rendered as if you had entered its HTML character, <code>&amp;lt;</code>, ex: <code><b>a &gt; b</b></code>
+<img src="http://TWiki.org/p/pub/TWiki/TWikiDocGraphics/tip.gif" border="0" alt="TIP" width="16" height="16" /> If you're pasting in preformatted HTML text and notice problems, check the file in a text processor with no text wrap. Also, save without hard line breaks on text wrap, in your HTML editing program.
+<h2><a name="Hyperlinks"> Hyperlinks </a></h2>
+Being able to create links without any formatting required is a core TWiki feature, made possible with <a href="http://TWiki.org/cgi-bin/view/TWiki/WikiWord">WikiWords</a>. New TWiki linking rules are a simple extension of the syntax that provide a new set of flexible options.
+<h3><a name="Internal_Links"> Internal Links </a></h3>
+<a href="http://TWiki.org/cgi-bin/view/TWiki/GoodStyle">GoodStyle</a> is a <a href="http://TWiki.org/cgi-bin/view/TWiki/WikiWord">WikiWord</a> that links to the GoodStyle topic located in the current TWiki web.
+<span style='background : #FFFFCE;'><font color="#0000FF">NotExistingYet</font></span><a href="http://TWiki.org/cgi-bin/edit/TWiki/NotExistingYet?topicparent=TWiki.TWikiDocumentation">?</a> is a topic waiting to be written. Create the topic by clicking on the <strong>?</strong>. (Try clicking, but then, <strong>Cancel</strong> - creating the topic would wreck this example!)
+<h3><a name="External_Links"> External Links </a></h3>
+<code>http://...</code>, <code>https://...</code>, <code>ftp://...</code>, <code>gopher://...</code>, <code>news://...</code>, <code>file://...</code>, <code>telnet://...</code>
+and <code>mailto:...@...</code> are linked automatically.
+Email addresses like <code>name@domain.com</code> are linked automatically.
+<code>[[Square bracket rules]]</code> let you easily create <a href="#SquareBrackets">non-WikiWord links</a>.
+You can also write <code>[[http://yahoo.com Yahoo home page]]</code> as an easier way of doing external links with descriptive text for the link, such as <a href="http://yahoo.com/" target="_top">Yahoo home page</a>.
+<h2><a name="TWiki_Variables"> TWiki Variables </a></h2>
+Variables are names that are enclosed in percent signs <code>%</code> that are expanded on the fly.
+<code>%TOC%</code> : Automatically generates a table of contents based on headings in a topic - see the top of this page for an example.
+<code>%WEB%</code> : The current web, is <b>TWiki</b>.
+<code>%TOPIC%</code> : The current topic name, is <b>TextFormattingRules</b>.
+<code>%ATTACHURL%</code> : The attachment URL of the current topic. Example usage: If you attach a file to a topic you can refer to it as <code><b>%ATTACHURL%/image.gif</b></code> to show the URL of the file or the image in your text.
+<code>%INCLUDE{"SomeTopic"}%</code> : Server side include, includes another topic. The current TWiki web is the default web. Example: <code><b>%INCLUDE{"TWiki.SiteMap"}%</b></code>
+<code>%SEARCH{"sushi"}%</code> : Inline search showing the search result embedded in a topic. <a href="http://TWiki.org/cgi-bin/view/TWiki/FormattedSearch">FormattedSearch</a> gives you control over formatting, used to create web-based applications.
+<a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiPreferences">TWikiPreferences</a> defines site-wide variables. Among others:
+<strong>Line break:</strong> Write <code><span style='background : #FFFFCC;'><font color="#990000">%BR%</font></span></code> to start a new line.
+<strong>Colored text:</strong> Write: <code><span style='background : #FFFFCC;'><font color="#990000"> %RED% Red %ENDCOLOR% and %BLUE% blue %ENDCOLOR% colors</font></span></code> to get: <font color="#ff0000"> Red </font> and <font color="#0000ff"> blue </font> colors.
+<strong>Documentation Graphics:</strong> Write: <code><span style='background : #FFFFCC;'><font color="#990000"> %H% Help, %T% Tip, %X% Alert</font></span></code> to get: <img src="http://TWiki.org/p/pub/TWiki/TWikiDocGraphics/help.gif" border="0" alt="HELP" width="16" height="16" /> Help, <img src="http://TWiki.org/p/pub/TWiki/TWikiDocGraphics/tip.gif" border="0" alt="TIP" width="16" height="16" /> Tip, <img src="http://TWiki.org/p/pub/TWiki/TWikiDocGraphics/warning.gif" border="0" alt="ALERT!" width="16" height="16" /> Alert. For more info see <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiDocGraphics">TWikiDocGraphics</a>.
+There are many more variables, see <strong><a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiVariables">TWikiVariables</a></strong>.
+<h2><a name="TWikiPlugin_Formatting_Extension"> TWikiPlugin Formatting Extensions </a></h2>
+Plugins provide additional text formatting capabilities and can extend the functionality of TWiki into many other areas. For example, the optional <a href="http://twiki.org/cgi-bin/view/Plugins/SpreadSheetPlugin" target="_top">SpreadSheetPlugin</a> lets you create a spreadsheet with the same basic notation used in TWiki tables.
+Available Plugins are located in the <a href="http://twiki.org/cgi-bin/view/Plugins" target="_top">Plugins</a> web on TWiki.org. Currently enabled plugins on this TWiki installation, as listed by <code>%PLUGINDESCRIPTIONS%</code>:
+<a href="http://TWiki.org/cgi-bin/view/TWiki/DefaultPlugin">DefaultPlugin</a>: This plugin can be used to specify some simple custom rendering rules. It also renders deprecated <code><b>*_text_*</b></code> as <strong><em>bold italic</em></strong> text.
+<a href="http://TWiki.org/cgi-bin/view/TWiki/InterwikiPlugin">InterwikiPlugin</a>: Link <code><b>ExternalSite:Page</b></code> text to external sites based on aliases defined in the <a href="http://TWiki.org/cgi-bin/view/TWiki/InterWikis">InterWikis</a> topic.
+Check on current Plugin status and settings for this site in <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiPreferences">TWikiPreferences</a>.
+<h2><a name="Common_Editing_Errors"> Common Editing Errors </a></h2>
+TWiki formatting rules are fairly simple to use and quick to type. However, there are some things to watch out for, taken from the <a href="http://TWiki.org/cgi-bin/view/TWiki/TextFormattingFAQ">TextFormattingFAQ</a>:
+<strong>Q:</strong> Text enclosed in angle brackets like <code>&lt;filename&gt;</code> is not displayed. How can I show it as it is?
+<strong>A:</strong> The <code>'&lt;'</code> and <code>'&gt;'</code> characters have a special meaning in HTML, they define HTML tags. You need to escape them, so write <code>'&amp;lt;'</code> instead of <code>'&lt;'</code>, and <code>'&amp;gt;'</code> instead of <code>'&gt;'</code>. <br /> Example: Type <code>'prog &amp;lt;filename&amp;gt;'</code> to get <code>'prog &lt;filename&gt;'</code>.
+<strong>Q:</strong> Why is the <code>'&amp;'</code> character sometimes not displayed?
+<strong>A:</strong> The <code>'&amp;'</code> character has a special meaning in HTML, it starts a so called character entity, i.e. <code>'&amp;copy;'</code> is the <code>&copy;</code> copyright character. You need to escape <code>'&amp;'</code> to see it as it is, so write <code>'&amp;amp;'</code> instead of <code>'&amp;'</code>. <br /> Example: Type <code>'This &amp;amp; that'</code> to get <code>'This &amp; that'</code>.
+-- <a href="http://TWiki.org/cgi-bin/view/Main/MikeMannix">MikeMannix</a> - 02 Dec 2001 <br />
+-- <a href="http://TWiki.org/cgi-bin/view/Main/PeterThoeny">PeterThoeny</a> - 01 Feb 2003
+<h1><a name="TWiki_Variables"> TWiki Variables </a></h1>
+<em>Special text strings expand on the fly to display user data or system info</em>
+TWikiVariables are text strings - <code>%VARIABLE%</code> - that expand into content whenever a page is opened. When a topic is rendered for viewing, <code>VARIABLES</code> are replaced by data, either user-entered, or info automatically generated by TWiki (like the date, or the current username). There are predefined variables, and Preference variables that you configure. You can also define custom variables, with new names and values.
+<h2><a name="Predefined_Variables"> Predefined Variables </a></h2>
+Most predefined variables return values that were either set in the <code><b>lib/twiki.cfg</b></code> file, when TWiki was installed, or taken from server info (like current username, or date and time). Many of the variables let you format the appearance of the display results.
+<img src="http://TWiki.org/p/pub/TWiki/TWikiDocGraphics/tip.gif" border="0" alt="TIP" width="16" height="16" /> <strong>Take the time to thoroughly read through ALL preference variables.</strong> If you actively configure your site, review variables periodically. They cover a wide range of functions, and it can be easy to miss the one perfect variable for something you have in mind. For example, see <code><b>%INCLUDINGTOPIC%</b></code>, <code><b>%INCLUDE%</b></code>, and the mighty <code><b>%SEARCH%</b></code>.
+This version of TWiki - 01 Feb 2003 - expands the following variables (enclosed in <code><b>%</b></code> percent signs):
+<table cellspacing="0" cellpadding="2" width="90%" border="1" align="center" style="background-color:#f5f5f5">
+<th width="160"> Variable: </th><th> Expanded to: </th>
+<td> <code>%WIKIHOMEURL%</code> </td>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><th bgcolor="#99CCCC"> <strong>Parameter:</strong> </th><th bgcolor="#99CCCC"> <strong>Description:</strong> </th><th bgcolor="#99CCCC"> <strong>Default:</strong> </th></tr>
+<tr><td> <code>"format"</code> </td><td> Format of one line, may include <code>name</code> and <code>web</code> variables </td><td> <code>"name"</code> </td></tr>
+<tr><td> <code>format="format"</code> </td><td> (Alternative to above) </td><td> <code>"name"</code> </td></tr>
+<tr><td> <code>separator=", "</code> </td><td> line separator </td><td> <code>"\n"</code> (new line) </td></tr>
+<tr><td> <code>web="Name"</code> </td><td> Name of web </td><td> Current web </td></tr>
+<br /> <code>%TOPICLIST{" &nbsp; * web.name"}%</code> creates a bullet list of all topics.
+<br /> <code>%TOPICLIST{separator=", "}%</code> creates a comma separated list of all topics.
+<br /> <code>%TOPICLIST{" &lt;option&gt;name&lt;/option&gt;"}%</code> creates an option list (for drop down menus). </td>
+<td> <code>%WEBLIST{"format"}%</code> </td>
+<td> Web index, ex: list of all webs. Hidden webs are excluded, e.g. webs with a <code>NOSEARCHALL=on</code> preference variable. The <code>"format"</code> defines the format of one web item. The <code>name</code> variable gets expanded to the name of the web, <code>qname</code> gets expanded to double quoted name, <code>marker</code> to <code>marker</code> where web matches <code>selection</code>.
+<tr><td> <code>"format"</code> </td><td> Format of one line, may include <code>name</code> variable </td><td> <code>"name"</code> </td></tr>
+<tr><td> <code>webs="public"</code> </td><td> comma sep list of Web, public expands to all non-hidden </td><td> <code>"public"</code> </td></tr>
+<tr><td> <code>marker="selected"</code> </td><td> Text for <code>marker</code> where item matches <code>selection</code>, otherwise equals <code>""</code> </td><td> <code>"selected"</code> </td></tr>
+<tr><td> <code>selection="%WEB%"</code> </td><td> Current value to be selected in list </td><td> <code>section="%WEB%"</code> </td></tr>
+Examples: <br /> <code>%WEBLIST{" &nbsp; * [[name.WebHome]]"}%</code> creates a bullet list of all webs.
+<code>%WEBLIST{"&lt;option marker value=qname&gt;name&lt;/option&gt;" webs="Trash,public" selection="TWiki" separator=" "}%</code> Dropdown of all public Webs + Trash Web, current Web highlighted.
+<td> <code>%GMTIME%</code> </td>
+<td> GM time, is <b>Sun Feb 2 02:45:08 2003</b> </td>
+<td> <code>%GMTIME{"format"}%</code> </td>
+<td> Formatted GM time based on time variables.
+<table border="1" cellspacing="0" cellpadding="1"> <tr><th bgcolor="#99CCCC"> <strong>Variable:</strong> </th><th bgcolor="#99CCCC"> <strong>Unit:</strong> </th><th bgcolor="#99CCCC"> <strong>Example</strong> </th></tr>
+<tr><td> seconds </td><td> seconds </td><td> 59 </td></tr>
+<tr><td> minutes </td><td> minutes </td><td> 59 </td></tr>
+<tr><td> hours </td><td> hours </td><td> 23 </td></tr>
+<tr><td> day </td><td> day of month </td><td> 31 </td></tr>
+<tr><td> month </td><td> month in ISO format </td><td> Dec </td></tr>
+<tr><td> mo </td><td> 2 digit month </td><td> 12 </td></tr>
+<tr><td> year </td><td> 4 digit year </td><td> 1999 </td></tr>
+<tr><td> ye </td><td> 2 digit year </td><td> 99 </td></tr>
+Variables can be shortened to 3 characters. Example: <br /> <code>%GMTIME{"day month, year - hour:min:sec"}%</code> is <br /> <b>02 Feb, 2003 - 02:45:08</b> </td>
+<td> <code>%SERVERTIME%</code> </td>
+<td> Server time, is <b>Sat Feb 1 18:45:08 2003</b> </td>
+<td> <code>%SERVERTIME{"format"}%</code> </td>
+<td> Formatted server time. <br /> Example: <code>%SERVERTIME{"hou:min"}%</code> is <b>18:45</b> </td>
+<td> <code>%HTTP_HOST%</code> </td>
+<td> HTTP_HOST environment variable, is <b></b> </td>
+<td> <code>%REMOTE_ADDR%</code> </td>
+<td> REMOTE_ADDR environment variable, is <b></b> </td>
+<td> <code>%REMOTE_PORT%</code> </td>
+<td> REMOTE_PORT environment variable, is <b></b> </td>
+<td> <code>%REMOTE_USER%</code> </td>
+<td> REMOTE_USER environment variable, is <b></b> </td>
+<td> <code>%INCLUDE{"page" ...}%</code> </td>
+<td> Server side include to <a href="http://TWiki.org/cgi-bin/view/TWiki/IncludeTopicsAndWebPages">IncludeTopicsAndWebPages</a>:
+<table border="1" cellspacing="0" cellpadding="1"> <tr><th bgcolor="#99CCCC"> <strong>Parameter:</strong> </th><th bgcolor="#99CCCC"> <strong>Description:</strong> </th><th bgcolor="#99CCCC"> <strong>Default:</strong> </th></tr>
+<tr><td> <code>"SomeTopic"</code> </td><td> The name of a topic located in the current web, i.e. <code>%INCLUDE{"WebNotify"}%</code> </td><td> &nbsp; </td></tr>
+<tr><td> <code>"Web.Topic"</code> </td><td> A topic in another web, i.e. <code>%INCLUDE{"TWiki.SiteMap"}%</code> </td><td> &nbsp; </td></tr>
+<tr><td> <code>"http://..."</code> </td><td> A full qualified URL, i.e. <code>%INCLUDE{"http://twiki.org/"}%</code> </td><td> &nbsp; </td></tr>
+<tr><td> <code>pattern="..."</code> </td><td> A <a href="http://TWiki.org/cgi-bin/view/TWiki/RegularExpression">RegularExpression</a> pattern to include a subset of a topic or page </td><td> none </td></tr>
+<tr><td> <code>rev="1.2"</code> </td><td> Include a previous topic revision; N/A for URLs </td><td> top revision </td></tr>
+<td> <code>%STARTINCLUDE%</code> </td>
+<td> If present in included topic, start to include text from this location up to the end, or up to the location of the <code>%STOPINCLUDE%</code> variable. A normal view of the topic shows everyting exept the <code>%STARTINCLUDE%</code> variable itself. </td>
+<td> <code>%STOPINCLUDE%</code> </td>
+<td> If present in included topic, stop to include text at this location and ignore the remaining text. A normal view of the topic shows everyting exept the <code>%STOPINCLUDE%</code> variable itself. </td>
+<td> <code>%TOC%</code> </td>
+<td> Table of Contents of current topic. </td>
+<td> <code>%TOC{"SomeTopic" ...}%</code> </td>
+<td> Table of Contents. Shows a TOC that is generated automatically based on headings of a topic. Headings in <a href="http://TWiki.org/cgi-bin/view/TWiki/WikiSyntax">WikiSyntax</a> (<code>"---++ text"</code>) and HTML (<code>"&lt;h2&gt;text&lt;/h2&gt;"</code>) are taken into account. Any heading text after <code>"!!"</code> is excluded from the TOC; for example, write <code>"---+!! text"</code> if you do not want to list a header in the TOC. Parameters are topic name, web and depth:
+<table border="1" cellspacing="0" cellpadding="1"> <tr><th bgcolor="#99CCCC"> <strong>Parameter:</strong> </th><th bgcolor="#99CCCC"> <strong>Description:</strong> </th><th bgcolor="#99CCCC"> <strong>Default:</strong> </th></tr>
+<tr><td> <code>"TopicName"</code> </td><td> topic name </td><td> Current topic </td></tr>
+Examples: <code><b>%TOC{depth="2"}%</b></code>, <code><b>%TOC{"TWikiDocumentation" web="TWiki"}%</b></code>
+<td> <code>%SEARCH{"text" ...}%</code> </td>
+<td> Inline search, shows a search result embedded in a topic. Parameters are the search term, web, scope, order and many more: [1]
+<tr><td> <code>"text"</code> </td><td> Search term. Is a regular expression or literal, depending on the <code>regex</code> parameter. For regular expressions ";" is used to mean <em>and</em> e.g. "search;agrep" will find all topic containing search <em>and</em> agrep. </td><td> required </td></tr>
+Regular example: <code><b>%SEARCH{"wiki" web="Main" scope="topic"}%</b></code> <br />
+Formatted example: <code><b>%SEARCH{"FAQ" scope="topic" nosearch="on" nototal="on" header="| *Topic: * | *Summary: * |" format="| topic | summary |"%</b></code> <em>(displays results in a table with header - <a href="http://TWiki.org/cgi-bin/view/TWiki/FormattedSearch">details</a>)</em> <br />
+<img src="http://TWiki.org/p/pub/TWiki/TWikiDocGraphics/help.gif" border="0" alt="HELP" width="16" height="16" /> If the <a href="http://twiki.org/cgi-bin/view/Plugins.TablePlugin" title="'Plugins.TablePlugin' on TWiki site, we know it!">TWiki:Plugins.TablePlugin</a> is installed, you may set a <code>%TABLE{}%</code> variable just before the <code>%SEARCH{}%</code> to alter the output of a search. Example: <code><b>%TABLE{ tablewidth="90%" }%</b></code>
+<td> <code>%METASEARCH{...}%</code> </td>
+<td> Special search of meta data
+<tr><td> <code>type="topicmoved"</code> </td><td> What sort of search is required? <br /> <code>"topicmoved"</code> if search for a topic that may have been moved <br /> <code>"parent"</code> if searching for topics that have a specific parent i.e. its children </td><td> required </td></tr>
+Example: <code><b>%METASEARCH{type="topicmoved" web="%WEB%" topic="%TOPIC%" title="This topic used to exist and was moved to: "}%</b></code>, you may want to use this in <a href="http://TWiki.org/cgi-bin/view/TWiki/WebTopicViewTemplate">WebTopicViewTemplate</a> and <a href="http://TWiki.org/cgi-bin/view/TWiki/WebTopicNonWikiTemplate">WebTopicNonWikiTemplate</a><br />
+<code><b>%METASEARCH{type="parent" web="%WEB%" topic="%TOPIC%" title="Children: "}%</b></code>
+<td> <code>%VAR{"NAME" web="Web"}%</code> </td>
+<td> Get a preference value from a web other then the current one. Example: To get <code>%WEBBGCOLOR%</code> of the Main web write <code>%VAR{"WEBBGCOLOR" web="Main"}%</code>, is <code><b>#FFFFC0</b></code> </td>
+[1] <strong><em>Note</em></strong>: The search form uses identical names for input fields.
+[2] <strong><em>Note</em></strong>: A web can be excluded from a <code><b>web="all"</b></code> search if you define a <code><b>NOSEARCHALL=on</b></code> variable in its <a href="http://TWiki.org/cgi-bin/view/TWiki/WebPreferences">WebPreferences</a>.
+<a name="PreferencesVariables"></a>
+<h2><a name="Preferences_Variables"> Preferences Variables </a></h2>
+Additional variables are defined in the preferences ( site-level ( <strong><em>SL</em></strong> ) in <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiPreferences">TWikiPreferences</a>, web-level ( <strong><em>WL</em></strong> ) in <a href="http://TWiki.org/cgi-bin/view/TWiki/WebPreferences">WebPreferences</a> of each web, and user level ( <strong><em>UL</em></strong> ) preferences in individual user topics):
+<th width="160"> Variable: </th><th> Level: </th><th> What: </th>
+<td> <code>%WIKIWEBMASTER%</code> </td>
+<strong><em>Note:</em></strong> There are some more useful variables defined in the <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiPreferences">TWikiPreferences</a> like <code>%BR%</code> for line break, colors like <code>%RED%</code> for colored text and small icons like <code>%H%</code> for a <img src="http://TWiki.org/p/pub/TWiki/TWikiDocGraphics/help.gif" border="0" alt="HELP" width="16" height="16" /> Help icon.
+<a name="SettingPrefs"></a>
+<h2><a name="Setting_Preferences"> Setting Preferences </a></h2>
+The syntax for Preferences Variables is the same anywhere in TWiki (on its own TWiki bullet line, including nested bullets): <br />[multiple of 3 spaces] * [space] Set [space] VARIABLENAME [space] = [value]<br /> <strong><em>Examples:</em></strong>
+<code><b>Set VARIABLENAME = value</b></code>
+<h2><a name="Creating_Custom_Variables"> Creating Custom Variables </a></h2>
+You can add your own Preference Variables for us across an entire site or a single web, using the standard <a href="#SettingPrefs">Preferences syntax</a>. Whatever you include in your Variable will be expanded on display, exactly as if it had been entered directly. You can place formatted text, page links, image paths.
+<blockquote style="background-color:#ffffff">
+<strong>Example: Create a custom logo variable the TWiki web</strong> <br />
+To place a logo anywhere in a web by typing <code><b>%MYLOGO%</b></code>, define the Variable on the web's <a href="http://TWiki.org/cgi-bin/view/TWiki/WebPreferences">WebPreferences</a> page, and upload a logo file, ex: <code>mylogo.gif</code>. You can upload by <a href="http://TWiki.org/cgi-bin/view/TWiki/FileAttachment">attaching the file</a> to <a href="http://TWiki.org/cgi-bin/view/TWiki/WebPreferences">WebPreferences</a>, or, to avoid clutter, to any other topic in the same web, ex: <code>LogoTopic</code>:
+<code><b>Set MYLOGO = %PUBURL%/TWiki/LogoTopic/mylogo.gif</b></code>
+-- <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a> - 19 Jan 2003 <br />
+-- <a href="http://TWiki.org/cgi-bin/view/Main/MikeMannix">MikeMannix</a> - 12 May 2002
+<h1><a name="File_Attachments"> File Attachments </a></h1>
+<em>Each topic can have one </em>
+<h2><a name="What_Are_Attachments_Good_For_"> What Are Attachments Good For? </a></h2>
+<h3><a name="Document_Management_System"> Document Management System </a></h3>
+<a href="#AttachmentAccess">need-to-know basis</a>
+<h3><a name="File_Sharing"> File Sharing </a></h3>
+For file sharing, <a href="http://TWiki.org/cgi-bin/view/TWiki/FileAttachment">FileAttachments</a> on a series of topics can be used to quickly create a well-documented, categorized digital download center for all types of files: documents; graphics and other media; drivers and patches; applications; anything you can safely upload!
+<h3><a name="Web_Authoring"> Web Authoring </a></h3>
+<strong><em>NOTE:</em></strong><a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiVariables"></a><img src="http://TWiki.org/p/pub/TWiki/TWikiDocGraphics/help.gif" border="0" alt="HELP" width="16" height="16" />.
+<h2><a name="Uploading_Files"> Uploading Files </a></h2>
+Click on the <code><b>Attach</b></code> link at the bottom of the page. The <code>Attach</code> <a href="#FileAttachmentTable">File Attachment table</a>.
+Any type of file can be uploaded. Some files that might pose a security risk are renamed, ex: <code>*.php</code> files are renamed to <code>*.php.txt</code> so that no one can place code that would be read in a .php file.
+* <img src="http://TWiki.org/p/pub/TWiki/TWikiDocGraphics/warning.gif" border="0" alt="ALERT!" width="16" height="16" />
+<h2><a name="Downloading_Files"> Downloading Files </a></h2>
+Click on the file in the <a href="#FileAttachmentTable">File Attachment table</a>.
+<a name="AttachmentAccess"></a>
+<img src="http://TWiki.org/p/pub/TWiki/TWikiDocGraphics/warning.gif" border="0" alt="ALERT!" width="16" height="16" /> <em>NOTE:</em> There is no access control on individual attachments. If you need control over single files, create a separate topic per file and set topic-level <a href="#TWikiAccessControl">access restrictions</a> for each.
+<h2><a name="Moving_Attachment_Files"> Moving Attachment Files </a></h2>
+Click <code><b>Action</b></code> on the Attachment to be moved.
+Click <code><b>Move</b></code>. The attachment and its version history are moved. The original location is stored as <a href="#Meta_Data_Definition">topic Meta Data</a>.
+<h2><a name="Deleting_Attachments"> Deleting Attachments </a></h2>
+<img src="http://TWiki.org/p/pub/TWiki/TWikiDocGraphics/tip.gif" border="0" alt="TIP" width="16" height="16" /> One easy workaround is to create a <code><b>Trash.TrashAttachments</b></code> - then, simply move unwanted Attachments to that topic.
+<h2><a name="Linking_to_Attached_Files"> Linking to Attached Files </a></h2>
+<code><b>Attach</b></code> file: <code>Sample.txt</code>
+<code><b>Edit</b></code> topic and enter: <code>%ATTACHURL%/Sample.txt</code>
+<code><b>Preview</b></code>: <code>%ATTACHURL%/Sample.txt</code> text appears as: <a href="http://TWiki.org/p/pub/TWiki/FileAttachment/Sample.txt" target="_top">http://TWiki.org/p/pub/TWiki/FileAttachment/Sample.txt</a>, a link to the text file.
+<code>%PUBURL%/%WEB%/OtherTopic/Sample.txt</code> (if it's within the same web)
+<code>%PUBURL%/Otherweb/OtherTopic/Sample.txt</code> (if it's in a different web)
+<code><b>Edit</b></code> topic and write text: <code>%INCLUDE{"%ATTACHURL%/Sample.txt"}%</code>
+Read more in <a href="http://TWiki.org/cgi-bin/view/TWiki/IncludeTopicsAndWebPages">IncludeTopicsAndWebPages</a>.
+<code><b>Attach</b></code> file: <code>Smile.gif</code>
+<code><b>Edit</b></code> topic and write text: <code>%ATTACHURL%/Smile.gif</code>
+<code><b>Preview</b></code>: text appears as <img src="http://TWiki.org/p/pub/TWiki/FileAttachment/Smile.gif" alt="Smile.gif" />, an image.
+<a name="FileAttachmentTable"></a>
+<h2><a name="File_Attachment_Contents_Table"> File Attachment Contents Table </a></h2>
+Files attached to a topic are displayed in a directory table, displayed at the bottom of the page, or optionally, hidden and accessed when you click <strong>Attach</strong>.
+<blockquote style="background-color:#f0f0f0">
+<table border="1" cellspacing="0" cellpadding="20" width="90%"><tr><td>
+<table border="1" cellspacing="0" cellpadding="1">
+<tr><th align="center" bgcolor="#99CCCC"> <strong><a href="FileAttachment">Attachment</a>:</strong> </th><th align="center" bgcolor="#99CCCC"> <strong>Action:</strong> </th><th align="center" bgcolor="#99CCCC"> <strong>Size:</strong> </th><th align="center" bgcolor="#99CCCC"> <strong>Date:</strong> </th><th align="center" bgcolor="#99CCCC"> <strong>Who:</strong> </th><th align="center" bgcolor="#99CCCC"> <strong>Comment:</strong> </th></tr>
+<tr><td> <img src="/p/pub/icn/txt.gif" width="16" height="16" align="top" /> <a href="http://TWiki.org/cgi-bin/viewfile/TWiki/FileAttachment?rev=&amp;filename=Sample.txt">Sample.txt</a> </td><td> <a href="http://TWiki.org/cgi-bin/attach/TWiki/FileAttachment?filename=Sample.txt&amp;revInfo=1">action</a> </td><td> 30 </td><td> 22 Jul 2000 - 19:37 </td><td> <a href="PeterThoeny">PeterThoeny</a> </td><td> Just a sample </td></tr>
+<tr><td> <img src="/p/pub/icn/bmp.gif" width="16" hight="16" align="top" /> <a href="http://TWiki.org/cgi-bin/viewfile/TWiki/FileAttachment?rev=&amp;filename=Smile.gif">Smile.gif</a> </td><td> <a href="http://TWiki.org/cgi-bin/attach/TWiki/FileAttachment?filename=Smile.gif&amp;revInfo=1">action</a> </td><td> 94 </td><td> 22 Jul 2000 - 19:38 </td><td> <a href="PeterThoeny">PeterThoeny</a> </td><td> Smiley face </td></tr>
+</td></tr></table>
+<h2><a name="File_Attachment_Controls"> File Attachment Controls </a></h2>
+Clicking on an <code><b>Action</b></code> link takes you to a new page that looks like this:
+<form>
+<table border="1" cellspacing="0" cellpadding="20"><tr><td>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><th align="center" bgcolor="#99CCCC"> <strong><a href="FileAttachment">Attachment</a>:</strong> </th><th align="center" bgcolor="#99CCCC"> <strong>Action:</strong> </th><th align="center" bgcolor="#99CCCC"> <strong>Size:</strong> </th><th align="center" bgcolor="#99CCCC"> <strong>Date:</strong> </th><th align="center" bgcolor="#99CCCC"> <strong>Who:</strong> </th><th align="center" bgcolor="#99CCCC"> <strong>Comment:</strong> </th><th align="center" bgcolor="#99CCCC"> <strong><a href="FileAttribute">Attribute</a>:</strong> </th></tr>
+<tr><td> <img src="/p/pub/icn/txt.gif" width="16" height="16" align="top" /> <a href="http://TWiki.org/cgi-bin/viewfile/TWiki/TWiki/FileAttachment?rev=&amp;filename=Sample.txt">Sample.txt</a> </td><td> <a href="http://TWiki.org/cgi-bin/attach/TWiki/FileAttachment?filename=Sample.txt&amp;revInfo=1">action</a> </td><td> 30 </td><td> 22 Jul 2000 - 19:37 </td><td> <a href="PeterThoeny">PeterThoeny</a> </td><td> Just a sample </td><td align="center"> &nbsp; </td></tr>
+<tr><td> <img src="/p/pub/icn/bmp.gif" width="16" height="16" align="top" /> <a href="http://TWiki.org/cgi-bin/viewfile/TWiki/FileAttachment?rev=&amp;filename=Smile.gif">Smile.gif</a> </td><td> <a href="http://TWiki.org/cgi-bin/attach/TWiki/FileAttachment?filename=Smile.gif&amp;revInfo=1">action</a> </td><td> 94 </td><td> 22 Jul 2000 - 19:38 </td><td> <a href="PeterThoeny">PeterThoeny</a> </td><td> Smiley face </td><td align="center"> &nbsp; </td></tr>
+<h2>Update attachment <code>Sample.txt</code></h2>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><th align="center" bgcolor="#99CCCC"> <strong>Version:</strong> </th><th align="center" bgcolor="#99CCCC"> <strong>Action:</strong> </th><th align="center" bgcolor="#99CCCC"> <strong>Date:</strong> </th><th align="center" bgcolor="#99CCCC"> <strong>Who:</strong> </th><th align="center" bgcolor="#99CCCC"> <strong>Comment:</strong> </th></tr>
+<tr><td> 1.1 </td><td> <a href="http://TWiki.org/cgi-bin/viewfile/TWiki/FileAttachment?rev=1.1&amp;filename=Sample.txt">view</a> </td><td> 2001.08.30.09.28.56 </td><td> <a href="PeterThoeny">PeterThoeny</a> </td><td> &nbsp; </td></tr>
+<code>C:\DATA\Sample.txt</code> (<a href="PeterThoeny">PeterThoeny</a>)
+<input type="hidden" name="filename" value="Sample.txt" />
+<input type="file" name="filepath" value="C:\DATA\Sample.txt" size="50" />
+<input type="text" name="filecomment" value="Just a sample" maxlength="50" size="50" />
+<input type="checkbox" name="createlink" /> Create a link to the attached file at the end of the topic.
+<input type="checkbox" name="hidefile" /> Hide attachment in normal topic view.
+Topic <b>FileAttachment</b> . { <input type="submit" value=" &nbsp; Upload file &nbsp; " /> |
+<input type="submit" name="changeproperties" value="Change properties" /> |
+<a href="http://TWiki.org/cgi-bin/rename/TWiki/FileAttachment?attachment=Sample.txt">Move attachment</a> |
+<a href="FileAttachment">Cancel</a> }
+The first table is a list of all attachments, including their attributes. An <code>h</code> means the attachment is hidden, it isn't listed when viewing a topic.
+The second table is all the versions of the attachment. Click on <strong>View</strong> to see that version. If it's the most recent version, you'll be taken to an URL that always displays the latest version, which is usually what you want.
+<strong>To change the comment</strong> on an attachment, enter a new comment and then click <strong>Change properties</strong>. Note that the comment listed against the specific version will not change, however the comment displayed when viewing the topic does change.
+<strong>To hide/unhide</strong> an attachment, enable the <code><b>Hide file</b></code> checkbox, then click <code><b>Change properties</b></code>.
+<h1><a name="TWiki_Forms"> TWiki Forms </a></h1>
+<em>Form-based input in topics, with name/value pairs stored as Meta Data variables; choose one of multiple forms per web &amp; topic</em>
+By adding form-based input to freeform content, you can structure topics with unlimited, easily searchable categories. When forms are enabled for a web and selected in a topic, a single form appears in edit mode, and the contents are rendered as a table when viewed on the display page. You can define unlimited forms per web. For each topic, you can select a template if more than one is defined, or remove forms entirely. Form input values are stored as <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiMetaData">TWikiMetaData</a>; all data is saved.
+<a name="FormsVsCategoryTables"></a>
+<h2><a name="Main_Changes_from_Category_Table"> Main Changes from Category Tables </a></h2>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><th align="center" bgcolor="#99CCCC"> <strong>Form Templates</strong> </th><th align="center" bgcolor="#99CCCC"> <strong>Category Tables</strong> </th></tr>
+<tr><td align="center"> defined in topics </td><td align="center"> defined in templates </td></tr>
+<h3><a name="Importing_Category_Table_Data"> Importing Category Table Data </a></h3>
+On upgrading from the previous TWiki, a Form Template topic has to be built for each web that used a Category Table, recreating the fields and values from the old <code><b>twikicatitems.tmpl</b></code>. The replacement Form Template must be set as the first item in the <a href="http://TWiki.org/cgi-bin/view/TWiki/WebPreferences">WebPreferences</a> variable <code>WEBFORMS</code>. If missing, pages will display, but attempting to edit results in an error message.
+<img src="http://TWiki.org/p/pub/TWiki/TWikiDocGraphics/tip.gif" border="0" alt="TIP" width="16" height="16" /> <strong>NOTE:</strong> If things aren't working correctly, there may be useful entries in <code>data/warning.txt</code>.
+<h2><a name="Defining_a_Form_Template"> Defining a Form Template </a></h2>
+<h3><a name="Form_Template_Elements"> Form Template Elements </a></h3>
+<strong>form template</strong> - a set of fields defining a form (replaces <em>category table definition</em>)
+<h3><a name="Defining_a_Form_in_One_Topic"> Defining a Form in One Topic </a></h3>
+Create a new topic with your form name: <code><b>YourForm</b></code>, <code><b>ExpenseReport</b></code>, <code><b>InfoCategory</b></code>, <code><b>RecordReview</b></code>, whatever you need.
+<strong>Example:</strong> <code><b>WebForm</b></code>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><th bgcolor="#99CCCC"> <strong>Name</strong> </th><th bgcolor="#99CCCC"> <strong>Type</strong> </th><th bgcolor="#99CCCC"> <strong>Size</strong> </th><th bgcolor="#99CCCC"> <strong>Values</strong> </th><th bgcolor="#99CCCC"> <strong>Tooltip message</strong> </th></tr>
+<tr><td> <a href="http://TWiki.org/cgi-bin/view/Know/TopicClassification">TopicClassification</a> </td><td> select </td><td align="center"> 1 </td><td> <a href="http://TWiki.org/cgi-bin/view/Know/NoDisclosure">NoDisclosure</a>, <a href="http://TWiki.org/cgi-bin/view/Know/PublicSupported">PublicSupported</a>, <a href="http://TWiki.org/cgi-bin/view/Know/PublicFAQ">PublicFAQ</a> </td><td> blah blah... </td></tr>
+<h3><a name="Defining_a_Form_with_Multiple_To"> Defining a Form with Multiple Topics </a></h3>
+A <code><b>FormTemplate</b></code> topic defines the Form, ex: <code><b>YourFormTemplate</b></code>.
+<strong>Example: WebFormTemplate</strong>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><th bgcolor="#99CCCC"> <strong>Name</strong> </th><th bgcolor="#99CCCC"> <strong>Type</strong> </th><th bgcolor="#99CCCC"> <strong>Size</strong> </th><th bgcolor="#99CCCC"> <strong>Values</strong> </th><th bgcolor="#99CCCC"> <strong>Tooltip message</strong> </th></tr>
+<tr><td> <a href="http://TWiki.org/cgi-bin/view/Know/TopicClassification">TopicClassification</a> </td><td> select </td><td> 1 </td><td> &nbsp; </td><td> blah blah... </td></tr>
+<tr><td> <a href="http://TWiki.org/cgi-bin/view/Know/OperatingSystem">OperatingSystem</a> </td><td> checkbox </td><td> 3 </td><td> &nbsp; </td><td> blah blah... </td></tr>
+<tr><td> <a href="http://TWiki.org/cgi-bin/view/Know/OsVersion">OsVersion</a> </td><td> text </td><td> 16 </td><td> &nbsp; </td><td> blah blah... </td></tr>
+<img src="http://TWiki.org/p/pub/TWiki/TWikiDocGraphics/warning.gif" border="0" alt="ALERT!" width="16" height="16" /> Leave the <code><b>Values</b></code> field <strong>blank</strong>.
+<table border="1" cellspacing="0" cellpadding="1"> <tr><th bgcolor="#99CCCC"> <strong>Name</strong> </th><th bgcolor="#99CCCC"> <strong>Type</strong> </th><th bgcolor="#99CCCC"> <strong>Tooltip message</strong> </th></tr>
+<tr><td> <a href="http://TWiki.org/cgi-bin/view/Know/NoDisclosure">NoDisclosure</a> </td><td> option </td><td> blah blah... </td></tr>
+<tr><td> <a href="http://TWiki.org/cgi-bin/view/Know/PublicSupported">PublicSupported</a> </td><td> option </td><td> blah blah... </td></tr>
+<tr><td> <a href="http://TWiki.org/cgi-bin/view/Know/PublicFAQ">PublicFAQ</a> </td><td> option </td><td> blah blah... </td></tr>
+<strong>Implementation Notes:</strong> This format allows you to define field items with or without <a href="http://TWiki.org/cgi-bin/view/TWiki/WikiName">WikiNames</a>, depending on your needs.
+Topics can be protected in the usual manner, using <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiAccessControl">TWikiAccessControl</a>, to limit who can change the form template and/or individual value lists.
+<code><b>[[...]]</b></code> links can be used to force a link (at present, the <code><b>[[...][...]]</b></code> format is not supported).
+The <code><b>Tooltip message</b></code> column is used as a tooltip for the field name (only if field name is a <a href="http://TWiki.org/cgi-bin/view/TWiki/WikiName">WikiName</a>) - you only see the tooltip In edit.
+The first item in the list is the default item. Alternative initial values can be set in a topic template, like <code><b>WebTopicEditTemplate</b></code>, with <code><b>field=value</b></code>, or, for checkboxes, <code><b>field<checkbox name>=1</b></code>.
+<a name="EnablingForms"></a>
+<h2><a name="Enabling_Forms_by_Web"> Enabling Forms by Web </a></h2>
+Forms are enabled on a per web basis. The <code><b>WEBFORMS</b></code> variable in <a href="http://TWiki.org/cgi-bin/view/TWiki/WebPreferences">WebPreferences</a> is optional and defines a list of possible form templates. Example:
+With <code><b>WEBFORMS</b></code> enabled, an extra button is added to the edit view. If the topic doesn't have a Form, an <strong>Add Form</strong> button appears at the end of the topic. If a Form is present, a <strong>Change</strong> button appears in the top row of the Form. The buttons open a screen that enables selection of a form specified in <code>WEBFORMS</code>, or the <strong>No form</strong> option.
+<h2><a name="Including_Forms_in_New_Topics"> Including Forms in New Topics </a></h2>
+A default Form Template (new topics get this default form) can be provided by creating the <code>WebTopicEditTemplate</code> topic in a web and adding a form to it. Initial Form values can be set there.
+Additionally a new topic can be given a Form using the <code>formtemplate</code> parameter in the URL. Initial values can then be provided in the URLs or as form values:
+other than checkboxes: <code><b>name</b></code>, ex: <code><b>?BugPriority=1</b></code>
+checkbox: <code><b>namevalue=1</b></code>, ex: <code><b>?ColourRed=1</b></code>. <br />
+<h2><a name="Setting_Up_Multiple_Form_Options"> Setting Up Multiple Form Options </a></h2>
+The optional <code><b>WEBFORMS</b></code> variable defines alternative forms that can be selected by pressing <strong>Change</strong> in edit mode.
+New topics with a form are created by simple HTML forms asking for a topic name. For example, you can have a <code>SubmitExpenseReport</code> topic where you can create new expense reports, a <code>SubmitVacationRequest</code> topic, and so on. These can specify the required template topic with its associated form.
+<h2><a name="Form_Data_Storage"> Form Data Storage </a></h2>
+The form topic name, fields and values are stored as <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiMetaData">TWikiMetaData</a> - the order of the field/value pairs is the same as in the template.
+<a name="UsingFormData"></a>
+<h2><a name="Using_Form_Data"> Using Form Data </a></h2>
+<a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiForms">TWikiForms</a> accept user-input data, stored as <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiMetaData">TWikiMetaData</a>. Meta data also contains program-generated info about changes, attachments, etc. To find, format and display form and other meta data, see <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiMetaData">TWikiMetaData</a>, <code><b>SEARCH</b></code> and <code><b>METASEARCH</b></code> variables in <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiVariables">TWikiVariables</a>, and <a href="http://TWiki.org/cgi-bin/view/TWiki/FormattedSearch">TWiki Formatted Search</a> for various options.
+-- <a href="http://TWiki.org/cgi-bin/view/TWiki/JohnTalintyre">JohnTalintyre</a> - 16 Aug 2001 <br />
+-- <a href="http://TWiki.org/cgi-bin/view/Main/MikeMannix">MikeMannix</a> - 05 Jan 2002
+<h1><a name="TWiki_Templates"> TWiki Templates </a></h1>
+<em>Definition of the templates used to render all HTML pages displayed in TWiki</em>
+The new modular template system offers flexible, easy control over the layout of all TWiki pages. The master template approach groups parts that are shared by several templates - like headers and footers - in a common file. Special variables allow individual layouts to include parts from a master template - variables are mixed with regular HTML markup for template-specific content. Templates are used to define <a href="#HtmlTemplates">page layout</a>, and also to supply <a href="#TemplateTopics">default content</a> for new pages.
+<h2><a name="Major_changes_from_the_previous_"> Major changes from the previous template system </a></h2>
+Where the old templates were each complete HTML documents, the new templates are defined using variables to include template parts from a master file. You can now change one instance of a common element to update all occurrences; previously, every affected template had to be updated. This simplifies the conversion of templates into XHTML format, and provides a more versatile solution for templates and for <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiSkins">TWikiSkins</a>. The new system:
+<a name="TemplateVariables"></a>
+<h2><a name="How_Template_Variables_Work"> How Template Variables Work </a></h2>
+All template preprocessing is done in <code>&amp;TWiki::Store::readTemplate()</code> so that the caller simply gets an expanded template file (the same as before).
+Directives are of the form <code><b>%TMPL:&lt;key&gt;%</b></code> and <code><b>%TMPL:&lt;key&gt;{"attr"}%</b></code>.
+<code><b>%TMPL:INCLUDE{"file"}%</b></code>: Includes a template file. The template directory of the current web is searched first, then the templates root (<code>twiki/templates</code>).
+<code><b>%TMPL:DEF{"var"}%</b></code>: Define a variable. Text between this and the END directive is not returned, but put into a hash for later use.
+<code><b>%TMPL:END%</b></code>: Ends variable definition.
+<code><b>%TMPL:P{"var"}%</b></code>: Prints a previously defined variable.
+Templates and <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiSkins">TWikiSkins</a> work transparently and interchangeably. For example, you can create a skin that overloads only the <code>twiki.tmpl</code> master template, like <code>twiki.print.tmpl</code>, that redefines the header and footer.
+<img src="http://TWiki.org/p/pub/TWiki/TWikiDocGraphics/help.gif" border="0" alt="HELP" width="16" height="16" /> Use of template directives is optional: templates work without them.
+<img src="http://TWiki.org/p/pub/TWiki/TWikiDocGraphics/warning.gif" border="0" alt="ALERT!" width="16" height="16" /> <strong>NOTE:</strong> Template directives work only for templates: they do not get processed in topic text.
+<h2><a name="Types_of_Template"> Types of Template </a></h2>
+<strong>Master Template</strong>: Stores common parts; included by other templates
+<strong>HTML Page Templates</strong>: Defines the layout of TWiki pages
+<strong>Template Topics</strong>: Defines default text when you create a new topic
+<h3><a name="Master_Templates"> Master Templates </a></h3>
+Common parts, appearing in two or more templates, can be defined in a master template and then shared by others: <code><b>twiki.tmpl</b></code> is the default master template.
+<table border="1" cellspacing="0" cellpadding="1"> <tr><th bgcolor="#99CCCC"> <strong>Template variable:</strong> </th><th bgcolor="#99CCCC"> <strong>Defines:</strong> </th></tr>
+<tr><td> %TMPL:DEF{"sep"}% </td><td> "&#124;" separator </td></tr>
+<a name="HtmlTemplates"></a>
+<h3><a name="HTML_Page_Templates"> </a> HTML Page Templates </h3>
+Templates are in the <code><b>twiki/templates</b></code> directory. As an example, <code><b>twiki/templates/view.tmpl</b></code> is the template file for the <code><b>twiki/bin/view</b></code> script. Templates can be overloaded by individual webs. The following search order applies:
+<code><b>twiki/templates/webName/scriptName.tmpl</b></code>
+<code><b>twiki/templates/scriptName.tmpl</b></code>
+<code>webName</code> is the name of the web (ex: <code>Main</code>)
+<code>scriptName</code> is the script (ex: <code>view</code>).
+<img src="http://TWiki.org/p/pub/TWiki/TWikiDocGraphics/help.gif" border="0" alt="HELP" width="16" height="16" /> <strong>NOTE:</strong> <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiSkins">TWikiSkins</a> can be defined to overload the standard templates.
+Special variables are used in templates, especially in <code>view</code>, to display <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiMetaData#MetaDataRendering">meta data</a>.
+<a name="TemplateTopics"></a>
+<h3><a name="Template_Topics"> Template Topics </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><th bgcolor="#99CCCC"> <strong>Topic Name:</strong> </th><th bgcolor="#99CCCC"> <strong>What it is:</strong> </th></tr>
+<tr><td> <a href="http://TWiki.org/cgi-bin/view/TWiki/WebTopicViewTemplate">WebTopicViewTemplate</a> </td><td> Error page shown when you try to view a nonexistent topic </td></tr>
+<tr><td> <a href="http://TWiki.org/cgi-bin/view/TWiki/WebTopicNonWikiTemplate">WebTopicNonWikiTemplate</a> </td><td> Alert page shown when you try to view a nonexistent topic with a non-WikiName </td></tr>
+<tr><td> <a href="http://TWiki.org/cgi-bin/view/TWiki/WebTopicEditTemplate">WebTopicEditTemplate</a> </td><td> Default text shown when you create a new topic. </td></tr>
+All template topics are located in the TWiki web. The <a href="http://TWiki.org/cgi-bin/view/TWiki/WebTopicEditTemplate">WebTopicEditTemplate</a> can be overloaded. When you create a new topic, TWiki locates a topic to use as a content template according to the following search order:
+A topic name specified by the <code>templatetopic</code> CGI parameter.
+<h4><a name="Edit_Template_Topics_and_Variabl"> Edit Template Topics and Variable Expansion </a></h4>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><th bgcolor="#99CCCC"> <strong>Variable:</strong> </th><th bgcolor="#99CCCC"> <strong>Description:</strong> </th></tr>
+<tr><td> <code>%DATE%</code> </td><td> Current date, e.g. <code>02 Feb 2003</code> </td></tr>
+<tr><td> <code>%WIKIUSERNAME%</code> </td><td> User name, e.g. <code>Main.TWikiGuest</code> </td></tr>
+<tr><td> <code>%URLPARAM{"name"}%</code> </td><td> Value of a named URL parameter </td></tr>
+<tr><td> <code>%NOP%</code> </td><td> A no-operation variable that gets removed. Useful to prevent a SEARCH from hitting an edit template topic; also useful to escape a variable like <code>%URLPARAM%NOP%{...}%</code> </td></tr>
+<tr><td> <code>%NOP{ ... }%</code> </td><td> A no-operation text that gets removed. Useful to write-protect an edit template topic, but not the topics based this template topic. See notes below. Example:<br /> <code>%NOP{<br />&nbsp; &nbsp;* Set&nbsp;ALLOWTOPICCHANGE = Main.TWikiAdminGroup<br /> }%</code> </td></tr>
+<strong><em>Notes:</em></strong>
+Unlike other variables, <code>%NOP{ ... }%</code> can span multiple lines.
+The scan for the closing <code>}%</code> pattern is "non-greedy", that is, it stops at the first occurance. That means, you need to escape variables with parameters located inside <code>%NOP{ ... }%</code>: Insert a <code>%NOP%</code> between <code>}</code> and <code>%</code>. Silly example: <code>%NOP{ %GMTIME{"year"}%NOP%% }%</code>.
+<h4><a name="Template_Topics_in_Action"> Template Topics in Action </a></h4>
+<form name="new" action="http://TWiki.org/cgi-bin/edit/TWiki/">
+<input type="text" name="topic" value="ExampleTopic2003x02x01" size="23" />
+<input type="hidden" name="templatetopic" value="ExampleTopicTemplate" />
+<input type="submit" value="Create" />
+The above form asks for a topic name. A hidden input tag named <code><b>templatetopic</b></code> specifies <a href="http://TWiki.org/cgi-bin/view/TWiki/ExampleTopicTemplate">ExampleTopicTemplate</a> as the template topic to use. Here is the HTML source of the form:
+The <code><b>onlywikiname</b></code> parameter enforces <a href="http://TWiki.org/cgi-bin/view/TWiki/WikiWord">WikiWords</a> for topic names.
+<img src="http://TWiki.org/p/pub/TWiki/TWikiDocGraphics/tip.gif" border="0" alt="TIP" width="16" height="16" /> <strong>TIP:</strong> You can use the <code>%WIKIUSERNAME%</code> and <code>%DATE%</code> variables in your topic templates to include the signature of the person creating a new topic. The variables are expanded into fixed text when a new topic is created. The standard signature is: <br />
+<code><b>-- %WIKIUSERNAME% - %DATE%</b></code>
+<h2><a name="Templates_by_Example"> Templates by Example </a></h2>
+Attached is an example of an oops based template <code>oopsbase.tmpl</code> and an example oops dialog <code>oopstest.tmpl</code> based on the base template. %A% <strong>NOTE:</strong> This isn't the release version, just a quick, simple demo.
+<h3><a name="Base_template_oopsbase_tmpl"> Base template oopsbase.tmpl </a></h3>
+The first line declares a delimiter variable called "sep", used to separate multiple link items. The variable can be called anywhere by writing <code>%TMPL:P{"sep"}%</code>
+<table border="1" cellspacing="0" cellpadding="1" bgcolor="#f5f5f5">
+<h3><a name="Test_template_oopstest_tmpl"> Test template oopstest.tmpl </a></h3>
+<h3><a name="Sample_screen_shot_of_oopstest_t"> Sample screen shot of oopstest.tmpl </a></h3>
+With URL: <code><b>.../bin/oops/Sandbox/TestTopic2?template=oopstest&amp;param1=WebHome&amp;param2=WebNotify</b></code>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> <img src="/p/pub/TWiki/TWikiTemplates/testscreen.gif" width="589" height="304" alt="testscreen.gif"> </td></tr>
+A drawback of referring to a master template is that you can only test a template from within TWiki, where the include variables are resolved. In the previous system, each template was a structurally complete HTML document with a <code>.tmpl</code> filename extension - it contained unresolved <code>%VARIABLES%</code>, but could still be previewed directly in a browser.
+-- <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a> - 01 Feb 2003 <br />
+-- <a href="http://TWiki.org/cgi-bin/view/TWiki/MikeMannix">MikeMannix</a> - 14 Sep 2001 <br />
+-- <a href="http://twiki.org/cgi-bin/view/Main/DavidLeBlanc" title="'Main/DavidLeBlanc' on TWiki site, we know it!">TWiki:Main/DavidLeBlanc</a> - 11 Mar 2002
+<h1><a name="TWiki_Skins"> TWiki Skins </a></h1>
+<em>Skins overlay regular templates with alternate header/footer layouts; topic text is not affected</em>
+Skins are customized <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiTemplates">TWikiTemplates</a> files. You can use skins to change the look of a TWiki topic, for example, the layout of the header and footer. Rendered text between header and footer does <strong><em>not</em></strong> change. You can also use skins to define an alternate view, like a view optimized for printing.
+<h2><a name="Defining_Skins"> Defining Skins </a></h2>
+Skin files are located in the <code>twiki/templates</code> directory and are named with the syntax: <code><b>&lt;scriptname&gt;.&lt;skin&gt;.tmpl</b></code>. For example, the <strong>Printable</strong> skin for the <code>view</code> template is <code>view.print.tmpl</code>.
+Use the existing <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiTemplates">TWikiTemplates</a> (like <code>view.tmpl</code>) or skin files as a base for your own skin, name it for example <code>view.myskin.tmpl</code>.
+<h2><a name="Variables_in_Skins"> Variables in Skins </a></h2>
+You can use <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiTemplates#TemplateVariables">template variables</a>, <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiVariables">TWikiVariables</a>, and other predefined variables to compose your skins. Some commonly used variables in skins:
+<table border="1" cellspacing="0" cellpadding="1"> <tr><th bgcolor="#99CCCC"> <strong>Variable:</strong> </th><th bgcolor="#99CCCC"> <strong>Expanded to:</strong> </th></tr>
+<tr><td> <code>%WIKILOGOURL%</code> </td><td> Link of page logo </td></tr>
+<a name="GoBox"></a>
+<h3><a name="The_Go_Box_and_Navigation_Box"> The "Go" Box and Navigation Box </a></h3>
+The <code>%WEBTOPICLIST%</code> includes a "Go" box to jump to a topic. The box also understand URLs, e.g. you can type <a href="http://www.google.com/" target="_top">http://www.google.com/</a> to jump to an external web site. The feature is handy if you build a skin that has a select box of frequently used links, like Intranet home, employee database, sales database and such. A little JavaScript gets into action on the onSelect method of the select tag to fill the selected URL into the "Go" box field, then submits the form.
+<form name="sample" action="http://TWiki.org/cgi-bin/view/TWiki/TWikiSkins">
+<table border="3"><tr><td>
+<select name="sel" onchange="this.form.topic.value=this.options[this.selectedIndex].value; this.form.submit()">
+<option selected="selected" value="">Navigate...</option>
+</td></tr><tr><td>
+<a href="http://TWiki.org/cgi-bin/view/TWiki/WelcomeGuest">Welcome</a> | <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiRegistration">Register</a> | <a href="http://TWiki.org/cgi-bin/view/TWiki/WebChanges">Changes</a> | <a href="http://TWiki.org/cgi-bin/view/TWiki/WebTopicList">Topics</a> | <a href="http://TWiki.org/cgi-bin/view/TWiki/WebIndex">Index</a> | <a href="http://TWiki.org/cgi-bin/view/TWiki/WebSearch">Search</a> | Go <input type="text" name="topic" size="16" />
+<h2><a name="Packaging_and_Publishing_Skins"> Packaging and Publishing Skins </a></h2>
+See <a href="http://twiki.org/cgi-bin/view/Plugins/SkinPackagingHowTo" title="'Plugins/SkinPackagingHowTo' on TWiki site, we know it!">TWiki:Plugins/SkinPackagingHowTo</a>
+<h2><a name="Activating_Skins"> Activating Skins </a></h2>
+Define the <code>SKIN</code> Preference variable in <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiPreferences">TWikiPreferences</a>, one of the <a href="http://TWiki.org/cgi-bin/view/TWiki/WebPreferences">WebPreferences</a>, or in a user - <a href="http://TWiki.org/cgi-bin/view/Main/TWikiGuest">TWikiGuest</a> - topic.
+<code>Set SKIN = print</code>
+Add <code>?skin=name</code> to the URL, for this example:
+<a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiSkins?skin=print" target="_top">http://TWiki.org/cgi-bin/view/TWiki/TWikiSkins?skin=print</a> (for the print view skin)
+<a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiSkins?skin=plain" target="_top">http://TWiki.org/cgi-bin/view/TWiki/TWikiSkins?skin=plain</a> (for the plain view skin that has no header and footer)
+The <code><b>?skin=name</b></code> URL parameter overrides the SKIN Preference value.
+-- <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a> - 05 Jan 2003
+<h1><a name="TWiki_Formatted_Search_Results"> TWiki Formatted Search Results </a></h1>
+<em>Inline search feature allows flexible formatting of search result</em>
+The <code>%SEARCH{...}%</code> variable documented in <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiVariables">TWikiVariables</a> has a fixed format for the search result, that is, a table consisting of topic names and topic summaries. Use the <code>format="..."</code> parameter to specify a customized format of the search result. The string of the format parameter is typically a bullet list or table row containing variables (such as <code>%SEARCH{ "food" format="| topic | summary |" }%</code>).
+<h2><a name="Syntax"> Syntax </a></h2>
+1. <code>header="..."</code> parameter
+Use the header parameter to specify the header of a search result. It should correspond to the format of the format parameter. This parameter is optional. <br /> Example: <code>header="| *Topic:* | *Summary:* |"</code>
+2. <code>format="..."</code> parameter
+<br /> Example: <code>format="| topic | summary |"</code>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><th bgcolor="#99CCCC"> <strong>Name:</strong> </th><th bgcolor="#99CCCC"> <strong>Expands To:</strong> </th></tr>
+<tr><td> <code>web</code> </td><td> Name of the web </td></tr>
+<strong><em>Note:</em></strong> For <code>pattern(reg-exp)</code>, specify a <a href="http://TWiki.org/cgi-bin/view/TWiki/RegularExpression">RegularExpression</a> that scans from start to end and contains the text you want to keep in parenthesis, like <code>pattern(.*?(from here.*?to here).*)</code>. You need to make sure that the integrity of a web page is not compromised; for example, if you include a table make sure to include everything including the table end tag.
+<h2><a name="Examples"> Examples </a></h2>
+<a name="SearchBulletList"></a>
+<h3><a name="Bullet_list_showing_topic_name_a"> Bullet list showing topic name and summary </a></h3>
+<strong>Write this:</strong>
+<code>%SEARCH{ "FAQ" scope="topic" nosearch="on" nototal="on" header=" &nbsp; * *Topic: Summary:*" format=" &nbsp; * [[topic]]: summary" }%</code>
+<strong>To get this:</strong>
+<strong>Topic: Summary:</strong>
+<a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiFAQ">TWikiFAQ</a>: Frequently Asked Questions About TWiki This is a real FAQ, and also a demo of one easily implemented knowledge base solution. See how it's done, click Edit . SEARCH ...
+<a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiFaqTemplate">TWikiFaqTemplate</a>: FAQ: Answer: Back to: NOP TWikiFAQ WIKIUSERNAME DATE
+<a href="http://TWiki.org/cgi-bin/view/TWiki/TextFormattingFAQ">TextFormattingFAQ</a>: Text Formatting FAQ The most frequently asked questions about text formatting are answered. Also, TextFormattingRules contains the complete TWiki shorthand system ...
+<h3><a name="Table_showing_form_field_values_"> Table showing form field values of topics with a form </a></h3>
+<strong>Write this in the Know web:</strong>
+<code>| *Topic:* | *OperatingSystem:* | *OsVersion:* |</code> <br />
+<code>%SEARCH{ "[T]opicClassification.*?value=\"[P]ublicFAQ\"" scope="text" regex="on" nosearch="on" nototal="on" format="| [[topic]] | formfield(OperatingSystem) | formfield(OsVersion) |" }%</code>
+<table border="1" cellspacing="0" cellpadding="1">
+<th bgcolor="#99CCCC"> <strong>Topic:</strong> </th>
+<th bgcolor="#99CCCC"> <strong>OperatingSystem:</strong> </th>
+<th bgcolor="#99CCCC"> <strong>OsVersion:</strong> </th></tr>
+<td> <a href="http://TWiki.org/cgi-bin/view/Know/IncorrectDllVersionW32PTH10DLL">IncorrectDllVersionW32PTH10DLL</a> </td><td> <a href="http://TWiki.org/cgi-bin/view/Know/OsWin">OsWin</a> </td><td> 95/98 </td></tr>
+<td> <a href="http://TWiki.org/cgi-bin/view/Know/WinDoze95Crash">WinDoze95Crash</a> </td>
+<td> <a href="http://TWiki.org/cgi-bin/view/Know/OsWin">OsWin</a> </td>
+<td> 95 </td></tr>
+<h3><a name="Extract_some_text_from_a_topic_u"> Extract some text from a topic using regular expression </a></h3>
+<code>%SEARCH{ "__Back to\:__ TWikiFAQ" scope="text" regex="on" nosearch="on" nototal="on" header="TWiki FAQs:" format=" &nbsp; * pattern(.*?FAQ\:[\n\r]*([^\n\r]+).*) [[topic][Answer...]]" }%</code>
+How do I delete or rename a topic? <a href="http://TWiki.org/cgi-bin/view/TWiki/DeleteOrRenameATopic">Answer...</a>
+Why does the topic revision not increase when I edit a topic? <a href="http://TWiki.org/cgi-bin/view/TWiki/EditDoesNotIncreaseTheRevision">Answer...</a>
+TWiki has a GPL (GNU General Public License). What is GPL? <a href="http://TWiki.org/cgi-bin/view/TWiki/GnuGeneralPublicLicense">Answer...</a>
+I've problems with the WebSearch</nop>. There is no Search Result on any inquiry. By clicking the Index topic it's the same problem. <a href="http://TWiki.org/cgi-bin/view/TWiki/SearchDoesNotWork">Answer...</a>
+What happens if two of us try to edit the same topic simultaneously? <a href="http://TWiki.org/cgi-bin/view/TWiki/SimultaneousEdits">Answer...</a>
+I would like to install TWiki on my server. Can I get the source? <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiDownload">Answer...</a>
+So what is this WikiWiki thing exactly? <a href="http://TWiki.org/cgi-bin/view/TWiki/WhatIsWikiWiki">Answer...</a>
+Everybody can edit any page, this is scary. Doesn't that lead to chaos? <a href="http://TWiki.org/cgi-bin/view/TWiki/WikiCulture">Answer...</a>
+<h3><a name="Nested_Search"> Nested Search </a></h3>
+<code>%SEARCH{ "culture" format=" &nbsp; * topic is referenced by: (list all references)" nosearch="on" nototal="on" }%</code>
+<code>%SEARCH{ "(topic found in first search)" format=" &nbsp; topic" nosearch="on" nototal="on" }%</code>
+Use <code>percnt</code> to escape the leading percent of the second search
+Use <code>\"</code> to escape the double quotes
+Use <code>dollar</code> to escape the <code></code> of <code>topic</code>
+Use <code>nop</code> to escape the <code>}%</code> sequence
+<code>%SEARCH{ "culture" format=" &nbsp; * topic is referenced by:n&nbsp; &nbsp; &nbsp; * percntSEARCH{ \"topic\" format=\" &nbsp; dollartopic\" nosearch=\"on\" nototal=\"on\" }nop%" nosearch="on" nototal="on" }%</code>
+<a href="http://TWiki.org/cgi-bin/view/TWiki/FormattedSearch">FormattedSearch</a> is referenced by:
+<a href="http://TWiki.org/cgi-bin/view/TWiki/ManagingWebs">ManagingWebs</a>
+<a href="">TWikiDocumentation</a>
+<a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiForms">TWikiForms</a>
+<a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiAccessControl">TWikiAccessControl</a> is referenced by:
+<a href="http://TWiki.org/cgi-bin/view/TWiki/FileAttachment">FileAttachment</a>
+<a href="http://TWiki.org/cgi-bin/view/TWiki/MainFeatures">MainFeatures</a>
+<a href="http://TWiki.org/cgi-bin/view/TWiki/WabiSabi">WabiSabi</a> is referenced by:
+<a href="http://TWiki.org/cgi-bin/view/TWiki/YouAreHere">YouAreHere</a>
+<a href="http://TWiki.org/cgi-bin/view/TWiki/WikiCulture">WikiCulture</a> is referenced by:
+<a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiAccessControl">TWikiAccessControl</a>
+-- <a href="http://TWiki.org/cgi-bin/view/Main/PeterThoeny">PeterThoeny</a> - 16 May 2002
+<a name="MetaDataDefinition"></a>
+<h1><a name="TWiki_Meta_Data"> TWiki Meta Data </a></h1>
+<em>Additional topic data, program-generated or from <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiForms">TWikiForms</a>, is stored in <code>META</code> variable name/value pairs</em>
+<a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiMetaData">TWikiMetaData</a> uses <code>META</code> variables to store topic data that's separate from the main free-form content. This includes program-generated info like <a href="http://TWiki.org/cgi-bin/view/TWiki/FileAttachment">FileAttachment</a> and topic movement data, and user-defined <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiForms">TWikiForms</a> info. Use <code>META</code> variables to format and display Meta Data.
+<h2><a name="Meta_Data_Syntax"> Meta Data Syntax </a></h2>
+Format is the same as in <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiVariables">TWikiVariables</a>, except all fields have a key.
+<code>%META:&lt;type&gt;{key1="value1" key2="value2" ...}%</code>
+Order of fields within the meta variables is not defined, except that if there is a field with key <code>name</code>, this appears first for easier searching (note the order of the variables themselves is defined).
+<code>\n</code> (new line) is represented in values by <code>%_N_</code> and <code>"</code> (double-quotes) by <code>%_Q_%</code>.
+<strong>Example of Format</strong>
+<h2><a name="Meta_Data_Specifications"> Meta Data Specifications </a></h2>
+<h3><a name="META_TOPICINFO"> </a> META:TOPICINFO </h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><th align="center" bgcolor="#99CCCC"> <strong>Key</strong> </th><th align="center" bgcolor="#99CCCC"> <strong>Comment</strong> </th></tr>
+<tr><td> version </td><td> Same as RCS version </td></tr>
+<h3><a name="META_TOPICMOVED"> </a> META:TOPICMOVED </h3>
+<code>%META:TOPICMOVED{from="Codev.OldName" to="Codev.NewName" by="talintj" date="976762680"}%</code>
+<tr><td> from </td><td> Full name, i.e., web.topic </td></tr>
+<tr><td> to </td><td> Full name, i.e., web.topic </td></tr>
+<tr><td> by </td><td> Who did it, is the REMOTE_USER, not WikiName </td></tr>
+<tr><td> date </td><td> integer, unx time, seconds since start 1970 </td></tr>
+<h3><a name="META_TOPICPARENT"> </a> META:TOPICPARENT </h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><th bgcolor="#99CCCC"> <strong>Key</strong> </th><th bgcolor="#99CCCC"> <strong>Comment</strong> </th></tr>
+<tr><td> name </td><td> The topic from which this was created, <a href="http://TWiki.org/cgi-bin/view/TWiki/WebHome">WebHome</a> if done from <code>Go</code>, othewise topic where <code>?</code> or form used. Normally just topic, but is full web.topic format if parent is in a different Web. Renaming a Web will then only break a few of these references or they can be scanned and fixed. </td></tr>
+<h3><a name="META_FILEATTACHMENT"> </a> META:FILEATTACHMENT </h3>
+<tr><td> name </td><td> Name of file, no path. Must be unique within topic </td></tr>
+<h3><a name="META_FORM"> </a> META:FORM </h3>
+<tr><td> name </td><td> A topic name - the topic represents one of the <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiForms">TWikiForms</a>. Can optionally include the web name (i.e., web.topic), but doesn't normally </td></tr>
+<h3><a name="META_FIELD"> </a> META:FIELD </h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><th bgcolor="#99CCCC"> <strong>Key</strong> </th><th bgcolor="#99CCCC"> <strong>Name</strong> </th></tr>
+<tr><td> name </td><td> Ties to entry in <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiForms">TWikiForms</a> template, is title with all bar alphanumerics and . removed </td></tr>
+<tr><td> title </td><td> Full text from <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiForms">TWikiForms</a> template </td></tr>
+<tr><td> value </td><td> Value user has supplied via form </td></tr>
+<h3><a name="Recommended_Sequence"> Recommended Sequence </a></h3>
+the <code>diff</code> function output appears in a logical order
+<code>text of topic</code>
+<h2><a name="Viewing_Meta_Data_in_Page_Source"> Viewing Meta Data in Page Source </a></h2>
+When viewing a topic the <code><b>Raw Text</b></code> link can be clicked to show the text of a topic (i.e., as seen when editing). This is done by adding <code>raw=on</code> to URL. <code>raw=debug</code> shows the meta data as well as the topic data, ex: <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiMetaData?raw=debug">debug view for this topic</a>
+<a name="MetaDataRendering"></a>
+<h2><a name="Rendering_Meta_Data"> Rendering Meta Data </a></h2>
+Meta Data is rendered with the %META% variable. This is mostly used in the <code>view</code>, <code>preview</code> and <code>edit</code> scripts.
+<table border="1" cellspacing="0" cellpadding="1"> <tr><th bgcolor="#99CCCC"> <strong>Variable usage:</strong> </th><th bgcolor="#99CCCC"> <strong>Comment:</strong> </th></tr>
+<tr><td> <code>%META{"form"}%</code> </td><td> Show form data, see <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiForms">TWikiForms</a>. </td></tr>
+<tr><td> <code>%META{"attachments"}%</code> </td><td> Show attachments, except for hidden ones. Options: <br > <code><b>all="on"</b></code>: Show all attachments, including hidden ones. </td></tr>
+<tr><td> <code>%META{"moved"}%</code> </td><td> Details of any topic moves. </td></tr>
+<tr><td> <code>%META{"parent"}%</code> </td><td> Show topic parent. Options: <br /> <code><b>dontrecurse="on"</b></code>: By default recurses up tree, at some cost. <br /> <code><b>nowebhome="on"</b></code>: Suppress WebHome. <br /> <code><b>prefix="..."</b></code>: Prefix for parents, only if there are parents, default <code>""</code>. <br /> <code><b>suffix="..."</b></code>: Suffix, only appears if there are parents, default <code>""</code>. <br /> <code><b>separator="..."</b></code>: Separator between parents, default is <code>" &gt; "</code>. </td></tr>
+At present, there is no Meta Data support for Plugins. However, the format is readily extendable and the <code>Meta.pm</code> code that supports the format needs only minor alteration.
+-- <a href="http://TWiki.org/cgi-bin/view/TWiki/JohnTalintyre">JohnTalintyre</a> - 29 Aug 2001 <br />
+-- <a href="http://TWiki.org/cgi-bin/view/TWiki/MikeMannix">MikeMannix</a> - 03 Dec 2001 <br />
+-- <a href="http://TWiki.org/cgi-bin/view/Main/PeterThoeny">PeterThoeny</a> - 10 Jan 2002
+<h1><a name="TWiki_Plugins"> TWiki Plugins </a></h1>
+<em>Plug-in enhanced feature add-ons, with a Plugin API for developers</em>
+Everything to do with TWiki Plugins - demos, new releases, downloads, development, general discussion - is available at TWiki.org, in the <b> <a href="http://twiki.org/cgi-bin/view/Plugins" title="'Plugins' on TWiki site, we know it!">TWiki:Plugins</a> </b> web.
+<h2><a name="Preinstalled_Plugins"> Preinstalled Plugins </a></h2>
+<strong><a href="http://TWiki.org/cgi-bin/view/TWiki/DefaultPlugin">DefaultPlugin</a></strong> optionally handles some legacy variables from older versions of TWiki. You can control this option from <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiPreferences">TWikiPreferences</a>. (Perl programmers can also <a href="#DefaultPluginAlt">add rules</a> for simple custom processing.)
+<strong><a href="http://TWiki.org/cgi-bin/view/TWiki/EmptyPlugin">EmptyPlugin</a></strong> is a fully functional module, minus active code; it does nothing and serves as a template for new Plugin development.
+<strong><a href="http://TWiki.org/cgi-bin/view/TWiki/InterwikiPlugin">InterwikiPlugin</a></strong> is preinstalled but can be disabled or removed. Use it for shorthand linking to remote sites, ex: <code>TWiki:Plugins</code> expands to <a href="http://twiki.org/cgi-bin/view/Plugins" title="'Plugins' on TWiki site, we know it!">TWiki:Plugins</a> on TWiki.org. You can edit the predefined set of of Wiki-related sites, and add your own.
+<a name="InstallPlugin"></a>
+<h2><a name="Installing_Plugins"> Installing Plugins </a></h2>
+<strong>Download</strong> the zip file containing the Plugin, documentation, and any other required files, from <a href="http://twiki.org/cgi-bin/view/Plugins" title="'Plugins' on TWiki site, we know it!">TWiki:Plugins</a>.
+<strong>Distribute</strong> the files to their proper locations - unzip the zip archive in your TWiki installation directory - if have a standard TWiki installation, this will distribute automatically. Otherwise, place the files according to the directory paths listed on the Plugin top in <a href="http://twiki.org/cgi-bin/view/Plugins" title="'Plugins' on TWiki site, we know it!">TWiki:Plugins</a>.
+<strong>Check</strong> the demo example on the Plugin topic: if it's working, the installation was fine!
+<strong>Special Requests:</strong> Some Plugins need certain Perl modules to be preinstalled on the host system. Plugins may also use other resources, like graphics, other modules, applications, templates. In these cases, detailed instructions are in the Plugin documentation.
+Each Plugin has a standard release page, located in the <a href="http://twiki.org/cgi-bin/view/Plugins" title="'Plugins' on TWiki site, we know it!">TWiki:Plugins</a> web at TWiki.org. In addition to the documentation topic (<code>SomePlugin</code>), there's a separate development page.
+<strong>Doc page:</strong> Read all available info about the Plugin; download the attached distribution files.
+<strong>Dev page:</strong> Post feature requests, bug reports and general dev comments; topic title ends in <code>Dev</code> (<code>SomePluginDev</code>).
+<strong>User support:</strong> Post installation, how to use type questions (and answers, if you have them) in the <a href="http://twiki.org/cgi-bin/view/Support" title="'Support' on TWiki site, we know it!">TWiki:Support</a> web.
+<a name="PreTesting"></a>
+<h3><a name="On_Site_Pretesting"> On-Site Pretesting </a></h3>
+<strong>Method 1:</strong> Safely test on-the-fly by creating separate Production and Test branches in your live TWiki installation.
+<strong>Duplicate</strong> the <code>twiki/bin</code> and <code>twiki/lib</code> directories for the Test version, adjusting the paths in the new <code>lib/TWiki.cfg</code>, the <code>twiki/data</code>; the <code>twiki/templates</code> and <code>twiki/pub</code> directories are shared.
+<strong>Test</strong> Plugins and other new features in the Test installation until you're satisfied.
+<img src="http://TWiki.org/p/pub/TWiki/TWikiDocGraphics/warning.gif" border="0" alt="ALERT!" width="16" height="16" /> If you modify topics using the new features, live users will likely see unfamiliar new META tags showing up on their pages - to avoid this, create and edit test-only topics to try out new features.
+<strong>Copy</strong> the modified files to the Production installation. You can update a TWiki installation live and users won't even notice.
+<strong>Method 2:</strong> List the Plugin being tested in the <code>DISABLEDPLUGINS</code> variable in <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiPreferences">TWikiPreferences</a>. Redefine the <code>DISABLEDPLUGINS</code> variable in the <code>Sandbox</code> web and do the testing there.
+<h2><a name="Managing_Plugins"> Managing Plugins </a></h2>
+When you finish <a href="#InstallPlugin">installing a Plugin</a>, you should be able to read the user instructions and go. In fact, some Plugins require additional settings or offer extra options that you have to select. Also, you may want to make a Plugin available only in certain webs, or temporarily disable it. And may want to list all available Plugins in certain topics. You can handle all of these management tasks with simple procedures.
+<h3><a name="Setting_Preferences"> Setting Preferences </a></h3>
+Installed Plugins can be <strong>toggled on or off</strong>, site-wide or by web, through TWikiPreferences and individual WebPreferences:
+All Plugin modules present in the <code>lib/TWiki/Plugins</code> directory are activated automatically unless disabled by the <code>DISABLEDPLUGINS</code> Preferences variable in TWikiPreferences. You can optionally list the installed Plugins in the <code>INSTALLEDPLUGINS</code> Preferences variable. This is useful to define the sequence of Plugin execution, or to specify other webs than the TWiki web for the Plugin topics. Settings in <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiPreferences">TWikiPreferences</a> are:
+<code>Set INSTALLEDPLUGINS = DefaultPlugin, ...</code>
+<code>Set DISABLEDPLUGINS = EmptyPlugin, ...</code>
+<strong>Plugin execution order</strong> in TWiki is determined by searching Plugin topics in a specific sequence: First, full <code>web.topicname</code> name, if specified in <code>INSTALLEDPLUGINS</code>; next, the TWiki web is searched; and finally, the current web.
+<strong>Plugin-specific settings</strong> are done in individual Plugin topics. Two settings are standard for each Plugin:
+One line description, used to form the bullets describing the Plugins in the <a href="http://TWiki.org/cgi-bin/view/TWiki/TextFormattingRules">TextFormattingRules</a> topic:
+<code>Set SHORTDESCRIPTION = Blah blah woof woof.</code>
+Debug Plugin, output can be seen in <code>data/debug.txt</code>. Set to 0=off or 1=on:
+<code>Set DEBUG = 0</code>
+The settings can be retrieved as Preferences variables like <code>%&lt;pluginname&gt;_&lt;var&gt;%</code>, ex: <code>%DEFAULTPLUGIN_SHORTDESCRIPTION%</code> shows the description of the DefaultPlugin.
+<h3><a name="Listing_Active_Plugins"> Listing Active Plugins </a></h3>
+The <code>%ACTIVATEDPLUGINS%</code> variable lists activated Plugins by name. (This variable is displayed in <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiPreferences">TWikiPreferences</a> for debugging use.)
+The <code>%PLUGINDESCRIPTIONS%</code> variable displays a bullet list with a one-line description of each active Plugins. This variable is based on the <code>%&lt;plugin&gt;_SHORTDESCRIPTION%</code> Preferences variables of individual topics and is shown in <a href="http://TWiki.org/cgi-bin/view/TWiki/TextFormattingRules">TextFormattingRules</a>.
+<strong>DEMO: Automatically List Active Plugins Using Variables</strong>
+Using <code>%ACTIVATEDPLUGINS%</code>:<br />
+On this TWiki site, the active Plugins are: <a href="http://TWiki.org/cgi-bin/view/TWiki/DefaultPlugin">DefaultPlugin</a>, <a href="http://TWiki.org/cgi-bin/view/TWiki/InterwikiPlugin">InterwikiPlugin</a>.
+Using <code>%<no>PLUGINDESCRIPTIONS%</code>:<br />
+<a name="PluginAPI"></a>
+<h2><a name="The_TWiki_Plugin_API"> </a> The TWiki Plugin API </h2>
+<h3><a name="Available_Core_Functions"> Available Core Functions </a></h3>
+The <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiFuncModule">TWikiFuncModule</a> (<code>lib/TWiki/Func.pm</code>) implements ALL official Plugin functions. Plugins should ONLY use functions published in this module.
+<img src="http://TWiki.org/p/pub/TWiki/TWikiDocGraphics/warning.gif" border="0" alt="ALERT!" width="16" height="16" /> If you use functions not in <code>Func.pm</code>, you run the risk of creating security holes. Also, your Plugin will likely break and require updating when you upgrade to a new version of TWiki.
+<h3><a name="Predefined_Hooks"> Predefined Hooks </a></h3>
+In addition to TWiki core functions, Plugins can use <strong>predefined hooks</strong>, or <strong>call backs</strong>, listed in the <code>lib/TWiki/Plugins/EmptyPlugin.pm</code> module.
+All but the initPlugin are disabled. To enable a call back, remove <code>DISABLE_</code> from the function name.
+For best performance, enable only the functions you really need. NOTE: <code>outsidePREHandler</code> and <code>insidePREHandler</code> are particularly expensive.
+<h3><a name="Plugin_Version_Detection"> Plugin Version Detection </a></h3>
+To eliminate the incompatibility problems bound to arise from active open Plugin development, a Plugin versioning system and an API <code>GetVersion</code> detection routine are provided for automatic compatibility checking.
+All modules require a <code>VERSION='0.000'</code> variable, beginning at <code>1.000</code>.
+The <code>initPlugin</code> handler should check all dependencies and return TRUE if the initialization is OK or FALSE if something went wrong.
+The Plugin initialization code does not register a Plugin that returns FALSE (or that has no <code>initPlugin</code> handler).
+<code>VERSION='1.000'</code> is the current setting in <code>TWiki::Plugins.pm</code> and in the preinstalled system Plugins (<a href="http://TWiki.org/cgi-bin/view/TWiki/DefaultPlugin">DefaultPlugin</a>, <a href="http://TWiki.org/cgi-bin/view/TWiki/EmptyPlugin">EmptyPlugin</a>, <a href="http://TWiki.org/cgi-bin/view/TWiki/InterwikiPlugin">InterwikiPlugin</a>).
+<a name="CreatePlugins"></a>
+<h2><a name="Creating_Plugins"> Creating Plugins </a></h2>
+With a reasonable knowledge of the Perl scripting language, you can create new Plugins or modify and extend existing ones. Basic plug-in architecture uses an Application Programming Interface (API), a set of software instructions that allow external code to interact with the main program. The <a href="#PluginAPI">TWiki Plugin API</a> Plugins by providing a programming interface for TWiki.
+<a name="DefaultPluginAlt"></a>
+<h3><a name="The_DefaultPlugin_Alternative"> The DefaultPlugin Alternative </a></h3>
+<strong>DefaultPlugin</strong> can handle some outdated TWiki variables, found, for example, in sites recently updated from an old version. Settings are in <a href="http://TWiki.org/cgi-bin/view/TWiki/DefaultPlugin">DefaultPlugin</a> topic. You can also add your own simple custom processing rules here, though in all but very simple cases, writing a new Plugin is preferable.
+<h3><a name="Anatomy_of_a_Plugin"> Anatomy of a Plugin </a></h3>
+a Perl module, ex: <code>MyFirstPlugin.pm</code>
+a documentation topic, ex: <code>MyFirstPlugin.txt</code>
+In particular, files that should be web-accessible (graphics, Java applets ...) are best placed as attachments of the <code>MyFirstPlugin</code> topic. Other needed Perl code is best placed in a <code>lib/TWiki/Plugins/MyFirstPlugin/</code> directory.
+The Plugin API handles the details of connecting your Perl module with main TWiki code. When you're familiar with the <a href="#PluginAPI">Plugin API</a>, you're ready to develop Plugins.
+<h3><a name="Creating_the_Perl_Module"> Creating the Perl Module </a></h3>
+Copy file <code>lib/TWiki/Plugins/EmptyPlugin.pm</code> to <code>&lt;name&gt;Plugin.pm</code>. The <code>EmptyPlugin.pm</code> module contains mostly empty functions, so it does nothing, but it's ready to be used. Customize it. Refer to the <a href="#PluginAPI">Plugin API</a> specs for more information.
+If your Plugin uses its own modules and objects, you must include the name of the Plugin in the package name. For example, write <code>Package MyFirstPlugin::Attrs;</code> instead of just <code>Package Attrs;</code>. Then call it using:
+<a name="CreatePluginTopic"></a>
+<h3><a name="Writing_the_Documentation_Topic"> Writing the Documentation Topic </a></h3>
+The Plugin documentation topic contains usage instructions and version details. It serves the Plugin files as <a href="http://TWiki.org/cgi-bin/view/TWiki/FileAttachment">FileAttachments</a> for downloading. (The doc topic is also included <em>in</em> the <a href="#CreatePluginPackage">distribution package</a>.) To create a documentation topic:
+<strong>OUTLINE: Doc Topic Contents</strong> <br />
+<strong>Syntax Rules:</strong> &lt;<i>Describe any special text formatting that will be rendered.</i>&gt;"
+<strong>Example:</strong> &lt;<i>Include an example of the Plugin in action. Possibly include a static HTML version of the example to compare if the installation was a success!</i>&gt;"
+<strong>Plugin Global Settings:</strong> &lt;<i>Description and settings for custom Plugin %VARIABLES%, and those required by TWiki.</i>&gt;"
+<strong>Plugins Preferences</strong> &lt;<i>If user settings are needed, explain... Entering values works exactly like <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiPreferences">TWikiPreferences</a> and <a href="http://TWiki.org/cgi-bin/view/TWiki/WebPreferences">WebPreferences</a>: six (6) spaces and then:</i>&gt;"
+<strong>Set &lt;<i>EXAMPLE = value added</i>&gt;</strong>
+<strong>Plugin Installation Instructions:</strong> &lt;<i>Step-by-step set-up guide, user help, whatever it takes to install and run, goes here.</i>&gt;"
+<strong>Plugin Info:</strong> &lt;<i>Version, credits, history, requirements - entered in a form, displayed as a table. Both are automatically generated when you create or edit a page in the <a href="http://twiki.org/cgi-bin/view/Plugins" title="'Plugins' on TWiki site, we know it!">TWiki:Plugins</a> web.</i>&gt;"
+<a name="CreatePluginPackage"></a>
+<h3><a name="Packaging_for_Distribution"> Packaging for Distribution </a></h3>
+A minimum Plugin release consists of a Perl module with a <a href="http://TWiki.org/cgi-bin/view/TWiki/WikiName">WikiName</a> that ends in <code>Plugin</code>, ex: <code>MyFirstPlugin.pm</code>, and a documentation page with the same name(<code>MyFirstPlugin.txt</code>).
+<code>lib/TWiki/Plugins/MyFirstPlugin.pm</code>
+<code>data/TWiki/MyFirstPlugin.txt</code>
+<code>pub/TWiki/MyFirstPlugin/uparrow.gif</code> [a required graphic]
+Create a zip archive with the Plugin name (<code>MyFirstPlugin.zip</code>) and add the entire directory structure from Step 1. The archive should look like this:
+<code>pub/TWiki/MyFirstPlugin/uparrow.gif</code>
+<a name="PublishPlugin"></a>
+<h3><a name="Publishing_for_Public_Use"> Publishing for Public Use </a></h3>
+You can release your tested, packaged Plugin to the TWiki community through the <a href="http://twiki.org/cgi-bin/view/Plugins" title="'Plugins' on TWiki site, we know it!">TWiki:Plugins</a> web. All Plugins submitted to TWiki.org are available for download and further development in <a href="http://twiki.org/cgi-bin/view/Plugins" title="'Plugins' on TWiki site, we know it!">TWiki:Plugins</a>. Publish your Plugin in three steps:
+<strong>Post</strong> the Plugin documentation topic in the <a href="http://twiki.org/cgi-bin/view/Plugins" title="'Plugins' on TWiki site, we know it!">TWiki:Plugins</a> web:
+create a new topic using the Plugin name, ex: <code>MyFirstPlugin.txt</code>
+paste in the topic text from <a href="#CreatePluginTopic">Creating Plugin Documentation</a> and save
+<strong>Attach</strong> the distribution zip file to the topic, ex: <code>MyFirstPlugin.zip</code>
+<strong>Link</strong> from the doc page to a new, blank page named after the Plugin, and ending in <code>Dev</code>, ex: <code>MyFirstPluginDev</code>. This is the discussion page for future development. (User support for Plugins is handled in <a href="http://twiki.org/cgi-bin/view/Support" title="'Support' on TWiki site, we know it!">TWiki:Support</a>.)
+-- <a href="http://TWiki.org/cgi-bin/view/TWiki/AndreaSterbini">AndreaSterbini</a> - 29 May 2001 <br />
+-- <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a> - 29 Jan 2003 <br />
+-- <a href="http://TWiki.org/cgi-bin/view/TWiki/MikeMannix">MikeMannix</a> - 03 Dec 2001
+<h1><a name="TWiki_Func_Module_Documentation"> TWiki::Func Module Documentation </a></h1>
+<em>Official list of stable TWiki functions for Plugin developers</em>
+<h2><a name="Description"> Description </a></h2>
+This module defines official funtions that <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiPlugins">Plugins</a> and add-on
+Plugins should <strong>only</strong> use functions published in this module. If you use
+<h2><a name="Functions_CGI_Environment"> </a> Functions: CGI Environment </h2>
+<h3><a name="getSessionValue_key_value"> getSessionValue( key ) ==&gt; value </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Get a session value from the Session Plugin (if installed) </td></tr>
+<tr><td> Parameter: <code>key</code> </td><td> Session key </td></tr>
+<tr><td> Return: <code>value</code> </td><td> Value associated with key; empty string if not set; undef if session plugin is not installed </td></tr>
+<h3><a name="setSessionValue_key_value_result"> setSessionValue( key, value ) ==&gt; result </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Set a session value via the Session Plugin (if installed) </td></tr>
+<tr><td> Parameter: <code>value</code> </td><td> Value associated with key </td></tr>
+<tr><td> Return: <code>result</code> </td><td> <code>"1"</code> if success; undef if session plugin is not installed </td></tr>
+<h3><a name="getSkin_skin"> getSkin( ) ==&gt; skin </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Get the name of the skin, set by the <code>SKIN</code> preferences variable or the <code>skin</code> CGI parameter </td></tr>
+<tr><td> Return: <code>skin</code> </td><td> Name of skin, e.g. <code>"gnu"</code>. Empty string if none </td></tr>
+<h3><a name="getUrlHost_host"> getUrlHost( ) ==&gt; host </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Get protocol, domain and optional port of script URL </td></tr>
+<tr><td> Return: <code>host</code> </td><td> URL host, e.g. <code>"http://example.com:80"</code> </td></tr>
+<h3><a name="getScriptUrl_web_topic_script_ur"> getScriptUrl( web, topic, script ) ==&gt; url </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Compose fully qualified URL </td></tr>
+<tr><td> Parameter: <code>web</code> </td><td> Web name, e.g. <code>"Main"</code> </td></tr>
+<tr><td> Parameter: <code>topic</code> </td><td> Topic name, e.g. <code>"WebNotify"</code> </td></tr>
+<tr><td> Parameter: <code>script</code> </td><td> Script name, e.g. <code>"view"</code> </td></tr>
+<tr><td> Return: <code>url</code> </td><td> URL, e.g. <code>"http://example.com:80/cgi-bin/view.pl/Main/WebNotify"</code> </td></tr>
+<h3><a name="getScriptUrlPath_path"> getScriptUrlPath( ) ==&gt; path </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Get script URL path </td></tr>
+<tr><td> Return: <code>path</code> </td><td> URL path of TWiki scripts, e.g. <code>"http://TWiki.org/cgi-bin"</code> </td></tr>
+<h3><a name="getViewUrl_web_topic_url"> getViewUrl( web, topic ) ==&gt; url </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Compose fully qualified view URL </td></tr>
+<tr><td> Parameter: <code>web</code> </td><td> Web name, e.g. <code>"Main"</code>. The current web is taken if empty </td></tr>
+<h3><a name="getOopsUrl_web_topic_template_pa"> getOopsUrl( web, topic, template, param1, param2, param3, param4 ) ==&gt; url </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Compose fully qualified "oops" dialog URL </td></tr>
+<tr><td> Parameter: <code>template</code> </td><td> Oops template name, e.g. <code>"oopslocked"</code> </td></tr>
+<tr><td> Parameter: <code>param1</code> ... <code>param4</code> </td><td> Parameter values for %PARAM1% ... %PARAM4% variables in template, optional </td></tr>
+<tr><td> Return: <code>url</code> </td><td> URL, e.g. <code>"http://example.com:80/cgi-bin/oops.pl/ Main/WebNotify?template=oopslocked&amp;param1=joe"</code> </td></tr>
+<h3><a name="getPubUrlPath_path"> getPubUrlPath( ) ==&gt; path </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Get pub URL path </td></tr>
+<tr><td> Return: <code>path</code> </td><td> URL path of pub directory, e.g. <code>"/pub"</code> </td></tr>
+<h3><a name="getCgiQuery_query"> getCgiQuery( ) ==&gt; query </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Get CGI query object. Important: Plugins cannot assume that scripts run under CGI, Plugins must always test if the CGI query object is set </td></tr>
+<tr><td> Return: <code>query</code> </td><td> CGI query object; or 0 if script is called as a shell script </td></tr>
+<h3><a name="writeHeader_query_"> writeHeader( query ) </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Prints a basic content-type HTML header for text/html to standard out </td></tr>
+<tr><td> Parameter: <code>query</code> </td><td> CGI query object </td></tr>
+<tr><td> Return: </td><td> none </td></tr>
+<h3><a name="redirectCgiQuery_query_url_"> redirectCgiQuery( query, url ) </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Redirect to URL </td></tr>
+<tr><td> Parameter: <code>url</code> </td><td> URL to redirect to </td></tr>
+<tr><td> Return: </td><td> none, never returns </td></tr>
+<h2><a name="Functions_Preferences"> Functions: Preferences </a></h2>
+<h3><a name="extractNameValuePair_attr_name_v"> extractNameValuePair( attr, name ) ==&gt; value </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Extract a named or unnamed value from a variable parameter string </td></tr>
+<tr><td> Parameter: <code>attr</code> </td><td> Attribute string </td></tr>
+<tr><td> Parameter: <code>name</code> </td><td> Name, optional </td></tr>
+<tr><td> Return: <code>value</code> </td><td> Extracted value </td></tr>
+Variable: <code>%TEST{ "nameless" name1="val1" name2="val2" }%</code>
+First extract text between <code>{...}</code> to get: <code>"nameless" name1="val1" name2="val2"</code>
+Then call this on the text: <br />
+<code>my noname = TWiki::Func::extractNameValuePair( text );</code> <br />
+<code>my name1&nbsp; = TWiki::Func::extractNameValuePair( text, "name1" );</code> <br />
+<code>my name2&nbsp; = TWiki::Func::extractNameValuePair( text, "name2" );</code>
+<h3><a name="getPreferencesValue_key_web_valu"> getPreferencesValue( key, web ) ==&gt; value </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Get a preferences value from TWiki or from a Plugin </td></tr>
+<tr><td> Parameter: <code>key</code> </td><td> Preferences key </td></tr>
+<tr><td> Parameter: <code>web</code> </td><td> Name of web, optional. Current web if not specified; does not apply to settings of Plugin topics </td></tr>
+<tr><td> Return: <code>value</code> </td><td> Preferences value; empty string if not set </td></tr>
+MyPlugin topic has: <code>* Set COLOR = red</code>
+Use <code>"MYPLUGIN_COLOR"</code> for <code>key</code>
+<code>my color = TWiki::Func::getPreferencesValue( "MYPLUGIN_COLOR" );</code>
+WebPreferences topic has: <code>* Set WEBBGCOLOR = #FFFFC0</code>
+<code>my webColor = TWiki::Func::getPreferencesValue( "WEBBGCOLOR", "Sandbox" );</code>
+<h3><a name="getPreferencesFlag_key_web_value"> getPreferencesFlag( key, web ) ==&gt; value </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Get a preferences flag from TWiki or from a Plugin </td></tr>
+<tr><td> Return: <code>value</code> </td><td> Preferences flag <code>"1"</code> (if set), or <code>"0"</code> (for preferences values <code>"off"</code>, <code>"no"</code> and <code>"0"</code>) </td></tr>
+MyPlugin topic has: <code>* Set SHOWHELP = off</code>
+Use <code>"MYPLUGIN_SHOWHELP"</code> for <code>key</code>
+<code>my showHelp = TWiki::Func::getPreferencesFlag( "MYPLUGIN_SHOWHELP" );</code>
+<h3><a name="getWikiToolName_name"> getWikiToolName( ) ==&gt; name </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Get toolname as defined in TWiki.cfg </td></tr>
+<tr><td> Return: <code>name</code> </td><td> Name of tool, e.g. <code>"TWiki"</code> </td></tr>
+<h3><a name="getMainWebname_name"> getMainWebname( ) ==&gt; name </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Get name of Main web as defined in TWiki.cfg </td></tr>
+<tr><td> Return: <code>name</code> </td><td> Name, e.g. <code>"Main"</code> </td></tr>
+<h3><a name="getTwikiWebname_name"> getTwikiWebname( ) ==&gt; name </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Get name of TWiki documentation web as defined in TWiki.cfg </td></tr>
+<tr><td> Return: <code>name</code> </td><td> Name, e.g. <code>"TWiki"</code> </td></tr>
+<h2><a name="Functions_User_Handling_and_Acce"> Functions: User Handling and Access Control </a></h2>
+<h3><a name="getDefaultUserName_loginName"> getDefaultUserName( ) ==&gt; loginName </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Get default user name as defined in TWiki.cfg's <code>defaultUserName</code> </td></tr>
+<tr><td> Return: <code>loginName</code> </td><td> Default user name, e.g. <code>"guest"</code> </td></tr>
+<h3><a name="getWikiName_wikiName"> getWikiName( ) ==&gt; wikiName </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Get Wiki name of logged in user </td></tr>
+<tr><td> Return: <code>wikiName</code> </td><td> Wiki Name, e.g. <code>"JohnDoe"</code> </td></tr>
+<h3><a name="getWikiUserName_text_wikiName"> getWikiUserName( text ) ==&gt; wikiName </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Get Wiki name of logged in user with web prefix </td></tr>
+<tr><td> Return: <code>wikiName</code> </td><td> Wiki Name, e.g. <code>"Main.JohnDoe"</code> </td></tr>
+<h3><a name="wikiToUserName_wikiName_loginNam"> wikiToUserName( wikiName ) ==&gt; loginName </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Translate a Wiki name to a login name based on <a href="http://TWiki.org/cgi-bin/view/Main/TWikiUsers">Main.TWikiUsers</a> topic </td></tr>
+<tr><td> Parameter: <code>wikiName</code> </td><td> Wiki name, e.g. <code>"Main.JohnDoe"</code> or <code>"JohnDoe"</code> </td></tr>
+<tr><td> Return: <code>loginName</code> </td><td> Login name of user, e.g. <code>"jdoe"</code> </td></tr>
+<h3><a name="userToWikiName_loginName_dontAdd"> userToWikiName( loginName, dontAddWeb ) ==&gt; wikiName </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Translate a login name to a Wiki name based on <a href="http://TWiki.org/cgi-bin/view/Main/TWikiUsers">Main.TWikiUsers</a> topic </td></tr>
+<tr><td> Parameter: <code>loginName</code> </td><td> Login name, e.g. <code>"jdoe"</code> </td></tr>
+<tr><td> Parameter: <code>dontAddWeb</code> </td><td> Do not add web prefix if <code>"1"</code> </td></tr>
+<tr><td> Return: <code>wikiName</code> </td><td> Wiki name of user, e.g. <code>"Main.JohnDoe"</code> or <code>"JohnDoe"</code> </td></tr>
+<h3><a name="isGuest_flag"> isGuest( ) ==&gt; flag </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Test if logged in user is a guest </td></tr>
+<tr><td> Return: <code>flag</code> </td><td> <code>"1"</code> if yes, <code>"0"</code> if not </td></tr>
+<h3><a name="permissionsSet_web_flag"> permissionsSet( web ) ==&gt; flag </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Test if any access restrictions are set for this web, ignoring settings on individual pages </td></tr>
+<tr><td> Parameter: <code>web</code> </td><td> Web name, required, e.g. <code>"Sandbox"</code> </td></tr>
+<tr><td> Return: <code>flag</code> </td><td> <code>"1"</code> if yes, <code>"0"</code> if no </td></tr>
+<h3><a name="checkAccessPermission_type_wikiN"> checkAccessPermission( type, wikiName, text, topic, web ) ==&gt; flag </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Check access permission for a topic based on the <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiAccessControl">TWiki.TWikiAccessControl</a> rules </td></tr>
+<tr><td> Parameter: <code>type</code> </td><td> Access type, e.g. <code>"VIEW"</code>, <code>"CHANGE"</code>, <code>"CREATE"</code> </td></tr>
+<tr><td> Parameter: <code>wikiName</code> </td><td> WikiName of remote user, i.e. <code>"Main.PeterThoeny"</code> </td></tr>
+<tr><td> Parameter: <code>text</code> </td><td> Topic text, optional. If empty, topic <code>web.topic</code> is consulted </td></tr>
+<tr><td> Parameter: <code>topic</code> </td><td> Topic name, required, e.g. <code>"PrivateStuff"</code> </td></tr>
+<tr><td> Return: <code>flag</code> </td><td> <code>"1"</code> if access may be granted, <code>"0"</code> if not </td></tr>
+<h2><a name="Functions_Content_Handling"> Functions: Content Handling </a></h2>
+<h3><a name="webExists_web_flag"> webExists( web ) ==&gt; flag </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Test if web exists </td></tr>
+<tr><td> Return: <code>flag</code> </td><td> <code>"1"</code> if web exists, <code>"0"</code> if not </td></tr>
+<h3><a name="topicExists_web_topic_flag"> topicExists( web, topic ) ==&gt; flag </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Test if topic exists </td></tr>
+<tr><td> Parameter: <code>web</code> </td><td> Web name, optional, e.g. <code>"Main"</code> </td></tr>
+<tr><td> Parameter: <code>topic</code> </td><td> Topic name, required, e.g. <code>"TokyoOffice"</code>, or <code>"Main.TokyoOffice"</code> </td></tr>
+<tr><td> Return: <code>flag</code> </td><td> <code>"1"</code> if topic exists, <code>"0"</code> if not </td></tr>
+<h3><a name="getRevisionInfo_web_topic_date_l"> getRevisionInfo( web, topic ) ==&gt; ( date, loginName, rev ) </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Get revision info of a topic </td></tr>
+<tr><td> Parameter: <code>topic</code> </td><td> Topic name, required, e.g. <code>"TokyoOffice"</code> </td></tr>
+<tr><td> Return: <code>( date, loginName, rev )</code> </td><td> List with: ( last update date, login name of last user, minor part of top revision number ), e.g. <code>( "01 Jan 2003", "phoeny", "5" )</code> </td></tr>
+<h3><a name="checkTopicEditLock_web_topic_oop"> checkTopicEditLock( web, topic ) ==&gt; ( oopsUrl, loginName, unlockTime ) </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Check if topic has an edit lock by a user </td></tr>
+<tr><td> Parameter: <code>web</code> </td><td> Web name, e.g. <code>"Main"</code>, or empty </td></tr>
+<tr><td> Parameter: <code>topic</code> </td><td> Topic name, e.g. <code>"MyTopic"</code>, or <code>"Main.MyTopic"</code> </td></tr>
+<tr><td> Return: <code>( oopsUrl, loginName, unlockTime )</code> </td><td> The <code>oopsUrl</code> for calling redirectCgiQuery(), user's <code>loginName</code>, and estimated <code>unlockTime</code> in minutes. The <code>oopsUrl</code> and <code>loginName</code> is empty if topic has no edit lock. </td></tr>
+<h3><a name="setTopicEditLock_web_topic_lock_"> setTopicEditLock( web, topic, lock ) ==&gt; oopsUrl </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Lock topic for editing, or unlock when done </td></tr>
+<tr><td> Parameter: <code>lock</code> </td><td> Set to <code>1</code> to lock topic, <code>0</code> to unlock </td></tr>
+<tr><td> Return: <code>oopsUrl</code> </td><td> Empty string if OK; the <code>oopsUrl</code> for calling redirectCgiQuery() in case lock is already taken when trying to lock topic </td></tr>
+<h3><a name="readTopicText_web_topic_rev_igno"> readTopicText( web, topic, rev, ignorePermissions ) ==&gt; text </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Read topic text, including meta data </td></tr>
+<tr><td> Parameter: <code>rev</code> </td><td> Topic revision to read, optional. Specify the minor part of the revision, e.g. <code>"5"</code>, not <code>"1.5"</code>; the top revision is returned if omitted or empty. </td></tr>
+<tr><td> Parameter: <code>ignorePermissions</code> </td><td> Set to <code>"1"</code> if checkAccessPermission() is already performed and OK; an oops URL is returned if user has no permission </td></tr>
+<tr><td> Return: <code>text</code> </td><td> Topic text with embedded meta data; an oops URL for calling redirectCgiQuery() is returned in case of an error </td></tr>
+<h3><a name="saveTopicText_web_topic_text_ign"> saveTopicText( web, topic, text, ignorePermissions, dontNotify ) ==&gt; oopsUrl </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Save topic text, typically obtained by readTopicText(). Topic data usually includes meta data; the file attachment meta data is replaced by the meta data from the topic file if it exists. </td></tr>
+<tr><td> Parameter: <code>text</code> </td><td> Topic text to save, assumed to include meta data </td></tr>
+<tr><td> Parameter: <code>ignorePermissions</code> </td><td> Set to <code>"1"</code> if checkAccessPermission() is already performed and OK </td></tr>
+<tr><td> Parameter: <code>dontNotify</code> </td><td> Set to <code>"1"</code> if not to notify users of the change </td></tr>
+<tr><td> Return: <code>oopsUrl</code> </td><td> Empty string if OK; the <code>oopsUrl</code> for calling redirectCgiQuery() in case of error </td></tr>
+Example: <br />
+<code>my oopsUrl = TWiki::Func::setTopicEditLock( web, topic, 1 );</code> <br />
+<code>if( oopsUrl ) {</code> <br />
+<code>&nbsp; &nbsp; TWiki::Func::redirectCgiQuery( query, oopsUrl ); &nbsp; # assuming valid query</code> <br />
+<code>&nbsp; &nbsp; return;</code> <br />
+<code>}</code> <br />
+<code>my text = TWiki::Func::readTopicText( web, topic );&nbsp; &nbsp; &nbsp; &nbsp; # read topic text</code> <br />
+<code># check for oops URL in case of error:</code> <br />
+<code>if( text =~ /^http.*?\/oops/ ) {</code> <br />
+<code>&nbsp; &nbsp; TWiki::Func::redirectCgiQuery( query, text );</code> <br />
+<code># do topic text manipulation like:</code> <br />
+<code>text =~ s/old/new/g;</code> <br />
+<code># do meta data manipulation like:</code> <br />
+<code>text =~ s/(META\:FIELD.*?name\=\"TopicClassification\".*?value\=\")[^\"]*/1BugResolved/;</code> <br />
+<code>oopsUrl = TWiki::Func::saveTopicText( web, topic, text ); # save topic text</code> <br />
+<code>TWiki::Func::setTopicEditLock( web, topic, 0 ); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # unlock topic</code> <br />
+<code>&nbsp; &nbsp; TWiki::Func::redirectCgiQuery( query, oopsUrl );</code> <br />
+<h3><a name="getPublicWebList_webs"> getPublicWebList( ) ==&gt; @webs </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Get list of all public webs, e.g. all webs that do not have the <code>NOSEARCHALL</code> flag set in the WebPreferences </td></tr>
+<tr><td> Return: <code>@webs</code> </td><td> List of all public webs, e.g. <code>( "Main",&nbsp; "Know", "TWiki" )</code> </td></tr>
+<h3><a name="getTopicList_web_topics"> getTopicList( web ) ==&gt; @topics </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Get list of all topics in a web </td></tr>
+<tr><td> Return: <code>@topics</code> </td><td> Topic list, e.g. <code>( "WebChanges",&nbsp; "WebHome", "WebIndex", "WebNotify" )</code> </td></tr>
+<h2><a name="Functions_Rendering"> Functions: Rendering </a></h2>
+<h3><a name="expandCommonVariables_text_topic"> expandCommonVariables( text, topic, web ) ==&gt; text </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Expand all common <code>%VARIABLES%</code> </td></tr>
+<tr><td> Parameter: <code>text</code> </td><td> Text with variables to expand, e.g. <code>"Current user is %WIKIUSER%"</code> </td></tr>
+<tr><td> Parameter: <code>topic</code> </td><td> Current topic name, e.g. <code>"WebNotify"</code> </td></tr>
+<tr><td> Parameter: <code>web</code> </td><td> Web name, optional, e.g. <code>"Main"</code>. The current web is taken if missing </td></tr>
+<tr><td> Return: <code>text</code> </td><td> Expanded text, e.g. <code>"Current user is TWikiGuest"</code> </td></tr>
+<h3><a name="renderText_text_web_text"> renderText( text, web ) ==&gt; text </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Render text from TWiki markup into XHTML as defined in <a href="http://TWiki.org/cgi-bin/view/TWiki/TextFormattingRules">TWiki.TextFormattingRules</a> </td></tr>
+<tr><td> Parameter: <code>text</code> </td><td> Text to render, e.g. <code>"*bold* text and =fixed font="</code> </td></tr>
+<tr><td> Return: <code>text</code> </td><td> XHTML text, e.g. <code>"&lt;b&gt;bold&lt;/b&gt; and &lt;code&gt;fixed font&lt;/code&gt;"</code> </td></tr>
+<h3><a name="internalLink_pre_web_topic_label"> internalLink( pre, web, topic, label, anchor, createLink ) ==&gt; text </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Render topic name and link label into an XHTML link. Normally you do not need to call this funtion, it is called internally by <code>renderText()</code> </td></tr>
+<tr><td> Parameter: <code>pre</code> </td><td> Text occuring before the TWiki link syntax, optional </td></tr>
+<tr><td> Parameter: <code>web</code> </td><td> Web name, required, e.g. <code>"Main"</code> </td></tr>
+<tr><td> Parameter: <code>topic</code> </td><td> Topic name to link to, required, e.g. <code>"WebNotify"</code> </td></tr>
+<tr><td> Parameter: <code>label</code> </td><td> Link label, required. Usually the same as <code>topic</code>, e.g. <code>"notify"</code> </td></tr>
+<tr><td> Parameter: <code>anchor</code> </td><td> Anchor, optional, e.g. <code>"#Jump"</code> </td></tr>
+<tr><td> Parameter: <code>createLink</code> </td><td> Set to <code>"1"</code> to add question linked mark after topic name if topic does not exist;<br /> set to <code>"0"</code> to suppress link for non-existing topics </td></tr>
+<tr><td> Return: <code>text</code> </td><td> XHTML anchor, e.g. <code>"&lt;a href="http://TWiki.org/cgi-bin/view/Main/WebNotify#Jump"&gt;notify&lt;/a&gt;"</code> </td></tr>
+<h3><a name="search_text_text_text"> search text( text ) ==&gt; text </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> This is not a function, just a how-to note. Use: <code>expandCommonVariables("%SEARCH{...}%" );</code> </td></tr>
+<tr><td> Parameter: <code>text</code> </td><td> Search variable </td></tr>
+<tr><td> Return: <code>"text"</code> </td><td> Search result in <a href="http://TWiki.org/cgi-bin/view/TWiki/FormattedSearch">TWiki.FormattedSearch</a> format </td></tr>
+<h3><a name="formatGmTime_time_format_text"> formatGmTime( time, format ) ==&gt; text </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Format the time to GM time </td></tr>
+<tr><td> Parameter: <code>time</code> </td><td> Time in epoc seconds </td></tr>
+<tr><td> Parameter: <code>format</code> </td><td> Format type, optional. Default e.g. <code>"31 Dec 2002 - 19:30"</code>, can be <code>"iso"</code> (e.g. <code>"2002-12-31T19:30Z"</code>), <code>"rcs"</code> (e.g. <code>"2001/12/31 23:59:59"</code>, <code>"http"</code> for HTTP header format (e.g. <code>"Thu, 23 Jul 1998 07:21:56 GMT"</code>) </td></tr>
+<tr><td> Return: <code>text</code> </td><td> Formatted time string </td></tr>
+<h2><a name="Functions_File_I_O"> Functions: File I/O </a></h2>
+<h3><a name="getDataDir_dir"> getDataDir( ) ==&gt; dir </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Get data directory (topic file root) </td></tr>
+<tr><td> Return: <code>dir</code> </td><td> Data directory, e.g. <code>"/twiki/data"</code> </td></tr>
+<h3><a name="getPubDir_dir"> getPubDir( ) ==&gt; dir </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Get pub directory (file attachment root). Attachments are in <code>dir/Web/TopicName</code> </td></tr>
+<tr><td> Return: <code>dir</code> </td><td> Pub directory, e.g. <code>"/htdocs/twiki/pub"</code> </td></tr>
+<h3><a name="readTemplate_name_skin_text"> readTemplate( name, skin ) ==&gt; text </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Read a template or skin file. Embedded <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiTemplates">template directives</a> get expanded </td></tr>
+<tr><td> Parameter: <code>name</code> </td><td> Template name, e.g. <code>"view"</code> </td></tr>
+<tr><td> Parameter: <code>skin</code> </td><td> Skin name, optional, e.g. <code>"print"</code> </td></tr>
+<tr><td> Return: <code>text</code> </td><td> Template text </td></tr>
+<h3><a name="readFile_filename_text"> readFile( filename ) ==&gt; text </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Read text file, low level. NOTE: For topics use readTopicText() </td></tr>
+<tr><td> Parameter: <code>filename</code> </td><td> Full path name of file </td></tr>
+<tr><td> Return: <code>text</code> </td><td> Content of file </td></tr>
+<h3><a name="saveFile_filename_text_"> saveFile( filename, text ) </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Save text file, low level. NOTE: For topics use saveTopicText() </td></tr>
+<tr><td> Parameter: <code>text</code> </td><td> Text to save </td></tr>
+<h3><a name="writeWarning_text_"> writeWarning( text ) </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Log Warning that may require admin intervention to data/warning.txt </td></tr>
+<tr><td> Parameter: <code>text</code> </td><td> Text to write; timestamp gets added </td></tr>
+<h3><a name="writeDebug_text_"> writeDebug( text ) </a></h3>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><td> Description: </td><td> Log debug message to data/debug.txt </td></tr>
+<h2><a name="Copyright_and_License"> Copyright and License </a></h2>
+Copyright (C) 2000-2003 Peter Thoeny, <a href="mailto:Peter@Thoeny.com">Peter@Thoeny.com</a>
+<a href="http://www.gnu.org/copyleft/gpl.html" target="_top">http://www.gnu.org/copyleft/gpl.html</a>
+<strong><em>NOTE:</em></strong> Above text is copied from the TWiki::Plugins/PerlDocPlugin output of <code>TWiki::Func</code> in <code>twiki</code> format. In case you want to get dynamically updated documentation based on the actual Perl module, install the PerlDocPlugin and replace above text with <code>%PERLDOC{"TWiki::Func"}%</code>.
+-- <a href="http://TWiki.org/cgi-bin/view/Main/PeterThoeny">PeterThoeny</a> - 31 Dec 2002
+<h1><a name="TWiki_Site_Tools"> TWiki Site Tools </a></h1>
+<em>Utilities for searching, navigation, and monitoring site activity</em>
+<a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiSiteTools">TWikiSiteTools</a> include utilities for navigating, searching and keeping up with site activity. Preferences can be configured by web or site-wide. You are currently in the <strong>TWiki</strong> web. In particular, TWiki provides two highly configurable, automated site monitoring tools, <strong>WebNotify</strong>, to email alerts when topics are edited, and <strong>WebStats</strong>, to generate detailed activity reports.
+<h2><a name="WebNotify_Recent_Changes_Alert"> WebNotify Recent Changes Alert </a></h2>
+Each TWiki web has an automatic email alert service that sends a list of recent changes on a preset schedule, like once a day. Users can subscribe and unsubscribe using <a href="http://TWiki.org/cgi-bin/view/TWiki/WebNotify">WebNotify</a> in each web. The Perl script <code>mailnotify</code> is called by a background process at regular intervals. The script sends an automated email to subscribed users if topics were changed in a web since the script was last run.
+You can create a <a href="http://TWiki.org/cgi-bin/view/TWiki/WebNotify">WebNotify</a> link using <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiVariables">TWikiVariables</a> with <code><b>%NOTIFYTOPIC%</b></code>
+TWiki handles WebNotify entries that include the <a href="http://TWiki.org/cgi-bin/view/TWiki/WikiName">WikiName</a> of a user or a <a href="http://TWiki.org/cgi-bin/view/Main/TWikiGroups">TWikiGroup</a> and an optional e-mail address. Example entries in WebNotify:
+You can also use <code>%MAINWEB%</code> instead of <code>Main</code>, but this is not necessary even if you have renamed the main web by configuring <code>mainWebname</code> in <code>TWiki.cfg</code>.
+<h3><a name="Configuring_Outgoing_Mail"> Configuring Outgoing Mail </a></h3>
+TWiki will use the <code><b>Net::SMTP</b></code> module if it is installed on your system. Set this with the <code><b>SMTPMAILHOST</b></code> variable in <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiPreferences">TWikiPreferences</a>.
+The notify e-mail uses the default <code>changes.tmpl</code> template, or a skin if activated in the <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiPreferences">TWikiPreferences</a>.
+mailnotify also relies on two hidden files in each <code>TWiki/data/[web]</code> directory: <code>.changes</code> and <code>.mailnotify.</code> Make sure both are writable by your web server process. <code>.changes</code> contains a list of changes; go ahead and make this empty. <code>.mailnotify</code> contains a timestamp of the last time notification was done.
+You can use an external mail program, like <code><b>sendmail</b></code>, if the <code>Net::SMTP</code> module is not installed. Set the program path in <code><b>mailProgram</b></code> in <code><b>TWiki.cfg</b></code>.
+<img src="http://TWiki.org/p/pub/TWiki/TWikiDocGraphics/help.gif" border="0" alt="HELP" width="16" height="16" /> Net::SMTP can be easily disabled (ex: if there is an installation error) by setting <code><b>SMTPMAILHOST</b></code> in <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiPreferences">TWikiPreferences</a> to an empty value.
+<img src="http://TWiki.org/p/pub/TWiki/TWikiDocGraphics/tip.gif" border="0" alt="TIP" width="16" height="16" /> You can set a separate <code><b>SMTPSENDERHOST</b></code> variable to define the mail sender host (some SMTP installations require this).
+<h3><a name="Setting_the_Automatic_Email_Sche"> Setting the Automatic Email Schedule </a></h3>
+<strong>For Unix platforms:</strong> Edit the <code>cron</code> table so that <code>mailnotify</code> is called in an interval of your choice. Please consult <code>man crontab</code> of how to modify the table that schedules program execution at certain intervals. Example:
+The above line will call mailnotify at 15 minutes and 45 minutes past every hour. The <code>-q</code> switch suppresses all normal output.
+<strong>For ISP installations:</strong> Many ISPs don't allow hosted accounts direct cron access, as it's often used for things that can heavily load the server. Workaround scripts are available.
+<strong>On Windows NT/2000:</strong> You can use a scheduled task if you have administrative privileges.
+<strong><em>Note:</em></strong> AT on an NT machine is pretty limited.
+<a href="http://www.microsoft.com/ntserver/partners/findoffering/serversolutions/Maintnce.asp#cron" target="_top">replacements</a>
+<h2><a name="WebStatistics_Site_Usage_Log"> WebStatistics Site Usage Log </a></h2>
+You can create a <a href="http://TWiki.org/cgi-bin/view/TWiki/WebStatistics">WebStatistics</a> link using <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiVariables">TWikiVariables</a> with <code><b>%STATISTICSTOPIC%</b></code>
+<h3><a name="Configuring_for_Automatic_Operat"> Configuring for Automatic Operation </a></h3>
+Make sure variable <code>doLogTopicView, doLogTopicSave and doLogTopicUpload</code> in <code>TWiki.cfg</code> are set. This will generate log entries in file <code>twiki/data/log&lt;date&gt;.txt</code> .
+The <a href="http://TWiki.org/cgi-bin/view/TWiki/WebStatistics">WebStatistics</a> topic must be present in all webs where you want to have statistics. You can use the topic in the Main web as a template.
+Call the <code>twiki/bin/statistics</code> script from a cron job, once a day is recommended. This will update the <a href="http://TWiki.org/cgi-bin/view/TWiki/WebStatistics">WebStatistics</a> topics in all webs.
+<strong><em>Attention:</em></strong> The script must run as the same user as the CGI scripts are running, which is user <code>nobody</code> on most systems. Example crontab entry: <br> <code>0 0 * * * (cd /path/to/TWiki/bin; ./statistics &gt;/dev/null 2&gt;&amp;1)</code>
+There is a workaround in case you can't run the script as user <code>nobody</code> : Run the utility <code>twiki/bin/geturl</code> in your cron job and specify the URL of the <code>twiki/bin/statistics</code> script as a parameter. Example: <br> <code>0 0 * * * (cd /path/to/TWiki/bin; ./geturl mydomain.com /urlpath/to/TWiki/bin/statistics &gt;/dev/null 2&gt;&amp;1)</code>
+<h3><a name="Generating_Statistics_Manually_b"> </a> Generating Statistics Manually by URL </h3>
+The <code>twiki/bin/statistics</code> script can also be executed as a CGI script, just enter the URL in your browser. Examples:
+Update current month for all webs: <br> <code>http://mydomain.com/twiki/bin/statistics</code>
+Update current month for Main web only: <br> <code>http://mydomain.com/twiki/bin/statistics/Main</code>
+Update January 2000 for Main web: <br> <code>http://mydomain.com/twiki/bin/statistics/Main?logdate=200001</code>
+<h2><a name="WebSearch"> WebSearch </a></h2>
+<a href="http://TWiki.org/cgi-bin/view/TWiki/WebSearch">WebSearch</a> is an extremely fast and flexible search facility, part of the core TWiki feature set. Options include:
+See also: <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiVariables">TWikiVariables</a> for including hard-coded searches in text.
+<h3><a name="WebChanges"> WebChanges </a></h3>
+To check for the most recently edited topics while on-site, use the <a href="http://TWiki.org/cgi-bin/view/TWiki/WebChanges">WebChanges</a> link, usually located on the upper toolbar. It lists the most recently modified topics, newest first, along with the first couple of lines of the page content.
+This is simply a preset <code>SEARCH</code>. The number of topics listed by the <code>limit</code> parameter.:
+<h3><a name="WebIndex"> WebIndex </a></h3>
+<a href="http://TWiki.org/cgi-bin/view/TWiki/WebIndex">WebIndex</a> lists all web topics in alphabetical order, with the first couple of lines of text. This is simply a preset <code>SEARCH</code>:
+-- <a href="http://TWiki.org/cgi-bin/view/Main/MikeMannix">MikeMannix</a> - 01 Dec 2001 <br />
+<h1><a name="Managing_Topics"> Managing Topics </a></h1>
+<em>Browser-based rename, move, and delete for individual topics</em>
+You can use browser-based controls to change a topic's name, move it to another TWiki web, or delete it to a hidden <code>Trash</code> web.
+<h2><a name="How_to_Rename_Move_Delete_a_Topi"> How to Rename/Move/Delete a Topic </a></h2>
+<strong>Click</strong> on <code><b>[More]</b></code> (bottom right of page) on the topic to be changed, then, in the new screen, on <code><b>[Rename/move]</b></code>. You can now rename and/or move/delete in one operation:
+<strong>Move/Delete:</strong> Select the target web if other than the current web - choose <code>Trash</code> to <a href="#DeleteTopic">delete a topic</a>.
+<strong>Rename:</strong> Enter the new topic name - default is current name <br />
+<img src="http://TWiki.org/p/pub/TWiki/TWikiDocGraphics/warning.gif" border="0" alt="ALERT!" width="16" height="16" /> <strong>NOTE:</strong> You'll be warned if any of the topics to be affected are locked (being edited), or if there is a name conflict.
+<strong>Prevent updates</strong> by unchecking individual items on the list of referring links - these topics will NOT to be updated with the new name (by default, all referring links will be updated).
+<strong>Click</strong> on <code><b>[Rename/Move]</b></code>: the topic will be renamed and links to the topic updated as requested.
+If any of the referring pages are locked then they will be listed: you can correct these later by again pressing <code><b>[Rename/Move]</b></code>.
+<img src="http://TWiki.org/p/pub/TWiki/TWikiDocGraphics/help.gif" border="0" alt="HELP" width="16" height="16" /> There is a <strong><em>Put back</em></strong> feature that allows you to undo a <code><b>Rename/Move/Delete</b></code> - an instruction line and undo link will appear at the bottom of the modified topic. This allows you to revert from the <em>last modification only</em>.
+<a name="DeleteTopic"></a>
+<h2><a name="Deleted_Topics_How_to_Clear_the_"> Deleted Topics: How to Clear the Trash </a></h2>
+Deleted topics are moved to a special <code><b>Trash</b></code> web - they are NOT physically erased from the server. All webs share <code>Trash</code> - in case of a name conflict with a topic already <code>Trash</code>, the user is alerted and asked to choose a new name.
+The <code>Trash</code> web should be be cleared periodically, by archiving (saving) the text and RCS files if required (recommended), then deleting them from the <code>Trash</code> directory.
+<img src="http://TWiki.org/p/pub/TWiki/TWikiDocGraphics/warning.gif" border="0" alt="ALERT!" width="16" height="16" /> This can only be done from on the server, not through the browser.
+<img src="http://TWiki.org/p/pub/TWiki/TWikiDocGraphics/tip.gif" border="0" alt="TIP" width="16" height="16" /> Since simple FTP access to the <code><b>Trash</b></code> directory is all that's required for maintenance, it's possible to grant <code>Trash</code> admin privileges to multiple users, while strictly limiting server access.
+<h2><a name="Redirecting_from_an_Old_Topic"> Redirecting from an Old Topic </a></h2>
+You can use <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiMetaData">TWikiMetaData</a> to place a command in the <a href="http://TWiki.org/cgi-bin/view/TWiki/WebTopicViewTemplate">WebTopicViewTemplate</a> and <a href="http://TWiki.org/cgi-bin/view/TWiki/WebTopicNonWikiTemplate">WebTopicNonWikiTemplate</a> that will indicate that a topic has been moved by searching for the tag %META:TOPICMOVED{...}%. Customize something like this:
+<h2><a name="How_Rename_Move_Works"> How Rename/Move Works </a></h2>
+%SEARCH%, with a special template, finds and displays all occurrences of the topic name in other topics, site-wide. These referring links are by default automatically changed to the new topic and/or web name. This includes relevant <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiMetaData">TWikiMetaData</a> definitions.
+<code>&lt;pre&gt;</code> and <code>&lt;verbatim&gt;</code> are honoured - no changes are made to text within these areas.
+<h3><a name="How_Referring_Topics_Are_Found"> How Referring Topics Are Found </a></h3>
+Referring topics are found using the %SEARCH% variable - see the template <code><b>searchrenameview.tmpl</b></code>. First, matching topics in the current web are listed - matches are to <code><b>topic</b></code>. Next, all webs (including the current one) are listed that match <code><b>web.topic</b></code>. Because %SEARCH% is used, webs marked in <a href="http://TWiki.org/cgi-bin/view/TWiki/WebPreferences">WebPreferences</a> as <code>NOSEARCHALL</code> will not show up in the search for references to the <code>topic</code> being changed.
+Changed references are kept are as short as possible, ex: <code>topic</code> is used in preference to <code>web.topic</code>.
+<h3><a name="Effect_of_User_Access_Settings"> Effect of User Access Settings </a></h3>
+User permissions affect the Rename function in various ways. To rename a topic, you need both <code><b>ALLOWTOPICCHANGE</b></code> and <code><b>ALLOWTOPICRENAME</b></code> permission for that topic. To alter referring topics, you need change permission. See <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiAccessControl">TWikiAccessControl</a> for information on setting up access permissions.
+<h2><a name="Special_Considerations"> Special Considerations </a></h2>
+Consider carefully whether to make browser-based <strong>Rename/Move/Delete</strong>
+When referring links are updated, the modified topics appear in <a href="http://TWiki.org/cgi-bin/view/TWiki/WebChanges">WebChanges</a><a href="http://TWiki.org/cgi-bin/view/TWiki/WebChanges">WebChanges</a>.
+Due to <a href="#RenameLimitations">current limitations</a>
+<a name="RenameLimitations"></a>
+<strong>Rename/Move</strong> is fairly complicated due to the dynamic generation of links. Ideally, it would be possible to run the required part of rendering in a way that would allow identification of the text to be changed. Unfortunately, these hooks don't exist in TWiki at present. Instead, %SEARCH% is used with a special template to show the text to be changed, and the selected topics are then altered. One drawback is that <code>search</code> can show matches that will not be updated due to case differences. Other mismatches with actual rendered output are also possible as the approaches are so different.
+-- <a href="http://TWiki.org/cgi-bin/view/Main/MikeMannix">MikeMannix</a> - 27 Dec 2001
+<h1><a name="Managing_Webs"> Managing Webs </a></h1>
+<em>Adding webs is a web based operation; renaming and deleting webs are manual operations done directly on the server</em>
+A <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiSite">TWikiSite</a> is divided into webs; each one represents one subject, one area of collaboration. Administrators can add/rename/delete webs.
+<a name="WebTemplate"></a>
+<h2><a name="Choose_Web_Template"> Choose Web Template </a></h2>
+There are two methods used to create a new web. First you can use a specially designed <a href="http://TWiki.org/cgi-bin/view/TWiki/TemplateWeb">TemplateWeb</a>. This is an invisible web that begins with an underscore &quot;_&quot; character. All topics in the _default template web will be copied into your new web.
+The second method is to use an existing web as a template web. This may be useful if you already have a web that you like to use as a starting point. Only topics that have names beginning with <strong>Web...</strong> (like "WebHome", "WebNotify", etc.) are copied.
+<a name="CreateNewWeb"></a>
+<h2><a name="Adding_a_New_Web"> Adding a New Web </a></h2>
+<form name="admin" action="http://TWiki.org/cgi-bin/manage/TWiki/ManagingWebs" method="post">
+Create a new web by filling out this form. <strong><em>Note:</em></strong> It is not recommended to create a new web for each little project. You can organize content within a web using <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiForms">TWikiForms</a> and <a href="http://TWiki.org/cgi-bin/view/TWiki/FormattedSearch">FormattedSearch</a>. Cross-linking topics and search is easier if there are only a few larger webs.
+<table border="1" cellspacing="0" cellpadding="1"> <tr><th align="right" bgcolor="#99CCCC"> <strong>Name of new web:</strong> </th><td> <input name="newweb" type="text" value="" size="16" /> </td><td> Enter a short name of up to 10 characters. The name must start with one or more upper case letters, followed by optional lower case letters or numbers; it cannot be a <a href="http://TWiki.org/cgi-bin/view/TWiki/WikiWord">WikiWord</a> </td></tr>
+<tr><th align="right" bgcolor="#99CCCC"> <strong>Based on web:</strong> </th><td> <select name="baseweb"> <option>_default</option> <option>Know</option> <option>Main</option> <option>Sandbox</option> <option>TWiki</option> </select> </td><td> Select a <a href="http://TWiki.org/cgi-bin/view/TWiki/TemplateWeb">TemplateWeb</a> </td></tr>
+<tr><td> &nbsp; </td><td colspan="2"> <input type="submit" value="Create new web" /> </td></tr>
+<input name="newtopic" type="hidden" value="" />
+<input name="action" type="hidden" value="createweb" />
+<strong>Note:</strong> Attachments will NOT get copied over along with their topics. This will be a feature added for the <a href="http://twiki.org/cgi-bin/view/Codev/CairoRelease" title="'Codev/CairoRelease' on TWiki site, we know it!">TWiki:Codev/CairoRelease</a>.
+<strong>Note:</strong> This script does not yet edit the <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiPreferences">TWiki.TWikiPreferences</a> file to update the <code>WIKIWEBLIST</code>. This must be done by hand.
+The manage script while creating the new web will update the following variables in the <a href="http://TWiki.org/cgi-bin/view/TWiki/WebPreferences">WebPreferences</a>: <code>WEBBGCOLOR</code>, <code>SITEMAPLIST</code>, <code>SITEMAPWHAT</code>, <code>SITEMAPUSETO</code> and <code>NOSEARCHALL</code>. These variables are now used to dynamically generate the <a href="http://TWiki.org/cgi-bin/view/TWiki/SiteMap">SiteMap</a>.
+<h2><a name="Renaming_or_Deleting_a_Web"> Renaming or Deleting a Web </a></h2>
+<strong>NOTE:</strong> If you plan to rename the TWiki.Main web, remember that TWiki stores user and group topics in <code>%MAINWEB%</code>, default named <code>Main</code>. That means, every <a href="http://TWiki.org/cgi-bin/view/TWiki/WikiName">WikiName</a> signature - <code>Main.SomeUserName</code> - points to it and would need updating (unless the variable, <code>%MAINWEB%.SomeUserName</code>, is used throughout).
+Prepare your site: Search each web for links to the target web, searching topic text for <code>Oldwebname.</code>, including the dot so you'll find references like <code>Oldwebname.SomeTopic</code>.
+Make changes as required, to <code>Newwebname.SomeTopic</code> or better yet, to <code>%MAINWEB%.SomeTopic</code>.
+Edit the <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiPreferences">TWikiPreferences</a> topic: Rename or delete the web from the <code>WIKIWEBLIST</code> variable.
+Go to <code>twiki/data</code> and rename or remove the web directory.
+Go to <code>twiki/templates</code> and rename or remove the web directory if present.
+Go to <code>twiki/pub</code> and rename or remove the web directory if present.
+-- <a href="http://TWiki.org/cgi-bin/view/Main/MikeMannix">MikeMannix</a> - 14 Sep 2001 <br />
+-- <a href="http://TWiki.org/cgi-bin/view/Main/PeterThoeny">PeterThoeny</a> - 07 Apr 2002 <br />
+-- <a href="http://TWiki.org/cgi-bin/view/Main/GrantBow">GrantBow</a> - 16 Jan 2003
+<a name="FileSystem"></a>
+<h1><a name="Appendix_A_TWiki_Filesystem"> Appendix A: TWiki Filesystem </a></h1>
+<em>Annotated directory and file listings, for the 01-Feb-2003 TWiki production release.</em>
+<h2><a name="Who_and_What_is_This_Good_For_"> Who and What is This Good For? </a></h2>
+Interested <strong><em>Users</em></strong> and <strong><em>Site Administrators</em></strong> can find out in simple terms what each part of TWiki actually does. Adventurous <em>Adminstrators</em> with server access to files (via telnet, ssh or ftp) can also figure out where to look to make minor modifications, like changing hardcode text or color. <strong><em>Software Developers</em></strong> can get an at-a-glance overview of TWiki code architecture.
+<h2><a name="Directory_Structure"> Directory Structure </a></h2>
+You can rename the root TWiki directory - <code><b>twiki</b></code> - to whatever you like by changing it in the <code><b>TWiki.cfg</b></code> configuration file. However, to keep the current installation and future upgrades simple, you should leave the five main subdirectories intact:
+<table border="1" cellspacing="0" cellpadding="1"> <tr><th bgcolor="#99CCCC"> <strong>Directory:</strong> </th><th bgcolor="#99CCCC"> <strong>Files:</strong> </th><th bgcolor="#99CCCC"> <strong>Used for:</strong> </th></tr>
+<tr><td> <code>twiki</code> </td><td align="center"> <a href="#TWikiFiles">list</a> </td><td> Start-up info </td></tr>
+<tr><td> <code>twiki/bin</code> </td><td align="center"> <a href="#BinFiles">list</a> </td><td> Perl scripts </td></tr>
+<tr><td> <code>twiki/lib</code> </td><td align="center"> <a href="#LibFiles">list</a> </td><td> Configuration file, main library, Perl system modules, Plugins directory </td></tr>
+<tr><td> <code>twiki/pub</code> </td><td align="center"> <a href="#PubFiles">list</a> </td><td> Public files (eg: images) and <a href="http://TWiki.org/cgi-bin/view/TWiki/FileAttachment">FileAttachments</a> and their RCS histories </td></tr>
+<tr><td> <code>twiki/data</code> </td><td align="center"> <a href="#DataFiles">list</a> </td><td> Individual topics (page content) and their RCS histories </td></tr>
+<tr><td> <code>twiki/templates</code> </td><td align="center"> <a href="#TemplatesFiles">list</a> </td><td> HTML templates, used by TWiki scripts </td></tr>
+<h2><a name="File_Descriptions"> File Descriptions </a></h2>
+<a name="TWikiFiles"></a>
+<h3><a name="Files_in_twiki_code_"> Files in <code>twiki</code> </a></h3>
+Application info and the current reference documentation. <em>Full file list:</em>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><th bgcolor="#99CCCC"> <strong>File:</strong> </th><th bgcolor="#99CCCC"> <strong>Used for:</strong> </th></tr>
+<tr><td> <code>index.html</code> </td><td> Links to launch TWiki after install and for files in this directory </td></tr>
+<tr><td> <code>license.txt</code> </td><td> GNU General Public License and TWiki-specific info </td></tr>
+<tr><td> <code>readme.txt</code> </td><td> General TWiki start-up info with relevant URLs </td></tr>
+<tr><td> <code>TWikiDocumentation.html</code> </td><td> All documentation packaged as a single page </td></tr>
+<tr><td> <code>TWikiHistory.html</code> </td><td> TWiki development timeline: versions, features, developers </td></tr>
+<a name="BinFiles"></a>
+<h3><a name="Files_in_twiki_bin_code_"> Files in <code>twiki/bin</code> </a></h3>
+Perl CGI scripts. <em>Full file list:</em>
+<tr><td> <code>.htaccess.txt</code> </td><td> Authentication. Rename to .htaccess and customize if used </td></tr>
+<a name="LibFiles"></a>
+<h3><a name="Files_under_twiki_lib_code_"> Files under <code>twiki/lib</code> </a></h3>
+The new <code>lib/TWiki/Plugins</code> directories contain configuration, library and function files, and <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiPlugins">TWikiPlugins</a>. <em>Full file list:</em>
+<tr><td> <code>TWiki.cfg</code> </td><td> Main configuration, used by <code>TWiki.pm</code> </td></tr>
+<a name="PubFiles"></a>
+<h3><a name="Files_under_twiki_pub_code_"> Files under <code>twiki/pub</code> </a></h3>
+The <code>pub</code> directory stores topic-related files, including images used by TWiki and <a href="http://TWiki.org/cgi-bin/view/TWiki/FileAttachment">FileAttachments</a>. Attachments are stored in subdirectories created with the related topic name. You can also upload files directly for and link manually (but not through <code><b>Attach</b></code>) <em>Partial file list:</em>
+<tr><td> <code>favicon.ico</code> </td><td> ICO file </td></tr>
+<a name="DataFiles"></a>
+<h3><a name="Files_under_twiki_data_code_"> Files under <code>twiki/data</code> </a></h3>
+TWiki topics: data stored as individual text files and rendered by TWiki for display as regular Web pages. Each active web has its own subdirectory. The TWiki distribution includes four start-up webs - <code><b>Main</b></code>, <code><b>TWiki</b></code>, <code><b>Know</b></code>, <code><b>Sandbox</b></code> - with documentation and demo content, a <code><b>Trash</b></code> web for browser-based, recoverable topic deletion, and a <code><b>_default</b></code> directory containing a core topic set required to start a new web. <em>Partial file list:</em>
+<tr><td> <code>.htpasswd</code> </td><td> Basic Authentication (htaccess) users file with username and encrypted password pairs </td></tr>
+<a name="TemplatesFiles"></a>
+<h3><a name="Files_in_twiki_templates_code_"> Files in <code>twiki/templates</code> </a></h3>
+Templates and skins used to control appearance of topics rendered as Web pages. <em>Full file list:</em>
+<tr><td> <code>attach.tmpl</code> </td><td> <code>Attach</code> (<a href="http://TWiki.org/cgi-bin/view/TWiki/FileAttachment">FileAttachments</a>) control screen </td></tr>
+<h2><a name="TWiki_File_System_Snapshot"> TWiki File System Snapshot </a></h2>
+<img src="http://TWiki.org/p/pub/TWiki/TWikiDocGraphics/tip.gif" border="0" alt="TIP" width="16" height="16" /> <strong><em>On an ISP installation...</em></strong> The user and group - <code>twiki twiki</code> - will probably be your domain or login name, eg: <code>yourdomain yourdomain</code> and can't be changed; same for <code>nobody nobody</code> files further down. Also, in the <code><b>bin</b></code> directory, scripts might need a <code><b>.cgi</b></code> (sometimes <code><b>.pl</b></code>) extension._
+Directory <code>twiki/bin</code>:
+Directory <code>twiki/templates/</code>:
+Directory <code>twiki/data/</code>:
+Partial file list for <code>twiki/data/Main</code>:
+<img src="http://TWiki.org/p/pub/TWiki/TWikiDocGraphics/tip.gif" border="0" alt="TIP" width="16" height="16" /> <em>Included files come with their RCS versions histories <code><b>.txt,v</b></code>.</em>
+Directory <code>twiki/pub/</code>:
+Partial file list for <code>twiki/pub/icn/</code>:
+Directory <code>twiki/pub/TWiki</code>:
+Directory <code>twiki/pub/TWiki/FileAttachment</code>:
+-- <a href="http://TWiki.org/cgi-bin/view/Main/PeterThoeny">PeterThoeny</a> - 11 Jan 2003 <br />
+-- <a href="http://TWiki.org/cgi-bin/view/Main/MikeMannix">MikeMannix</a> - 16 May 2002
+<h1><a name="Appendix_B_TWiki_Development_Tim"> Appendix B: TWiki Development Timeline </a></h1>
+<h2><a name="01_Feb_2003_Release_Beijing_"> 01-Feb-2003 Release (Beijing) </a></h2>
+<strong>18 Jan 2003</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<h2><a name="01_Dec_2001_Release_Athens_"> 01-Dec-2001 Release (Athens) </a></h2>
+<strong>25 Oct 2001</strong> - <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a>
+<a href="">TWikiDocumentation</a>: reference manual for the latest TWiki
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<title>Welcome to TWiki - A Web-based Collaboration Platform</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<body bgcolor="#ffffff">
+<h1>Welcome to TWiki</h1>
+<a href="readme.txt">readme.txt</a> </li>
+<a href="license.txt">license.txt</a> </li>
+<a href="TWikiDocumentation.html">TWikiDocumentation.html</a> </li>
+<a href="TWikiHistory.html">TWikiHistory.html</a> </li>
+Lets <a href="./bin/view/Main/WebHome">get started</a> with this web based collaboration platform </li>
+<one line to give the program's name and a brief idea of what it does.>
+Copyright (C) <year> <name of author>
+<title>TWikiHistory</title>
+Access statistics. Each web has a <a href="http://TWiki.org/cgi-bin/view/TWiki/WebStatistics">WebStatistics</a> topic that shows monthy statistics with number of topic views and changes, most popular topics, and top contributors. (It needs to be enabled, <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiDocumentation">TWikiDocumentation</a> has more.)
+Possible to add a category table to a TWiki topic. This permits storing and searching for more structured information. Editing a topic shows a HTML form with the usual text area and a table with selectors, checkboxes, radio buttons and text fields. <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiDocumentation">TWikiDocumentation</a> has more on setup. The TWiki.Know web uses this category table to set classification, platform and OS version.
+<a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiDocumentation">TWikiDocumentation</a>: reference manual for the latest TWiki
+</body></html><html><head>
+</body></html><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<title> TWiki . Main . WebHome </title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<base href="http://192.168.220.133/twiki/bin/view/Main/WebHome" />
+<a name="PageTop"></a>
+<form name="main" action="/twiki/bin/view/Main/WebHome">
+<table width="100%" border="0" cellpadding="3" cellspacing="0">
+<td bgcolor="#FFFFC0" rowspan="2" valign="top" width="1%">
+<a href="http://TWiki.org/"><img src="http://192.168.220.133/twiki/pub/TWiki/TWikiLogos/twikiRobot46x50.gif" border="0" alt="TWiki home" /></a>
+<a href="http://192.168.220.133/twiki/bin/view/Main/WebHome">TWiki</a>
+&gt; <a href="http://192.168.220.133/twiki/bin/view/Main/WebHome">Main</a>
+<font size="+1"><b>WebHome</b> </font>
+</td><td align="right">
+<font size="-2">TWiki webs: <br />
+<a href="/twiki/bin/view/Main/WebHome">Main</a> | <a href="/twiki/bin/view/TWiki/WebHome">TWiki</a> | <a href="/twiki/bin/view/Know/WebHome">Know</a> | <a href="/twiki/bin/view/Sandbox/WebHome">Sandbox</a> </font>
+<tr bgcolor="#FFFFC0">
+<td colspan="2">
+Main . { <a href="/twiki/bin/view/Main/TWikiUsers">Users</a>
+<strong><font size="+1"> <a href="/twiki/bin/view/TWiki/WelcomeGuest">WelcomeGuest</a>: </font></strong>
+<a href="http://TWiki.org/"><img src="http://192.168.220.133/twiki/pub/TWiki/TWikiLogos/twikiRobot131x64.gif" width="131" height="64" alt="Powered by TWiki" border="0" /></a>
+<b>The TWiki <sup>TM</sup> home is <br> at <a href="http://TWiki.org/" target="_top">http://TWiki.org/</a> </b>
+<table width="100%" border="0" cellspacing="2" bgcolor="#000000" cellpadding="3">
+<tr bgcolor="#99CCCC">
+<th colspan="2">
+<td> <b>TWiki.<a href="/twiki/bin/view/Main/WebHome">Main</a></b></td>
+<td> Welcome to TWiki... <a href="/twiki/bin/view/Main/TWikiUsers">Users</a>, <a href="/twiki/bin/view/Main/TWikiGroups">Groups</a>, <a href="/twiki/bin/view/Main/OfficeLocations">Offices</a>
+<font size="-2"> &nbsp; &nbsp; <nobr> { <a href="/twiki/bin/view/Main/WebChanges">Changes</a>
+<tr bgcolor="#FFE0B0">
+<td> <b>TWiki.<a href="/twiki/bin/view/TWiki/WebHome">TWiki</a></b></td>
+<td> <a href="/twiki/bin/view/TWiki/WelcomeGuest">Welcome</a>, <a href="/twiki/bin/view/TWiki/TWikiRegistration">Registration</a>, and other <a href="/twiki/bin/view/TWiki/StartingPoints">StartingPoints</a>; TWiki history &amp; Wiki style; All the docs...
+<font size="-2"> &nbsp; &nbsp; <nobr> { <a href="/twiki/bin/view/TWiki/WebChanges">Changes</a> | <a href="/twiki/bin/view/TWiki/WebSearch">Search</a> | <a href="/twiki/bin/view/TWiki/WebPreferences">Prefs</a> } </nobr></font> </td><td> ...discover TWiki details, and how to start your own site. </td> </tr>
+<tr bgcolor="#D0FFD0">
+<td> <b>TWiki.<a href="/twiki/bin/view/Know/WebHome">Know</a></b></td>
+<td> Knowledge base set-up - Add <a href="/twiki/bin/view/TWiki/TWikiForms">TWikiForms</a> for organizing and classifying content.
+<font size="-2"> &nbsp; &nbsp; <nobr> { <a href="/twiki/bin/view/Know/WebChanges">Changes</a> | <a href="/twiki/bin/view/Know/WebSearch">Search</a> | <a href="/twiki/bin/view/Know/WebPreferences">Prefs</a> } </nobr></font> </td><td> ...try free-form collaboration, with structure! </td> </tr>
+<tr bgcolor="#D0D0D0">
+<td> <b>TWiki.<a href="/twiki/bin/view/Sandbox/WebHome">Sandbox</a></b></td>
+<td> Sandbox test area with all features enabled.
+<font size="-2"> &nbsp; &nbsp; <nobr> { <a href="/twiki/bin/view/Sandbox/WebChanges">Changes</a> | <a href="/twiki/bin/view/Sandbox/WebSearch">Search</a> | <a href="/twiki/bin/view/Sandbox/WebPreferences">Prefs</a> } </nobr></font> </td><td> ...experiment in an unrestricted hands-on web. </td> </tr>
+<tr bgcolor="#ffffff">
+<td colspan="3"><font size="-1"><a href="mailto:webmaster@your.company">webmaster@your.company</a></font></td>
+<strong>TWiki.Main Web:</strong>
+<b> <a href="/twiki/bin/view/Main/TWikiUsers">TWikiUsers</a>: </b> List of users of this TWiki web.
+<a href="/twiki/bin/view/Main/TWikiGroups">TWikiGroups</a>: List of groups.
+<a href="/twiki/bin/view/Main/OfficeLocations">OfficeLocations</a>: Corporate offices.
+<form action="/twiki/bin/search/Main/SearchResult">
+<input type="text" name="search" size="32" /> <input type="submit" value="Search" /> &nbsp;&nbsp; (More options in <a href="/twiki/bin/view/Main/WebSearch">WebSearch</a>)
+<a href="/twiki/bin/view/Main/WebChanges">WebChanges</a>: Display recent changes to the Main web
+<strong>TWiki.TWiki Web:</strong>
+<b> <a href="/twiki/bin/view/TWiki/WelcomeGuest">WelcomeGuest</a>: </b> Look here first to get you rolling on TWiki.
+<strong>Notes:</strong>
+<span style='background : #FFFFC0'>You are currently in the Main web. The color code for this web is this background, so you know where you are.</span>
+If you are not familiar with the TWiki collaboration platform, please visit <a href="/twiki/bin/view/TWiki/WelcomeGuest">WelcomeGuest</a> first.
+<td valign="top">
+Topic <b>WebHome</b> . { <a href="/twiki/bin/edit/Main/WebHome?t=1558478052"><b>Edit</b></a>
+| <a href="/twiki/bin/attach/Main/WebHome">Attach</a>
+Revision r1.20 - 02 Feb 2003 - 02:43 GMT - <a href="/twiki/bin/view/Main/PeterThoeny">PeterThoeny</a>
+<td width="40%" valign="top">
+<font size="-2">Copyright &copy; 1999-2003 by the contributing authors.
+All material on this collaboration platform is the property of the contributing authors. <br />
+Ideas, requests, problems regarding TWiki? <a href="mailto:webmaster@your.company?subject=TWiki&#32;Feedback&#32;on&#32;Main.WebHome">Send</a> feedback. </font>
+<tr><td colspan="2"> </td></tr>
+<a name="PageBottom"></a>
+Topic <b>WebHome</b> . { <a href="/twiki/bin/edit/Main/WebHome?t=1558502714"><b>Edit</b></a>

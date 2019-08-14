@@ -1,0 +1,200 @@
+<title>TWikiDocumentation</title>
+</head><body bgcolor="#ffffff">
+<h1><a name="Feb_2">(01 Feb 2003)</a></h1>
+<script language="JavaScript" type="text/javascript">
+<!-- TWiki -->
+<strong><em>Doubleclick</em></strong>
+<a href="#TWiki">TWiki System Requirements</a>
+<a href="#Server_Requirements">Server Requirements</a>
+<strong><em>Note:</em></strong><a href="" target="_top"></a>
+<strong><em>Related Topics:</em></strong> <a href="http://TWiki.org">TWikiSite</a>
+<h1><a name="TWiki_System_Requirements"> TWiki System Requirements </a></h1>
+<em>Server and client requirements for TWiki 01-Feb-2003</em>
+<h2><a name="Server_Requirements"> Server Requirements </a></h2>
+<a href="http://www.gnu.org" target="_top">RCS</a>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><th colspan="3" bgcolor="#99CCCC"></th></tr>
+<tr><th bgcolor="#99CCCC"> <strong>Resource</strong> </th><th bgcolor="#99CCCC">
+<tr><td> Perl </td><td colspan="2" align="center"><br />
+<tr><td></td><td align="center"> <code>Net::SMTP</code></td></tr>
+<tr><td> RCS </td><td colspan="2" align="center"><br />
+<tr><td> GNU <code>diff</code> </td><td colspan="2" align="center"> GNU <code>diff</code><br />
+<tr><td></td><td colspan="2" align="center"> <code>ls, fgrep, egrep</code> </td></tr>
+<tr><td></td><td align="center"> <code>cron</code> </td><td> <code>cron</code></td></tr>
+<tr><td> Web server </td><td colspan="2" align="center"> Apache</td></tr>
+<img src="http://TWiki.org" border="0" alt="ALERT!" width="16" height="16" />
+<a name="ClientRequirements"></a>
+<h2><a name="Client_Requirements"> Client Requirements </a></h2>
+The TWiki <a href="http://TWiki.org">standard installation</a>
+You can easily add functionality, by customizing <a href="http://TWiki.org">TWikiTemplates</a>
+<h2><a name="Known_Issues"> Known Issues </a></h2>
+-- <a href="http://TWiki.org/cgi-bin/">MikeMannix</a>
+<h1><a name="TWiki_Installation_Guide"> TWiki Installation Guide </a></h1>
+<em>Installation instructions for the TWiki 01-Feb-2003 production release. Update notes for the new RCS configuration are marked</em>
+These installation steps are based on the <strong>Apache</strong> web server on <strong>Linux</strong>
+<a name="StandardInstallation"></a>
+<h2><a name="Standard_Installation"> Standard Installation </a></h2>
+Request and download the TWiki<a href="http://TWiki.org/download.html" target="_top">http://TWiki.org/download.html</a>
+<h3><a name="Step_1_Create_Configure_the_Dire"> Step 1: Create</a></h3>
+<img src="http://TWiki.org/p/pub/TWiki/TWikiDocGraphics/warning.gif" border="0" alt="ALERT!" width="16" height="16" />
+<br /> <img src="http://TWiki.org/p/pub/TWiki/TWikiDocGraphics/warning.gif" border="0" alt="ALERT!" width="16" height="16" />
+<blockquote style="background-color:#F5F5F5">
+<strong>Example <code>httpd.conf</code> entries:</strong>
+<pre> ScriptAlias /twiki/bin/ "/home/httpd/twiki/bin/"
+&lt;/Directory&gt;</pre>
+<em>Go directly to <a href="#StepTwo">Step 2</a>...</em>
+<a name="StepOneB"></a>
+<h4><a name="Step_1_for_Non_Root_Accounts"> Step 1 for Non-Root Accounts </a></h4>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><th bgcolor="#99CCCC"> <strong>TWiki dir:</strong> </th><th bgcolor="#99CCCC">
+<tr><td> <code>twiki</code> </td><td> start-up pages </td><td> root TWiki dir </td><td> <code>/home/smith/twiki/</code> </td></tr>
+<tr><td> <code>twiki/bin</code> </td><td> CGI bin </td><td> CGI-enabled dir </td><td> <code>/home/smith/twiki/bin</code> </td></tr>
+<tr><td> <code>twiki/lib</code> </td><td> library files </td><td> same level as <code>twiki/bin</code> </td><td> <code>/home/smith/twiki/lib</code> </td></tr>
+<tr><td> <code>twiki/pub</code> </td><td> public files </td><td> htdoc enabled dir </td><td> <code>/home/smith/twiki/pub</code> </td></tr>
+<tr><td> <code>twiki/data</code> </td><td> topic data </td><td> dir secure from public access </td><td> <code>/home/smith/twiki/data</code> </td></tr>
+<tr><td> <code>twiki/templates</code> </td><td> web templates </td><td> dir secure from public access </td><td> <code>/home/smith/twiki/templates</code> </td></tr>
+If you are not able to create the <code>twiki/lib</code> directory at the same level as the <code>twiki/bin</code>
+twikiLibPath = <font color="red">'/some/other/path/lib'</font>; # Path to lib directory containing TWiki.pm
+You can also edit <code>localPerlLibPath</code> in the <code>setlib.cfg</code>
+<a name="StepTwo"></a>
+<h3><a name="Step_2_Set_File_Permissions"> Step 2: Set File Permissions </a></h3>
+<strong>IMPORTANT:</strong> On ISP-hosted accounts, Perl CGI scripts usually require a <code>.cgi</code>
+<img src="http://TWiki.org/p/pub/TWiki/TWikiDocGraphics/help.gif" border="0" alt="HELP" width="16" height="16" />
+<img src="http://TWiki.org/p/pub/TWiki/TWikiDocGraphics/tip.gif" border="0" alt="TIP" width="16" height="16" />
+<img src="http://TWiki.org/p/pub/TWiki/TWikiDocGraphics/help.gif" border="0" alt="HELP" width="16" height="16" />
+<h3><a name="Step_3_Set_the_Main_Configuratio"> Step 3: Set the Main Configuration File </a></h3>
+<strong>Security issue:</strong> Directories <code>twiki/data</code> , <code>twiki/templates</code>
+<h3><a name="Step_4_Configure_Site_Wide_Email"> Step 4: Configure Site-Wide Email Preferences </a></h3>
+<code>WIKIWEBMASTER</code> should be set to the email address of the TWiki administrator
+<code>SMTPMAILHOST</code> is typically set on Windows or other non-Unix/Linux systems, where <code>sendmail</code>
+<code>SMTPSENDERHOST</code> is optional, and set to the domain name sending the email (e.g. <code>twiki.yourdomain.com</code>).
+<h3><a name="Step_5_Finish_Up_from_Your_Brows"> Step 5: Finish Up from Your Browser </a></h3>
+<img src="http://TWiki.org/p/pub/TWiki/TWikiDocGraphics/tip.gif" border="0" alt="TIP" width="16" height="16" />
+<h2><a name="Additional_Server_Level_Options"> Additional Server-Level Options </a></h2>
+<a name="AuthenticationOfUsers"></a>
+<h3><a name="Enabling_Authentication_of_Users"> Enabling Authentication of Users </a></h3>
+<strong>Rename</strong> file <code>.htaccess.txt</code> in the <code>twiki/bin</code> directory to <code>.htaccess</code>
+<code>Redirect <font color="red">/urlpathto/twiki/index.html</font> http://<font color="red">yourdomain.com/urlpathto/twiki/bin/</font>view</code> <br>
+<code>AuthUserFile <font color="red">/filepathto/twiki/data/</font>.htpasswd</code> <br />
+<code>ErrorDocument 401 <font color="red">/urlpathto/twiki/bin/</font>oops/TWiki/TWiki</code>
+<img src="http://TWiki.org/p/pub/TWiki/TWikiDocGraphics/warning.gif" border="0" alt="ALERT!" width="16" height="16" />
+<img src="http://TWiki.org/p/pub/TWiki/TWikiDocGraphics/help.gif" border="0" alt="HELP" width="16" height="16" />
+<strong>This applies only if you have root access:</strong> on hosted accounts, you shouldn't have this problem - otherwise, email tech support.
+<img src="http://TWiki.org/p/pub/TWiki/TWikiDocGraphics/warning.gif" border="0" alt="ALERT!" width="16" height="16" />
+<strong>Copy</strong> the <a href="http://TWiki.org/cgi-bin/view/TWiki/TWikiRegistrationPub">TWikiRegistrationPub</a>
+<img src="http://TWiki.org/p/pub/TWiki/TWikiDocGraphics/warning.gif" border="0" alt="ALERT!" width="16" height="16" />
+<img src="http://TWiki.org/p/pub/TWiki/TWikiDocGraphics/warning.gif" border="0" alt="ALERT!" width="16" height="16" />
+<h2><a name="TWiki_File_System_Info"> TWiki File System Info </a></h2>
+See <a href="http://TWiki.org/cgi-bin/view/TWiki/AppendixFileSystem">Appendix A: TWiki File System</a>
+-- <a href="http://TWiki.org/cgi-bin/view/TWiki/PeterThoeny">PeterThoeny</a> - 28 Dec 2002 <br />
+-- <a href="http://TWiki.org/cgi-bin/view/Main/MikeMannix">MikeMannix</a> - 16 May 2002
+<h1><a name="Windows_Install_Cookbook"> Windows Install Cookbook </a></h1>
+<h2><a name="Introduction"> Introduction </a></h2>
+This cookbook is intended to get you up and running with TWiki on Windows quickly, with as few problems as possible. The 'cookbook' approach is simply to restrict the many choices that someone installing
+TWiki must make, so that a reasonably well-defined procedure can be followed - new users can simply follow the steps, while experts can use this as more of a guideline. Please read
+<a href="http://twiki.org/cgi-bin/view/Codev.WindowsModPerlInstallCookbook" title="'Codev.WindowsModPerlInstallCookbook' on TWiki site, we know it!">TWiki:Codev.WindowsModPerlInstallCookbook</a> in case you use mod_perl.
+-- <a href="http://TWiki.org/cgi-bin/view/Main/RichardDonkin">RichardDonkin</a> - 24 Feb 2002
+<h2><a name="Recent_updates"> Recent updates </a></h2>
+30 Nov 2002 - added <code>binutils</code> to list of Cygwin packages, and added warning not to use Apache 2.0
+20 Nov 2002 - update to avoid <a href="http://twiki.org/cgi-bin/view/Support.InstallDigestSHA1Fails" title="'Support.InstallDigestSHA1Fails' on TWiki site, we know it!">SHA1Fails</a>
+12 Nov 2002 - setting <code>SMTPMAILHOST</code> for user registration and notification
+03 Sep 2002 - linked to <a href="http://twiki.org/cgi-bin/view/Codev.WindowsModPerlInstallCookbook" title="'Codev.WindowsModPerlInstallCookbook' on TWiki site, we know it!">Codev</a>
+20 Jul 2002 - added flags to <code>grep</code> commands in <code>TWiki.cfg</code>
+20 Jun 2002 - added creation of <code>c:/twiki</code> directory
+15 Jun 2002 - various notes on Cygwin installation and troubleshooting: use of 'Unix' as default text file type (i.e. for mounting <code>c:/cygwin</code> directories) is essential for binary attachment uploads to work properly
+<code>egrep</code> and <code>fgrep</code> on some Cygwin versions (fix from <a href="http://twiki.org/cgi-bin/view/Main.DavidLeBlanc" title="'Main.DavidLeBlanc' on TWiki site, we know it!">TWiki</a>)
+21 Apr 2002 - updates on download sizes and free disk space requirements, improved post-installation <a href="#Testing_your_TWiki_installation">testing</a>
+<a href="http://twiki.org/cgi-bin/" title="'Main.MaryDeMarco' on TWiki site, we know it!">TWiki:MaryDeMarco</a>
+<code>pcre</code> to list of Cygwin packages (required by <code>grep</code>)
+<a href="http://twiki.org/cgi-bin/view/Codev.TWikiAlphaRelease" title="'Codev.TWikiAlphaRelease' on TWiki site, we know it!">TWiki:Codev.TWikiAlphaRelease</a>
+3 Mar 2002 - minor update to include <code>uname -a</code> command to check Cygwin DLL version, and delete Apache config's PassEnv line
+<a href="http://twiki.org/cgi-bin/view/Codev.WindowsInstallCookbookComments" title="'Codev.WindowsInstallCookbookComments' on TWiki site, we know it!">TWiki:Codev.WindowsInstallCookbookComments</a>
+<code>register</code>, fixed minor typo in Cygwin binary mode section, after beta testing by
+<h2><a name="Scope"> Scope </a></h2>
+<table border="1" cellspacing="0" cellpadding="1"> <tr><th bgcolor="#99CCCC"> <strong>Component</strong> </th><th bgcolor="#99CCCC">
+<tr><td> Operating System </td><td> Windows 2000 </td><td> Should also work for Windows NT </td></tr>
+<tr><td> Web Server </td><td><a href="http://httpd.apache.org" target="_top">http://httpd.apache.org</a>, but <strong>don't</strong> use Apache 2.0 yet) </td></tr>
+<tr><td> Unix tools </td><td> Cygwin 1.3.9 </td><td> Simplest way to get a whole set of required tools </td></tr>
+<tr><td> Perl </td><td> Cygwin perl-5.6.1-2 </td><td> Comes with Cygwin </td></tr>
+<tr><td> RCS </td><td> Cygwin rcs-5.7-2 </td><td> Comes with Cygwin, includes a file corruption bugfix </td></tr>
+<img src="http://TWiki.org/p/pub/TWiki/TWikiDocGraphics/new.gif" border="0" alt="NEW" width="28" height="8" />
+<h3><a name="Alternatives"> Alternatives </a></h3>
+<a href="http://twiki.org/cgi-bin/" title="'Codev.ActiveState' on TWiki site, we know it!">TWiki:Codev.ActiveState</a>
+<a href="http://twiki.org/cgi-bin/view/Codev.TWikiOnWindows" title="'Codev.TWikiOnWindows' on TWiki site, we know it!">TWiki:Codev.TWikiOnWindows</a>
+<a href="http://twiki.org/cgi-bin/view/Codev.TWikiOnWindowsKnownConfigurations" title="'Codev.TWikiOnWindowsKnownConfigurations' on TWiki site, we know it!">Configurations</a>
+<a href="http://twiki.org/cgi-bin/view/Support.TwikiOnWindowsBinaryAttachments" title="'Support.TwikiOnWindowsBinaryAttachments' on TWiki site, we know it!">TWiki:Support</a>.
+<h2><a name="Checking_versions"> Checking versions </a></h2>
+If you already have some of these add-ons installed, here's how to check the versions - this assumes you have
+<i>: Cygwin DLL version is the number in 1.3.x format</i>
+less c:/<i>your-apache-dir</i>/Announcement
+If you have an older version of any component, do yourself a favour and <strong>upgrade it</strong> as part of the install process.
+<h2><a name="Pre_requisites_and_upgrades"> Pre-requisites and upgrades </a></h2>
+<h3><a name="Text_editing"> Text editing </a></h3>
+<code>nano</code>, a non-GUI editor, but if you prefer to use a GUI editor, you should first install PFE, a freeware editor that supports Unix format files. PFE is available
+Another good <a href="http://twiki.org/cgi-bin/view/Codev.OpenSource" title="'Codev.OpenSource' on TWiki site, we know it!">TWiki:Codev.OpenSource</a>
+<h2><a name="The_Unix_Windows_Environment"> The Unix/Windows Environment </a></h2>
+It's a little known fact that you can use pathnames such as <code><b>c:/apache</b></code> almost everywhere in Windows - try it in a File Open dialogue box.
+The reason this matters is that <code><b>'\'</b></code> is a special character to Perl and other tools, so it's much easier to use <code><b>'/'</b></code> everywhere.
+<h3><a name="The_Cygwin_environment"> The Cygwin environment </a></h3>
+<a href="http://twiki.org/cgi-bin/view/Codev.CygWin" title="'Codev.CygWin' on TWiki site, we know it!">TWiki:Codev.CygWin</a> is a Unix-like environment for Windows
+<h3><a name="The_Apache_environment"> The Apache environment </a></h3>
+If you need to use spaces in file names (not recommended), put double quotes around the file name in the <code>httpd.conf</code>
+<h3><a name="The_Perl_environment"> The Perl environment </a></h3>
+<code>ls</code>, <code>egrep</code>, and RCS tools that it (typically) launches with the <code>bash</code> shell.
+If you need to use spaces in file names (not recommended), you <em>may</em><code>TWiki.cfg</code>
+<h2><a name="Installing_Components"> Installing Components </a></h2>
+<h3><a name="TWiki_part_1_"> TWiki (part 1) </a></h3>
+Head to <a href="http://twiki.org" target="_top">http://twiki.org</a>
+<h3><a name="Apache"> Apache </a></h3>
+<strong>1. Download Apache</strong>
+<a href="http://httpd.apache.org/" target="_top">http://httpd.apache.org/</a>
+<a href="http://www.apache.org/dist/httpd/Announcement.html" target="_top">this page</a>
+<a href="http://www.apache.org/dyn/closer.cgi" target="_top">http://www.apache.org/dyn/closer.cgi</a>
+The file to download is <code><b></b></code>
+<strong><em>NOTE</em></strong><code><b>instmsi.exe</b></code><a href="http://httpd.apache.org/dist/httpd/binaries/win32/" target="_top"></a>
+<strong><em>NOTE</em></strong>: The Apache package itself requires a download of around 2 MB, and up to 10 MB of free disk space once installed.
+<strong>2. Install Apache</strong>
+Specify <code><b>c:\</b></code> as the installation directory - this actually installs Apache into <code><b>c:\apache</b></code> (if you specify <code>c:\apache</code>
+<a href="http://httpd.apache.org/docs/windows.html" target="_top">Installing Apache on Windows</a> and <a href="http://httpd.apache.org/docs/win_service.html" target="_top">Windows NT/2000 service</a>.
+<strong>3. Test Apache</strong>
+If necessary, start apache, either as a Win2000 service (using Admin Tools | Computer Management, or by typing <code>apache -k start -n apache</code>
+Point your browser at <a href="http://yourdomain.com/" target="_top">http://yourdomain.com/</a> to see the Apache intro page.
+<code>apache -k restart</code> for standalone Apache process running in another window
+<code>apache -k restart -n apache</code> for Apache running as a Win2000 service (-n gives name of service)
+Another useful command is <code>apache -k stop</code>.
+<h3><a name="Cygwin_Unix_tools_Perl_and_RCS"> </a> Cygwin, Unix tools, Perl and RCS </h3>
+<strong>4. Install Cygwin</strong>
+Head to <a href="http://cygwin.com" target="_top">http://cygwin.com</a>, and click the <strong><em>Install Cygwin Now</em></strong> link.
+Now run the Cygwin <code>setup.exe</code> file - this will also install Perl and RCS in one fell swoop.
+On first page, accept the defaults (be sure that the <strong><em>default text file type is Unix</em></strong> to avoid problems with attachment uploads, and specify 'install for all users')
+Select <code>c:\download\cygwin-dist</code> as the local package directory, and suitable proxy settings, then pick a local mirror site
+In the package list screen, hit the <strong>View</strong> button until you get an alphabetical list that says <strong>Full</strong> to the right of the button.
+Leave the radio button on <strong>Curr</strong> (Current)
+For each package, make sure the <strong>New</strong> column in the installer has a version number under it. If it says 'Skip' or 'Keep'
+<code>bash</code>
+<code>wget</code> (optional, useful for Perl install and <a href="http://twiki.org/cgi-bin/view/Codev.ReadWriteOfflineWiki" title="'Codev.ReadWriteOfflineWiki' on TWiki site, we know it!">TWiki:Codev.ReadWriteOfflineWiki</a>)
+<a href="http://cygwin.com/faq/faq.html#SEC32" target="_top">Cygwin FAQ entry</a> and upgrade <code>libncurses5</code>.
+<strong><em>NOTE</em></strong>: The mandatory packages require a download of about 12 MB - about half of this is Perl, which would be necessary even without Cygwin, and most of the rest is gcc
+<strong><em>NOTE</em></strong>: The installer keeps a local copy of downloaded files, so it's easy to re-install without re-downloading.
+<strong>5. Test Cygwin</strong>
+Launch the desktop icon - this runs the <code>bash</code> shell, which has command line editing features
+TIP: When typing a directory or file name, hit the TAB key after the first few letters of the name - <code>bash</code> will 'complete' the name.
+Type <code>rcs -V</code> - you should see the RCS version, 5.7
+Type <code>perl -v</code> - you should see cygwin mentioned in the first line, and the Perl version, 5.6.1
+Type <code>grep home /etc/passwd</code> - you should see some output.
+The <a href="http://cygwin.com/cygwin-ug-net/cygwin-ug-net.html" target="_top">Cygwin User Guide</a> is well worth reading for some background on how Cygwin works.
+<strong>6. Configure Cygwin for binary mode</strong>
+<strong><em>This is very important - omitting this step leads to a partially working system that corrupts RCS files</em></strong>
+<a href="http://twiki.org/cgi-bin/view/Codev.CookbookLineEndingProblems" title="'Codev.CookbookLineEndingProblems' on TWiki site, we know it!">TWiki:Codev.CookbookLineEndingProblems</a>
+<b>mkdir /twiki /c c:/twiki</b>
+This configures <code>/twiki</code> (known as a 'mount point') to map onto <code>c:/twiki</code> and for that directory tree to always be in binary mode, and does the same for <code>/c</code>
+It is <strong>very important</strong> that all lines in the output of <code>mount</code> say 'binmode' under Flags
+If the lines for <code>C:\cygwin</code> directories do not, you should uninstall and then re-install Cygwin to ensure that binary attachment uploads will work.
+<a href="http://www.cygwin.com/cygwin-ug-net/using.html" target="_top">Cygwin documentation</a> for more details on this.
+Type <code><b>cd /twiki</b></code>
+Type <code><b>echo hi &gt;t</b></code>
+Type <code><b>cat -v t</b></code> - you should see <code><b>hi</b></code> as the output
+If you see filename errors, your <strong>mounts did not work</strong> for some reason - check your typing
+If you see <code><b>hi^M</b></code> as output, <strong>your /twiki directory is not in binary mode</strong>
+Clean up by doing <code>rm t</code>
+This setup is written to the Windows registry, so there's no need to put these commands into a <code>.profile</code> file. For more information on binary vs text mode, see this
+<a href="http://cygwin.com/cygwin-ug-net/using-textbinary.html" target="_top">User Guide section</a> and this <a href="http://cygwin.com/faq/faq.html#SEC54" target="_top">FAQ entry</a>.
+<h3><a name="TWiki_part_2_"> TWiki (part 2) </a></h3>
